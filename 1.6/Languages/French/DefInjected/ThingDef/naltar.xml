@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Altar -->
+  <OWD_Altar.label>Autel nécromantique</OWD_Altar.label>
+  <OWD_Altar.description>Un autel qui convertit les cadavres en énergie nécromantique. En raison de la conversion nécessitant un lien faible entre le serviteur de contrôle et le corps, seuls les cadavres humanoïdes peuvent être utilisés. Peut également servir de foyer pour les rituels nécromantiques.</OWD_Altar.description>
+
+</LanguageData>

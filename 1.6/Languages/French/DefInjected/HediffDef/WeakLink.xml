@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Weak Link / Unstable Control -->
+  <OWD_WeakLink.label>Contrôle instable</OWD_WeakLink.label>
+  <OWD_WeakLink.description>En raison du lien faible entre le nécromancien et ce mort-vivant, contrôler ce mort-vivant devient de plus en plus difficile.</OWD_WeakLink.description>
+  <OWD_WeakLink.stages.0.label>Lien faible</OWD_WeakLink.stages.0.label>
+  <OWD_WeakLink.stages.1.label>Lien dégradé</OWD_WeakLink.stages.1.label>
+  <OWD_WeakLink.stages.2.label>Lien s'estompant</OWD_WeakLink.stages.2.label>
+  <OWD_WeakLink.stages.3.label>Lien rompu</OWD_WeakLink.stages.3.label>
+  <OWD_WeakLink.stages.4.label>Lié à ???</OWD_WeakLink.stages.4.label>
+
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Extract Soul Shard Ritual -->
+  <OWD_ExtractSoulShardRitual.label>Extraire un éclat d'âme</OWD_ExtractSoulShardRitual.label>
+  <OWD_ExtractSoulShardRitual.description>Effectuer un rituel pour extraire de force un éclat d'âme infusé d'un colon, le purifiant de l'essence stockée. Le processus est destructif et peut briser l'éclat lui-même si le rituel n'est pas effectué avec une concentration suffisante.</OWD_ExtractSoulShardRitual.description>
+  <OWD_ExtractSoulShardRitual.outcomeDescription>L'éclat d'âme infusé sera retiré du colon cible. Selon la qualité du rituel, un éclat d'âme vide sera produit, ou l'éclat se brisera en rien.</OWD_ExtractSoulShardRitual.outcomeDescription>
+
+</LanguageData>

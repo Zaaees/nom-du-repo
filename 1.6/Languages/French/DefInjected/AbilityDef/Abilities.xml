@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <OWD_ReviveShamblers.label>Poussière nécromantique</OWD_ReviveShamblers.label>
+  <OWD_ReviveShamblers.description>Utilisez l'énergie nécromantique pour parfaitement simuler la poussière de non-vie. Les traînants sont incontrôlables, peut-être y a-t-il un moyen de les lier à nous ?</OWD_ReviveShamblers.description>
+
+  <SummonShambler.label>Sauter traînant</SummonShambler.label>
+  <SummonShambler.description>Vous téléportez un traînant réanimé de quelque part. Vous pouvez en quelque sorte sentir leur présence et deviner leur emplacement dans ce monde et dans d'autres.</SummonShambler.description>
+
+  <SummonHorde.label>Sauter horde</SummonHorde.label>
+  <SummonHorde.description>Téléportez une horde de 5 traînants réanimés de quelque part. Vous pouvez en quelque sorte sentir leur présence et deviner leur emplacement dans ce monde et dans d'autres.</SummonHorde.description>
+
+  <RaiseUndead.label>Relever les morts-vivants</RaiseUndead.label>
+  <RaiseUndead.description>Réanime les cadavres et les fait obéir à vos ordres.</RaiseUndead.description>
+
+  <ConsumeCorpses.label>Consommer les cadavres</ConsumeCorpses.label>
+  <ConsumeCorpses.description>Consommez les cadavres dans une grande zone autour de vous afin de convertir rapidement leur chair et leurs os en énergie nécromantique.</ConsumeCorpses.description>
+
+  <Ability_ExpandMana.label>Étendre la capacité énergétique</Ability_ExpandMana.label>
+  <Ability_ExpandMana.description>Consomme toute l'énergie nécromantique pour augmenter définitivement la capacité maximale de 10.</Ability_ExpandMana.description>
+
+  <Ability_SelectNecromancer.label>Sélectionner le nécromancien</Ability_SelectNecromancer.label>
+  <Ability_SelectNecromancer.description>Téléportez la caméra vers le nécromancien contrôleur.</Ability_SelectNecromancer.description>
+
+  <Ability_UndeadSuicide.label>Se détruire</Ability_UndeadSuicide.label>
+  <Ability_UndeadSuicide.description>Ordonnez à ce mort-vivant de se détruire.</Ability_UndeadSuicide.description>
+
+  <RaiseUndeadChampion.label>Relever un champion mort-vivant</RaiseUndeadChampion.label>
+  <RaiseUndeadChampion.description>Ressuscite un seul cadavre en tant que puissant champion mort-vivant lié au nécromancien.</RaiseUndeadChampion.description>
+
+  <RaiseUndeadOverseer.label>Relever un surveillant mort-vivant</RaiseUndeadOverseer.label>
+  <RaiseUndeadOverseer.description>Ressuscite un seul cadavre en tant que puissant surveillant mort-vivant lié au nécromancien.</RaiseUndeadOverseer.description>
+
+  <NecroticHealing.label>Guérison nécromantique</NecroticHealing.label>
+  <NecroticHealing.description>Canalise l'énergie nécromantique dans les morts-vivants à proximité, soignant leurs blessures.</NecroticHealing.description>
+
+  <OWD_RaiseCreature.label>Relever des traînants</OWD_RaiseCreature.label>
+  <OWD_RaiseCreature.description>Relevez la plupart des types de cadavres en tant que traînants, et les lie partiellement au nécromancien.</OWD_RaiseCreature.description>
+
+</LanguageData>

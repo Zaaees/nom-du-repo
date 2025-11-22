@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Orb Hediff -->
+  <OWD_Hediff_NecroticOrb.label>orbe nécromantique</OWD_Hediff_NecroticOrb.label>
+  <OWD_Hediff_NecroticOrb.labelNoun>un orbe nécromantique</OWD_Hediff_NecroticOrb.labelNoun>
+  <OWD_Hediff_NecroticOrb.description>Un orbe nécromantique installé. Il projette un puissant bouclier d'énergie.</OWD_Hediff_NecroticOrb.description>
+
+</LanguageData>

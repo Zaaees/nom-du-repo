@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Soul Shard Categories -->
+  <OWD_SoulShards.label>Éclats d'âme</OWD_SoulShards.label>
+  <OWD_SoulShards_Empty.label>Éclats d'âme vides</OWD_SoulShards_Empty.label>
+  <OWD_SoulShards_Filled.label>Éclats d'âme remplis</OWD_SoulShards_Filled.label>
+  <OWD_SoulShards_Filled_Minor.label>Éclats d'âme mineurs</OWD_SoulShards_Filled_Minor.label>
+  <OWD_SoulShards_Filled_Major.label>Éclats d'âme majeurs</OWD_SoulShards_Filled_Major.label>
+
+</LanguageData>

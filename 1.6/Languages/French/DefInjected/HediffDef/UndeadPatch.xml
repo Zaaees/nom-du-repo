@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Deprecated Undead Hediff -->
+  <Undead.label>Mort-vivant (Obsolète)</Undead.label>
+  <Undead.description>Ceci est un placeholder factice pour la compatibilité des sauvegardes. Si vous voyez ceci, veuillez tuer ce colon et le ressusciter à nouveau.</Undead.description>
+
+</LanguageData>

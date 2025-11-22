@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Unfinished Necrotic Prosthetic -->
+  <UnfinishedHealthItemNecrotic.label>prothèse nécromantique inachevée</UnfinishedHealthItemNecrotic.label>
+  <UnfinishedHealthItemNecrotic.description>Une prothèse nécromantique inachevée.</UnfinishedHealthItemNecrotic.description>
+
+  <!-- Necrotic Core Item -->
+  <OWD_NecroticCore.label>noyau nécromantique</OWD_NecroticCore.label>
+  <OWD_NecroticCore.description>Un noyau d'archites nécromantiques cristallisés, capable de virtualiser et d'améliorer la fonction d'un cœur régulier en copiant et en internalisant ses fonctions. Le cœur est détruit dans ce processus.</OWD_NecroticCore.description>
+
+</LanguageData>

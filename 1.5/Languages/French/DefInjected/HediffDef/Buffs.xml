@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Mending -->
+  <OWD_NecroticMending.label>Réparation nécromantique</OWD_NecroticMending.label>
+  <OWD_NecroticMending.description>Une vague d'énergie nécromantique referme activement les blessures de cette créature.</OWD_NecroticMending.description>
+
+  <!-- Necrotic Regeneration -->
+  <OWD_NecroticRegeneration.label>Régénération nécromantique</OWD_NecroticRegeneration.label>
+  <OWD_NecroticRegeneration.description>Une vague d'énergie nécromantique accélère la guérison, restaurant la chair et les os chez les morts-vivants.</OWD_NecroticRegeneration.description>
+
+  <!-- Enraged -->
+  <OWD_Enrage.label>Enragé</OWD_Enrage.label>
+  <OWD_Enrage.description>Les sens de cette créature ont été submergés par une rage artificielle induite par le lien nécromantique. Des images d'ennemis lointains scintillent dans leur esprit, les poussant à poursuivre les ennemis du nécromancien.</OWD_Enrage.description>
+  <OWD_Enrage.stages.0.label>enragé</OWD_Enrage.stages.0.label>
+  <OWD_Enrage.stages.1.label>???</OWD_Enrage.stages.1.label>
+
+  <!-- Necrotic Field -->
+  <OWD_NecroticField.label>Champ nécromantique</OWD_NecroticField.label>
+  <OWD_NecroticField.description>Une vague d'énergie nécromantique accélère la guérison, restaurant la chair et les os chez les morts-vivants.</OWD_NecroticField.description>
+  <OWD_NecroticField.stages.0.label>minimale</OWD_NecroticField.stages.0.label>
+  <OWD_NecroticField.stages.1.label>modérée</OWD_NecroticField.stages.1.label>
+  <OWD_NecroticField.stages.2.label>forte</OWD_NecroticField.stages.2.label>
+  <OWD_NecroticField.stages.3.label>extrême</OWD_NecroticField.stages.3.label>
+
+</LanguageData>

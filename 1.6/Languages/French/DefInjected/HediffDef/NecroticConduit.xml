@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- NecroticConduit.xml -->
+  <OWD_NecroticFlow.label>Lien de traînant</OWD_NecroticFlow.label>
+  <OWD_NecroticFlow.description>Un conduit d'archites nécromantiques reliant le nécromancien aux traînants relevés avec le même type d'archites. Il utilise un éclat d'archotechnologie sombre comme point de connexion. Vous ne pouvez que spéculer sur son fonctionnement interne, mais une chose est claire de vos expériences : le nombre de traînants contrôlables est directement lié à l'étendue de votre contrôle. Les surveillants morts-vivants devraient être en mesure de vous aider à étendre davantage cette limite.</OWD_NecroticFlow.description>
+
+  <!-- NeuralShackle.xml -->
+  <OWD_NecroticLink.label>Lien nécromantique</OWD_NecroticLink.label>
+  <OWD_NecroticLink.description>Un implant neural fait d'archites cristallisés, cédant des parties du cerveau de ce colon au nécromancien lié, accordant 1 contrôle supplémentaire et permettant au contrecoup de l'utilisation dangereuse des capacités nécromantiques d'être absorbé par ce colon à la place.</OWD_NecroticLink.description>
+
+</LanguageData>

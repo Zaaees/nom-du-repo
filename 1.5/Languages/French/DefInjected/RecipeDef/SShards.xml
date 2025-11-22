@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Empty Soul Shards Recipe -->
+  <OWD_CraftSoulShardEmpty.label>fabriquer des éclats d'âme vides</OWD_CraftSoulShardEmpty.label>
+  <OWD_CraftSoulShardEmpty.description>Fabriquer 5 Éclats d'âme vides, un réceptacle imparfait capable de stocker des informations partielles d'"âme", enregistrant des mémoires. Il est créé en infusant un orbe nécromantique avec une quantité significative d'énergie stockée d'un serviteur de contrôle lié, divisant l'orbe en 5 éclats.</OWD_CraftSoulShardEmpty.description>
+  <OWD_CraftSoulShardEmpty.jobString>Fabrication d'éclats d'âme vides.</OWD_CraftSoulShardEmpty.jobString>
+
+  <!-- Cleanse Soul Shard Recipe -->
+  <OWD_CleanseSoulShard.label>purifier un éclat d'âme</OWD_CleanseSoulShard.label>
+  <OWD_CleanseSoulShard.description>Utiliser l'énergie nécromantique pour purifier un Éclat d'âme rempli, le rendant vide et prêt pour une nouvelle inscription.</OWD_CleanseSoulShard.description>
+  <OWD_CleanseSoulShard.jobString>Purification d'éclat d'âme.</OWD_CleanseSoulShard.jobString>
+
+</LanguageData>

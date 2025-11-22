@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- NeuralShackle.xml -->
+  <OWD_AttuneNecroticLink.label>Accorder le lien nécromantique</OWD_AttuneNecroticLink.label>
+  <OWD_AttuneNecroticLink.description>Accordez l'entrave neurale d'un colon pour établir un lien nécromantique.</OWD_AttuneNecroticLink.description>
+  <OWD_AttuneNecroticLink.reportString>Accorde le lien nécromantique de {0}.</OWD_AttuneNecroticLink.reportString>
+
+</LanguageData>

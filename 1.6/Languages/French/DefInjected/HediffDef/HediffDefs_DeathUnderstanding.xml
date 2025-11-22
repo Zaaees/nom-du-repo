@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Unfamiliar with Death -->
+  <UnfamiliarWithDeath.label>Peu familier avec la mort</UnfamiliarWithDeath.label>
+  <UnfamiliarWithDeath.description>Vous ne comprenez pas pleinement ce qui se trouve au-delà.</UnfamiliarWithDeath.description>
+
+  <!-- Familiar with Death -->
+  <FamiliarWithDeath.label>Familier avec la mort</FamiliarWithDeath.label>
+  <FamiliarWithDeath.description>Vous commencez à comprendre ce qu'est la mort, le lien archite et comment les morts-vivants peuvent se déplacer même sans nourriture.</FamiliarWithDeath.description>
+
+  <!-- One with Death -->
+  <OneWithDeath.label>Un avec la mort</OneWithDeath.label>
+  <OneWithDeath.description>Vous avez pleinement embrassé la mort et vous êtes familiarisé avec les rouages internes du lien archite. Tant que vous avez des archites qui coulent en vous, ou des colons à sacrifier, vous êtes fonctionnellement immortel.</OneWithDeath.description>
+
+</LanguageData>

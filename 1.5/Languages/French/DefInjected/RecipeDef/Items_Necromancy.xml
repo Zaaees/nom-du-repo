@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Items_Necromancy.xml -->
+  <Make_GreenCrystal_Metal.label>fabriquer un cristal vert (catalyseur métallique)</Make_GreenCrystal_Metal.label>
+  <Make_GreenCrystal_Metal.description>Fabriquez un cristal vert en utilisant de l'acier, de l'or, du plastacier ou de l'uranium comme catalyseur et des corps comme carburant, permettant aux archites de se répliquer.</Make_GreenCrystal_Metal.description>
+  <Make_GreenCrystal_Metal.jobString>Fabrique un cristal vert.</Make_GreenCrystal_Metal.jobString>
+
+  <Make_GreenCrystal.label>fabriquer un cristal vert</Make_GreenCrystal.label>
+  <Make_GreenCrystal.description>Fabriquez un cristal vert en utilisant du jade comme catalyseur et des corps comme carburant, permettant aux archites de se répliquer.</Make_GreenCrystal.description>
+  <Make_GreenCrystal.jobString>Fabrique un cristal vert.</Make_GreenCrystal.jobString>
+
+  <!-- NecroticConduit.xml -->
+  <Make_OWD_NecroticConduit.label>fabriquer un conduit nécromantique</Make_OWD_NecroticConduit.label>
+  <Make_OWD_NecroticConduit.description>Fabriquez un conduit nécromantique, permettant à un nécromancien de se lier avec les traînants.</Make_OWD_NecroticConduit.description>
+  <Make_OWD_NecroticConduit.jobString>Fabrique un conduit nécromantique.</Make_OWD_NecroticConduit.jobString>
+
+  <!-- NeuralShackle.xml -->
+  <InstallNeuralShackle.label>installer une entrave neurale</InstallNeuralShackle.label>
+  <InstallNeuralShackle.description>Installez une entrave neurale pour lier le colon à un nécromancien.</InstallNeuralShackle.description>
+  <InstallNeuralShackle.jobString>Installe une entrave neurale.</InstallNeuralShackle.jobString>
+
+</LanguageData>

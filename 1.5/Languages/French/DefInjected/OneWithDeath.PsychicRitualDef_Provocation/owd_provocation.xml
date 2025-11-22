@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Provocation Ritual -->
+  <OWD_ProvokeObelisk.label>Provocation nécromantique</OWD_ProvokeObelisk.label>
+  <OWD_ProvokeObelisk.description>Effectuer un rituel utilisant l'énergie nécromantique comme médium, comme crier dans le vide et attendre une réponse. Tout ce qui répond doit être en quelque sorte lié à l'énergie nécromantique elle-même.</OWD_ProvokeObelisk.description>
+  <OWD_ProvokeObelisk.outcomeDescription>Un obélisque nécromantique se manifestera quelque part sur la carte, gardé par plusieurs serviteurs morts-vivants.</OWD_ProvokeObelisk.outcomeDescription>
+
+</LanguageData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necromancer Control Relationship -->
+  <NecromancerControl.label>Nécromancien</NecromancerControl.label>
+  <NecromancerControl.description>Ce colon est contrôlé par un nécromancien.</NecromancerControl.description>
+
+</LanguageData>
