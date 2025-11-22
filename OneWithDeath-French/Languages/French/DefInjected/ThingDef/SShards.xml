@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Empty Soul Shard -->
+  <OWD_SoulShardEmpty.label>Éclat d'âme (vide)</OWD_SoulShardEmpty.label>
+  <OWD_SoulShardEmpty.description>Un éclat de cristal semblable à de l'obsidienne, étrangement froid au toucher. Il semble bourdonner d'une faible résonance vide, comme s'il attendait d'être rempli.</OWD_SoulShardEmpty.description>
+
+  <!-- Filled Soul Shard Base -->
+  <OWD_SoulShardFilled_Base.description>Un éclat de cristal semblable à de l'obsidienne qui brille d'une faible lumière. Il est chaud au toucher. Il est rempli de fragments de mémoire d'un autre colon.</OWD_SoulShardFilled_Base.description>
+
+  <!-- Minor Soul Shard -->
+  <OWD_SoulShardFilled_Minor.label>Éclat d'âme</OWD_SoulShardFilled_Minor.label>
+
+  <!-- Major Soul Shard -->
+  <OWD_SoulShardFilled_Major.label>Éclat d'âme</OWD_SoulShardFilled_Major.label>
+
+</LanguageData>

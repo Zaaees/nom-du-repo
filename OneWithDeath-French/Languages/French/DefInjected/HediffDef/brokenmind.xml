@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Broken Mind -->
+  <OWD_BrokenMind.label>esprit brisé</OWD_BrokenMind.label>
+  <OWD_BrokenMind.description>L'âme de ce colon a été violemment arrachée de son corps, ne laissant qu'une coquille vide. Il n'est plus que l'ombre de lui-même, à peine capable de fonctionner.</OWD_BrokenMind.description>
+  <OWD_BrokenMind.stages.0.label>vide</OWD_BrokenMind.stages.0.label>
+
+</LanguageData>

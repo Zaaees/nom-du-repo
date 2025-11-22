@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Control Servitor -->
+  <OWD_CServitor.label>Serviteur de contrôle</OWD_CServitor.label>
+  <OWD_CServitor.description>Une construction qui peut contenir un colon vivant indéfiniment, le liant de force au lien nécromantique qui relie un nécromancien à un mystérieux archotech. Ce colon mentalement asservi pourra soutenir le nécromancien lié dans diverses tâches.</OWD_CServitor.description>
+
+  <!-- Auxiliary Servitor -->
+  <owd_auxServitor.label>serviteur auxiliaire</owd_auxServitor.label>
+  <owd_auxServitor.description>Une petite construction qui agit comme un catalyseur pour améliorer certains aspects de la nécromancie. Il est généralement utilisé pour renforcer la connexion au lien nécromantique, améliorant la qualité des rituels ou le contrôle donné par un serviteur de contrôle.</owd_auxServitor.description>
+
+</LanguageData>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Undead Childhood -->
+  <OWD_BKST_UndeadChildhood.title>Origine mort-vivante</OWD_BKST_UndeadChildhood.title>
+  <OWD_BKST_UndeadChildhood.titleShort>Mort-vivant</OWD_BKST_UndeadChildhood.titleShort>
+  <OWD_BKST_UndeadChildhood.description>Ressuscité en tant que mort-vivant, [PAWN_nameDef] n'a aucun souvenir d'une enfance vivante, n'existant que comme serviteur de la mort.</OWD_BKST_UndeadChildhood.description>
+
+  <!-- Undead Beginnings -->
+  <OWD_BKST_UndeadBeginnings.title>Origine morte-vivante</OWD_BKST_UndeadBeginnings.title>
+  <OWD_BKST_UndeadBeginnings.titleShort>Mort-vivant</OWD_BKST_UndeadBeginnings.titleShort>
+  <OWD_BKST_UndeadBeginnings.description>Ressuscité en tant que mort-vivant, [PAWN_nameDef] n'a aucun souvenir d'une enfance vivante, n'existant que comme serviteur de la mort.</OWD_BKST_UndeadBeginnings.description>
+
+  <!-- Undead Adulthood -->
+  <OWD_BKST_UndeadAdulthood.title>Servitude morte-vivante</OWD_BKST_UndeadAdulthood.title>
+  <OWD_BKST_UndeadAdulthood.titleShort>Serviteur</OWD_BKST_UndeadAdulthood.titleShort>
+  <OWD_BKST_UndeadAdulthood.description>Lié à la volonté d'un nécromancien, [PAWN_nameDef] existe en tant que mort-vivant, dépouillé de sa vie passée et mû par l'énergie nécromantique.</OWD_BKST_UndeadAdulthood.description>
+
+  <!-- Undead Champion -->
+  <OWD_BKST_UndeadChampion.title>Champion mort-vivant</OWD_BKST_UndeadChampion.title>
+  <OWD_BKST_UndeadChampion.titleShort>Champion</OWD_BKST_UndeadChampion.titleShort>
+  <OWD_BKST_UndeadChampion.description>[PAWN_nameDef] est plus fort que les morts-vivants ordinaires, conservant davantage de son ancien moi pour lui permettre de combattre plus férocement.</OWD_BKST_UndeadChampion.description>
+
+  <!-- Undead Overseer -->
+  <OWD_BKST_UndeadOverseer.title>Surveillant mort-vivant</OWD_BKST_UndeadOverseer.title>
+  <OWD_BKST_UndeadOverseer.titleShort>Surveillant</OWD_BKST_UndeadOverseer.titleShort>
+  <OWD_BKST_UndeadOverseer.description>[PAWN_nameDef] conserve la plupart de ses anciens souvenirs ainsi que de nouveaux qui permettent de canaliser l'énergie nécromantique qui coule dans son propre corps.</OWD_BKST_UndeadOverseer.description>
+
+</LanguageData>

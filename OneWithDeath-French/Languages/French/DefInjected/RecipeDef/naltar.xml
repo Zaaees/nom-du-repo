@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Convert Corpse to Energy Recipe -->
+  <OWD_ConvertCorpseToEnergy.label>convertir l'énergie nécromantique</OWD_ConvertCorpseToEnergy.label>
+  <OWD_ConvertCorpseToEnergy.description>Convertir un cadavre en 5 points d'énergie nécromantique.</OWD_ConvertCorpseToEnergy.description>
+  <OWD_ConvertCorpseToEnergy.jobString>Conversion du cadavre en énergie.</OWD_ConvertCorpseToEnergy.jobString>
+
+</LanguageData>

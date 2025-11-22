@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>One with Death - Traduction Française</name>
+  <author>6224Y (Mod original) - Traduction par Claude</author>
+  <packageId>6224Y.OneWithDeath.French</packageId>
+  <description>Traduction française complète pour le mod "One with Death".
+
+Ce mod de traduction permet de jouer à "One with Death" entièrement en français. Il traduit tous les éléments du jeu : recherches, capacités, objets, bâtiments, rituels, pensées et bien plus encore.
+
+--- FRENCH TRANSLATION ---
+French translation for "One with Death" mod.
+
+This translation mod allows you to play "One with Death" entirely in French. It translates all game elements: research, abilities, items, buildings, rituals, thoughts and much more.
+
+Terminologie utilisée :
+- Necromancy = Nécromancie
+- Undead = Morts-vivants
+- Shambler = Traînant
+- Necrotic Energy = Énergie nécromantique
+- Soul Shard = Éclat d'âme</description>
+  <url>https://www.patreon.com/c/62Mods</url>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.5</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>6224Y.OneWithDeath</packageId>
+      <displayName>One with Death</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/WORKSHOP_ID</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>6224Y.OneWithDeath</li>
+  </loadAfter>
+</ModMetaData>

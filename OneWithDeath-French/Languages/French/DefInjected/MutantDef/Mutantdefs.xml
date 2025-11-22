@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Shambler -->
+  <OWD_Shambler.label>Traînant nécromantique</OWD_Shambler.label>
+  <OWD_Shambler.description>Une créature qui a été ressuscitée des morts par des archites nano-échelle corrompus.\n\nÀ propos des traînants : Les traînants sont des cadavres qui ont été réanimés par l'archotechnologie. Ils attaquent sans relâche les créatures vivantes et leur immunité à la douleur les rend difficiles à tuer. Cependant, les archites qui les animent ne peuvent pas soutenir le corps en décomposition longtemps, donc les traînants expirent après quelques jours de mouvement.\n\nIl existe des moyens de ressusciter vos propres traînants et de vous rendre invisible à leurs yeux, afin qu'ils n'attaquent que les étrangers.</OWD_Shambler.description>
+
+  <!-- Undead Base -->
+  <OWD_Undead_Base.label>Mort-vivant</OWD_Undead_Base.label>
+  <OWD_Undead_Base.description>Une créature qui n'est plus vivante mais pas complètement morte non plus, un être ressuscité avec des archites nécromantiques qui se déplace selon la volonté de celui qui l'a créé.</OWD_Undead_Base.description>
+
+  <!-- Lich -->
+  <OWD_Lich.label>Mort-vivant</OWD_Lich.label>
+  <OWD_Lich.description>Cet individu est devenu un avec la mort, maîtrisant chaque aspect de celle-ci. Son corps est traversé par l'énergie nécromantique.</OWD_Lich.description>
+
+</LanguageData>

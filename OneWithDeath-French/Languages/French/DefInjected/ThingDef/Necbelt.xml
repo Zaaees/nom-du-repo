@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Orb -->
+  <OWD_NecroticOrb.label>Orbe nécromantique</OWD_NecroticOrb.label>
+  <OWD_NecroticOrb.description>Un orbe ancien d'énergie nécromantique compressée qui a été stabilisé au-delà de votre compréhension. Lorsqu'il est installé à la place d'un cœur, il projette un puissant champ d'énergie verte scintillante qui intercepte les projectiles entrants. L'énergie émise empêche d'autres orbes d'être installés. L'orbe semble avoir d'autres utilisations également, je dois enquêter davantage.</OWD_NecroticOrb.description>
+
+  <!-- Necrotic Orb Field -->
+  <OWD_Thing_NecroticOrbFollower.label>champ d'orbe nécromantique</OWD_Thing_NecroticOrbFollower.label>
+
+</LanguageData>

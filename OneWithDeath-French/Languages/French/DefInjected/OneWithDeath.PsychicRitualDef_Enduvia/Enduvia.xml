@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Enduvia Ritual -->
+  <OWD_Enduvia.label>Enduvia</OWD_Enduvia.label>
+  <OWD_Enduvia.description>Un rituel dangereux pour invoquer l'"âme" d'un nécromancien, des schémas de conscience dispersés à travers les dimensions, liés ensemble par une force invisible, un lien.</OWD_Enduvia.description>
+  <OWD_Enduvia.outcomeDescription>L'âme sélectionnée sera transférée au sacrifice, écrasant son esprit. Si une âme déjà présente dans le monde est choisie, ou si aucune âme n'est choisie, le rituel échouera de manière catastrophique.</OWD_Enduvia.outcomeDescription>
+
+</LanguageData>

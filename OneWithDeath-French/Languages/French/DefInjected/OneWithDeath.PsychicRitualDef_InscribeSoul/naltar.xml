@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Inscribe Soul Ritual -->
+  <OWD_InscribeSoul.label>Inscrire une âme</OWD_InscribeSoul.label>
+  <OWD_InscribeSoul.description>Effectuer un rituel sombre pour sacrifier une créature vivante, fusionnant sa mémoire et ses schémas cérébraux, son "âme", en l'inscrivant dans un Éclat d'âme vide.</OWD_InscribeSoul.description>
+  <OWD_InscribeSoul.outcomeDescription>La qualité du rituel déterminera la puissance de l'inscription.</OWD_InscribeSoul.outcomeDescription>
+
+</LanguageData>
