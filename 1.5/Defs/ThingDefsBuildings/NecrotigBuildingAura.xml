@@ -1,0 +1,188 @@
+<Defs>
+
+    <HediffDef>
+    <defName>OWD_NecroticAura</defName>
+    <label>Necrotic Aura</label>
+    <description>A psychic field combined with a mist of necrotic archites is slowly and forcefully clotting wounds and reconstructing flesh and missing limbs, while forcing the mind to stay focused. This however has various adverse effects.</description>
+    <hediffClass>OneWithDeath.Hediff_NecroticAura</hediffClass>
+    <defaultLabelColor>(0.1, 0.6, 0.1)</defaultLabelColor>
+  <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <minSeverity>0.0</minSeverity>
+        <label>mild</label>
+        <painOffset>0.05</painOffset>
+        <statOffsets>
+          <InjuryHealingFactor>-0.1</InjuryHealingFactor>
+          <ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+          <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+        </statOffsets>
+         <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+        <regeneration>10</regeneration>
+        <statFactors>
+            <RestFallRateFactor>1.225</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.2</minSeverity>
+        <label>moderate</label>
+        <painOffset>0.1</painOffset>
+         <statOffsets>
+         <InjuryHealingFactor>-0.2</InjuryHealingFactor>
+          <ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+        <regeneration>10</regeneration>
+        <statFactors>
+            <RestFallRateFactor>1.45</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>strong</label>
+        <painOffset>0.15</painOffset>
+         <statOffsets>
+         <InjuryHealingFactor>-0.3</InjuryHealingFactor>
+          <ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+          <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+        <regeneration>10</regeneration>
+        <statFactors>
+            <RestFallRateFactor>1.675</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>intense</label>
+        <painOffset>0.15</painOffset>
+         <statOffsets>
+          <ImmunityGainSpeed>0.6</ImmunityGainSpeed>
+          <WorkSpeedGlobal>0.4</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+        <regeneration>10</regeneration>
+        <statFactors>
+            <RestFallRateFactor>1.9</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.8</minSeverity>
+        <label>extreme</label>
+        <painOffset>0.15</painOffset>
+         <statOffsets>
+          <InjuryHealingFactor>-0.8</InjuryHealingFactor>
+          <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+          <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <regeneration>10</regeneration>
+        <statFactors>
+            <RestFallRateFactor>1.9</RestFallRateFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>OWD_PainfulRegenerationThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OWD_NecroticAura</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Painful regeneration</label>
+        <description>I can feel all the cells of my body being constantly prodded, moved, and shifted around in a painful way. Every wound slowly heals in an excruciating manner.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>OWD_NecroticAuraEmitter</defName>
+    <label>Necrotic Aura Emitter</label>
+    <description>A device housing a resonating core of green crystals. When active, it emits a field of necrotic energy that forces rapid, painful regeneration in nearby living beings, while also inducing drowsiness and hindering fine motor skills at higher intensities. Requires Green Crystals as fuel.</description>
+    <thingClass>OneWithDeath.Building_NecroticAuraEmitter</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Buildings/NecroticAura</texPath>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <researchPrerequisites>
+    <li>OWD_constructs</li>
+  </researchPrerequisites>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2100</uiOrder>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>4500</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0.5</Flammability>
+      <Beauty>-5</Beauty>
+    </statBases>
+    <costList>
+      <Steel>250</Steel>
+      <GreenCrystal>5</GreenCrystal>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+       <li Class="CompProperties_Flickable"/>
+       <li Class="CompProperties_Refuelable">
+         <fuelConsumptionRate>0.1</fuelConsumptionRate>
+         <fuelCapacity>2.0</fuelCapacity>
+         <initialFuelPercent>0.5</initialFuelPercent>
+         <fuelFilter>
+           <thingDefs>
+             <li>GreenCrystal</li>
+           </thingDefs>
+         </fuelFilter>
+         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+         <showFuelGizmo>true</showFuelGizmo>
+         <drawFuelGaugeInMap>true</drawFuelGaugeInMap>
+         <fuelIconPath>Things/Items/GreenCrystal</fuelIconPath>
+         <outOfFuelMessage>Needs Green Crystals</outOfFuelMessage>
+         <fuelLabel>Crystals</fuelLabel>
+       </li>
+       <li Class="CompProperties_Glower">
+         <glowRadius>8.9</glowRadius>
+         <glowColor>(0, 200, 0, 0)</glowColor>
+       </li>
+        </comps>
+  </ThingDef>
+
+</Defs>

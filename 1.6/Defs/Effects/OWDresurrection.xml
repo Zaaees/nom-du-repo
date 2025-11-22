@@ -1,0 +1,193 @@
+<Defs>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OWD_ResurrectionPulse</defName>
+    <altitudeLayer>Terrain</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>1</fadeOutTime>
+    <growthRate>2.3</growthRate>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <texPath>Things/Mote/DeathRefusalAvailable</texPath>
+      <shaderType>Mote</shaderType>
+      <shaderParameters>
+        <_Color>(0.4, 1.0, 0.4, .3)</_Color>
+      </shaderParameters>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_RandomGraphic">
+    <defName>OWD_ResurrectionSplatter</defName>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <solidTime>1</solidTime>
+    <fadeOutTime>2</fadeOutTime>
+    <growthRate>.15</growthRate>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Filth/Spatter/SpatterA</texPath>
+        <shaderType>Transparent</shaderType>
+        <color>(0, 85, 0, 170)</color>
+        <drawSize>(1.5, 1.5)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Filth/Spatter/SpatterB</texPath>
+        <shaderType>Transparent</shaderType>
+        <color>(27, 120, 17, 170)</color>
+        <drawSize>(1.5, 1.5)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Filth/Spatter/SpatterC</texPath>
+        <shaderType>Transparent</shaderType>
+        <color>(17, 27, 23, 170)</color>
+        <drawSize>(1.5, 1.5)</drawSize>
+      </li>
+    </randomGraphics>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OWD_SputteringGreenPuff</defName>
+    <graphicData>
+      <texPath>Things/Mote/DustPuff</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(0, 200, 0, 150)</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.6</solidTime>
+    <fadeOutTime>1.4</fadeOutTime>
+  </FleckDef>
+  
+  <FleckDef>
+    <defName>OWD_ResurrectionFlyer</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+    <graphicData>
+      <texPath>effects/architepuff</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.4, 1.0, 0.4)</color>
+    </graphicData>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>OWD_ResurrectionUse</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>OWD_ResurrectionSplatter</fleckDef>
+        <burstCount>2~5</burstCount>
+        <rotation>-150~150</rotation>
+        <positionRadius>0.3</positionRadius>
+        <speed>0.6~1.1</speed>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>OWD_ResurrectionSplatter</fleckDef>
+        <chancePerTick>0.3</chancePerTick>
+        <chancePeriodTicks>50</chancePeriodTicks>
+        <rotation>-150~150</rotation>
+        <positionRadius>0.5</positionRadius>
+        <speed>0.6~1.1</speed>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>OWD_SputteringGreenPuff</fleckDef>
+        <chancePerTick>0.1</chancePerTick>
+        <chancePeriodTicks>10</chancePeriodTicks>
+        <rotation>-150~150</rotation>
+        <positionRadius>0.5</positionRadius>
+        <speed>0.6~1.1</speed>
+        <fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <EffecterDef>
+    <defName>OWD_ResurrectionAvailable</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <chancePerTick>.2</chancePerTick>
+        <chancePeriodTicks>20</chancePeriodTicks>
+        <scale>.05</scale>
+        <fleckDef>OWD_HoraxianFerroBlob</fleckDef>
+        <positionRadius>0.8</positionRadius>
+        <positionRadiusMin>0.8</positionRadiusMin>
+        <burstCount>10~40</burstCount>
+        <speed>-0.9</speed>
+        <angle>0</angle>
+        <spawnLocType>OnSource</spawnLocType>
+        <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>PulsingDistortionRing</fleckDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <burstCount>1</burstCount>
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>96</chancePeriodTicks>
+        <positionRadius>0</positionRadius>
+        <scale>.1</scale>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef>
+    <defName>OWD_ResurrectionParticle</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.2</fadeInTime>
+    <solidTime>0.6</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <graphicData>
+      <texPath>effects/NecroFerroBlob</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.5, 1.0, 0.1, 1.0)</color>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+  <EffecterDef>
+    <defName>OWD_UndeadRaising</defName>
+    <children>
+      <!-- Part 1: The "Flying In" particles -->
+      <li>
+        <subEffecterClass>OneWithDeath.SubEffecter_PawnCorpseAttractor</subEffecterClass>
+        <fleckDef>OWD_ResurrectionFlyer</fleckDef>
+        <scale>0.8~1.2</scale>
+        <positionRadius>3.0</positionRadius>
+        <positionRadiusMin>3.0</positionRadiusMin>
+        <speed>2.5</speed> 
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>6</chancePeriodTicks>
+        <burstCount>3~5</burstCount>
+      </li>
+      <!-- Part 2: The "Lingering" particles -->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>owd_architepuff</fleckDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <scale>0.6~1.0</scale>
+        <rotationRate>-10~10</rotationRate>
+        <positionRadius>0.5</positionRadius>
+        <ticksBetweenMotes>15</ticksBetweenMotes>
+      </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

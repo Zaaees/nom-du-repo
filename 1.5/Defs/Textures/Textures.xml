@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <Textures>
+  <!-- Use Mechanitor textures -->
+  <Texture2D>
+    <defName>UI_Commands_SelectAllMechs</defName>
+    <graphicData>
+      <texPath>UI/Commands/SelectAllMechs</texPath>
+    </graphicData>
+  </Texture2D>
+  <Texture2D>
+    <defName>UI_Commands_AssignToGroup</defName>
+    <graphicData>
+      <texPath>UI/Commands/AssignToGroup</texPath>
+    </graphicData>
+  </Texture2D>
+  <Texture2D>
+    <defName>UI_Commands_SelectOverseer</defName>
+    <graphicData>
+      <texPath>UI/Commands/SelectOverseer</texPath>
+    </graphicData>
+  </Texture2D>
+</Textures>
+</Defs>

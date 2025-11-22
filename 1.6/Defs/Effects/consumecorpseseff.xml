@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef>
+    <defName>OWD_ConsumeParticle</defName>
+    <fleckSystemClass>FleckSystemStatic</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>1.0</fadeOutTime>
+    <graphicData>
+      <texPath>effects/greenparticle</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.4, 1.0, 0.4, 0.8)</color>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <scalers>
+      <li>
+        <scaleAmt>1.5~1.5</scaleAmt>
+        <scaleTime>1.3</scaleTime>
+        <curve>
+            <points>
+                <li>(0, 1)</li>
+                <li>(1, 0)</li>
+            </points>
+        </curve>
+      </li>
+    </scalers>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>OWD_ConsumeCorpseEffect</defName>
+    <children>
+      <!-- Part 1: Shrinking green particles, spawns instantly -->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>OWD_ConsumeParticle</fleckDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <burstCount>10~15</burstCount>
+        <scale>1.0~1.5</scale>
+        <positionRadius>0.5</positionRadius>
+      </li>
+      <!-- Part 2: Small green smoke puff, delayed -->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>owd_architepuff</fleckDef>
+        <initialDelayTicks>30</initialDelayTicks>
+        <spawnLocType>OnSource</spawnLocType>
+        <burstCount>1~2</burstCount>
+        <scale>0.5~0.8</scale>
+        <positionRadius>0.3</positionRadius>
+        <color>(0.2, 0.8, 0.2, 0.4)</color>
+      </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

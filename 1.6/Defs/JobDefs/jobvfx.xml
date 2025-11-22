@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--
+  <JobDef>
+    <defName>OWD_CastVFXJob</defName>
+    <driverClass>OneWithDeath.JobDriver_CastVFX</driverClass>
+    <reportString>channeling necrotic energy.</reportString>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  -->
+</Defs>

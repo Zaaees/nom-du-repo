@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef>
+    <defName>OWD_GreenParticle</defName>
+    <fleckSystemClass>FleckSystemStatic</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.1</solidTime>
+    <fadeOutTime>1.8</fadeOutTime>
+    <graphicData>
+      <texPath>effects/greenparticle</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.4, 1.0, 0.4, 0.6)</color>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <scalers>
+      <li>
+        <scaleAmt>5.0~5.5</scaleAmt>
+        <scaleTime>2.0</scaleTime>
+        <curve>
+          <points>
+            <li>(0, 0)</li>
+            <li>(0.5, 1)</li>
+            <li>(1, 0.9)</li>
+          </points>
+        </curve>
+      </li>
+    </scalers>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>OWD_ExpandManaCompleteEffect</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>OWD_GreenParticle</fleckDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <burstCount>20~25</burstCount>
+        <scale>0.8~1.2</scale>
+        <positionRadius>0</positionRadius>
+      </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

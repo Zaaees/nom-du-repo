@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <PawnKindDef Name="OWD_BaseSkeletonAbstract" Abstract="True">
+    <race>OWD_Race_LegionUndead</race>
+    <defaultFactionType>OWD_Undeads</defaultFactionType>
+    <combatPower>40</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <invNutrition>0</invNutrition>
+    <gearHealthRange>0.2~1.0</gearHealthRange>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>70</maxGenerationAge>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <initialResistanceRange>99~99</initialResistanceRange>
+    <initialWillRange>0~0</initialWillRange>
+    <inventoryOptions>
+      <skipChance>1</skipChance>
+    </inventoryOptions>
+    <skills>
+      <li><skill>Shooting</skill><range>0~2</range></li>
+      <li><skill>Melee</skill><range>7~20</range></li>
+      <li><skill>Construction</skill><range>0~0</range></li>
+      <li><skill>Mining</skill><range>0~0</range></li>
+      <li><skill>Cooking</skill><range>0~0</range></li>
+      <li><skill>Plants</skill><range>0~0</range></li>
+      <li><skill>Animals</skill><range>0~0</range></li>
+      <li><skill>Crafting</skill><range>0~0</range></li>
+      <li><skill>Artistic</skill><range>0~0</range></li>
+      <li><skill>Medicine</skill><range>0~0</range></li>
+      <li><skill>Social</skill><range>0~0</range></li>
+      <li><skill>Intellectual</skill><range>0~0</range></li>
+    </skills>
+    <disallowedTraits>
+      <li>Nudist</li>
+      <li>Kind</li>
+      <li>DrugDesire</li>
+      <li>Pyromaniac</li>
+      <li>Wimp</li>
+      <li>Ascetic</li>
+      <li>Greedy</li>
+      <li>Jealous</li>
+      <li>TooSmart</li>
+      <li>SlowLearner</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OWD_BaseSkeletonAbstract">
+    <defName>OWD_SkeletonSoldier</defName>
+    <label>skeleton soldier</label>
+    <combatPower>60</combatPower>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_PlateArmor</li>
+      <li>Apparel_SimpleHelmet</li>
+    </apparelRequired>
+    <weaponMoney>200~350</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+      <canBeScattered>false</canBeScattered>
+  <appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+    <techHediffsMoney>0</techHediffsMoney>
+    <techHediffsChance>0</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OWD_BaseSkeletonAbstract">
+    <defName>OWD_SkeletonChampion</defName>
+    <label>skeleton champion</label>
+    <combatPower>90</combatPower>
+    <itemQuality>Good</itemQuality>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_PlateArmor</li>
+      <li>Apparel_SimpleHelmet</li>
+    </apparelRequired>
+    <skills>
+      <li><skill>Melee</skill><range>8~20</range></li>
+    </skills>
+    <weaponMoney>200~350</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+      <canBeScattered>false</canBeScattered>
+  <appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+    <techHediffsMoney>0</techHediffsMoney>
+    <techHediffsChance>0</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryBase">
+    <defName>OWD_EnemyNecromancer</defName>
+    <label>Lich</label>
+   <race>OWD_Race_LegionUndead</race>
+    <defaultFactionType>OWD_Undeads</defaultFactionType>
+    <combatPower>120</combatPower>
+    <factionLeader>false</factionLeader>
+    <minGenerationAge>35</minGenerationAge>
+    <maxGenerationAge>80</maxGenerationAge>
+    <itemQuality>Good</itemQuality>
+    <canBeSapper>false</canBeSapper>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_Duster</li>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>Medieval</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <initialWillRange>3~6</initialWillRange>
+    <initialResistanceRange>15~25</initialResistanceRange>
+    <skills>
+      <li><skill>Intellectual</skill><range>7~14</range></li>
+      <li><skill>Social</skill><range>5~10</range></li>
+      <li><skill>Shooting</skill><range>4~8</range></li>
+      <li><skill>Melee</skill><range>20~20</range></li>
+    </skills>
+    <weaponMoney>200~350</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsMoney>0</techHediffsMoney>
+    <techHediffsChance>0</techHediffsChance>
+      <canBeScattered>false</canBeScattered>
+  <appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+    <invNutrition>0</invNutrition>
+   
+  </PawnKindDef>
+</Defs>

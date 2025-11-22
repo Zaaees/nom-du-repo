@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <PawnRelationDef>
+    <defName>NecromancerControl</defName>
+    <label>Necromancer</label>
+    <description>This pawn is being controlled by a Necromancer</description>
+    <importance>10</importance>
+    <opinionOffset>100</opinionOffset>
+    <workerClass>PawnRelationWorker</workerClass>
+    <reflexive>false</reflexive>
+    <generationChanceFactor>0</generationChanceFactor>
+  </PawnRelationDef>
+
+
+</Defs>

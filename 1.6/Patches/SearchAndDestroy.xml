@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationInsert">
+    <xpath>*/ThinkTreeDef[defName = "OWD_UndeadHumanlike"]/thinkRoot[@Class = "ThinkNode_Priority"]/subNodes/li[@Class="ThinkNode_ConditionalColonist"]</xpath>
+    <value>
+      <li MayRequire="memegoddess.searchanddestroy" Class="SearchAndDestroy.ThinkNode_ConditionalSearchAndDestroy">
+        <subNodes>
+          <li Class="ThinkNode_Priority">
+            <subNodes>
+              <li Class="SearchAndDestroy.JobGiver_AIFightEnemiesShortExp">
+                <targetAcquireRadius>200</targetAcquireRadius>
+                <targetKeepRadius>72</targetKeepRadius>
+              </li>
+              <li Class="SearchAndDestroy.JobGiver_GoWithinRangeOfHostile" />
+            </subNodes>
+          </li>
+        </subNodes>
+      </li>
+    </value>
+  </Operation>
+</Patch>

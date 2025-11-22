@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ITEM -->
+  <ThingDef>
+    <defName>OWD_SoulOrb</defName>
+    <label>Soul Orb</label>
+    <description>A sphere of a crystal-like substance capable of holding the entire mind of a necromancer. It works in mysterious ways but you can tell that it breaks the dimensional barrier between worlds. Consuming it will transfer the stored mind to a new host, freeing the necromancer from its mortal shackles.</description>
+     <techLevel>Neolithic</techLevel>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>5000</MarketValue>
+      <Mass>2.0</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+<tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Items/SoulOrb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.5, 0.5)</drawSize>
+    </graphicData>
+    <comps>
+    <li Class="CompProperties_Glower">
+  <glowRadius>3</glowRadius>
+  <glowColor>(180, 255, 100, 0)</glowColor> 
+  <overlightRadius>1</overlightRadius>
+</li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="OneWithDeath.CompProperties_StoredSoul"/>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Consume Soul Orb</useLabel>
+        <useDuration>240</useDuration>
+      </li>
+      <li Class="OneWithDeath.CompProperties_ConsumeSoulOrb"/>
+    
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+   
+  </ThingDef>
+
+  <!-- HEDIFF -->
+  <HediffDef>
+    <defName>OWD_PawnSoul</defName>
+    <label>Possessed Soul</label>
+    <description>The soul of the necromancer is inhabiting this body. The original body's mind is suppressed as long as the necromancer decides to stay into this body</description>
+    <hediffClass>OneWithDeath.Hediff_PawnSoul</hediffClass>
+    <isBad>false</isBad>
+    <showGizmosOnCorpse>true</showGizmosOnCorpse>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <everCurableByItem>false</everCurableByItem>
+    <comps>
+  
+      <li Class="OneWithDeath.CompProperties_PeriodicSoulSave"/>
+    </comps>
+  </HediffDef>
+
+  
+
+  <OneWithDeath.PsychicRitualRoleDef_CasterExuvia>
+    <defName>OWD_CasterExuvia</defName>
+    <label>caster</label>
+    <description>The necromancer who will die in order to fill the soul orb.</description>
+    <allowedCount>1</allowedCount>
+    <canHandleOfferings>true</canHandleOfferings>
+    <showInvocationVfx>true</showInvocationVfx>
+    <allowedConditions>DefaultInvoker</allowedConditions>
+  </OneWithDeath.PsychicRitualRoleDef_CasterExuvia>
+
+  <OneWithDeath.PsychicRitualDef_Exuvia>
+    <defName>OWD_Exuvia</defName>
+    <label>Exuvia</label>
+    <description>A powerful and not fully understood ritual where a necromancer that has already embraced death, sheds their final mortal coil. Their very essence is torn from their body and bound within a Soul Orb. The ritual requires a living sacrifice and ingent quantities of necrotic energy, provided by a nearby servitor.</description>
+    <researchPrerequisite>OWD_ExuviaResearch</researchPrerequisite>
+    <iconPath>UI/Abilities/Exuvia</iconPath>
+    <outcomeDescription>The caster's body will die. The sacrifice will be killed. A Soul Orb containing the caster's soul will be created and their essence saved for future use.</outcomeDescription>
+    <hoursUntilOutcome>1</hoursUntilOutcome>
+    <cooldownHours>5</cooldownHours>
+    <invocationCircleRadius>1</invocationCircleRadius>
+    <invokerRole>OWD_CasterExuvia</invokerRole>
+    <chanterRole>OWD_Chanter</chanterRole>
+    <targetRole>OWD_Sacrifice</targetRole>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>OWD_SoulShardEmpty</li>
+        </thingDefs>
+      </filter>
+      <count>5</count>
+    </requiredOffering>
+    <modExtensions>
+      <li Class="OneWithDeath.RitualExtension_Necrotic"/>
+    </modExtensions>
+  </OneWithDeath.PsychicRitualDef_Exuvia>
+
+</Defs>

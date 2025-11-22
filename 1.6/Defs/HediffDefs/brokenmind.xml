@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>OWD_BrokenMind</defName>
+    <label>broken mind</label>
+    <description>This pawn's soul has been violently ripped from their body, leaving behind a hollow shell. They are a shadow of their former self, barely able to function.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <stages>
+      <li>
+        <label>hollow</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.5</setMax>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+        <statFactors>
+          <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>OWD_LostSoul</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>OWD_BrokenMind</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Lost Self</label>
+        <description>There is a void inside me where something vital used to be. I feel empty. Unbothered</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

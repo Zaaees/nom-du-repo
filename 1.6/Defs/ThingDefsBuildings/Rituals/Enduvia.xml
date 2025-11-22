@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Role for a Psychic Invoker -->
+  <OneWithDeath.PsychicRitualRoleDef_Psychic>
+    <defName>OWD_Invoker_Psychic</defName>
+    <label>invoker</label>
+    <description>The invoker must be psychically sensitive to channel the energies of the ritual.</description>
+    <allowedCount>1</allowedCount>
+    <canHandleOfferings>true</canHandleOfferings>
+    <showInvocationVfx>true</showInvocationVfx>
+    <allowedConditions>
+      <li>DefaultInvoker</li>
+    </allowedConditions>
+  </OneWithDeath.PsychicRitualRoleDef_Psychic>
+  
+  <!-- The Enduvia Ritual Definition -->
+  <OneWithDeath.PsychicRitualDef_Enduvia>
+    <defName>OWD_Enduvia</defName>
+    <label>Enduvia</label>
+  <researchPrerequisite>OWD_EnduviaResearch</researchPrerequisite>
+    <description>A dangerous ritual to call forth a necromancer's "soul", conciousness patterns scattered across dimensions, linked together by some invisible force, a link.</description>
+  <iconPath>UI/Abilities/Enduvia</iconPath>
+    <hoursUntilOutcome>2</hoursUntilOutcome>
+     <invocationCircleRadius>1</invocationCircleRadius>
+    <cooldownHours>1</cooldownHours>
+    <outcomeDescription>The selected soul will be transferred to the sacrifice, overwriting their mind. If a soul already present in the world is chosen, or if no soul is chosen at all, the ritual will fail catastrophically.</outcomeDescription>
+    <invokerRole>OWD_Invoker_Psychic</invokerRole>
+    <chanterRole>OWD_Chanter</chanterRole>
+    <targetRole>OWD_Sacrifice</targetRole>
+    <modExtensions>
+      <li Class="OneWithDeath.RitualExtension_Necrotic"/>
+    </modExtensions>
+  </OneWithDeath.PsychicRitualDef_Enduvia>
+
+</Defs>

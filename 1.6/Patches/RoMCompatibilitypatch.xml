@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Add TM_Mana to OWD_Lich if RoM is active -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MutantDef[defName='OWD_Lich']</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/MutantDef[defName='OWD_Lich']/needWhitelist</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>/Defs/MutantDef[defName='OWD_Lich']/needWhitelist/li[text()='TM_Mana']</xpath>
+        <match Class="PatchOperationSequence">
+          <operations />
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/MutantDef[defName='OWD_Lich']/needWhitelist</xpath>
+          <value>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Mana</li>
+          </value>
+        </nomatch>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/MutantDef[defName='OWD_Lich']</xpath>
+        <value>
+          <needWhitelist>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Mana</li>
+          </needWhitelist>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <!-- Add TM_Mana to OWD_Undead_Base if RoM is active -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/needWhitelist</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/needWhitelist/li[text()='TM_Mana']</xpath>
+        <match Class="PatchOperationSequence">
+          <operations />
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/needWhitelist</xpath>
+          <value>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Mana</li>
+          </value>
+        </nomatch>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']</xpath>
+        <value>
+          <needWhitelist>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Mana</li>
+          </needWhitelist>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+<!-- Add TM_Stamina to OWD_Lich if RoM is active -->
+    <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MutantDef[defName='OWD_Lich']</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/MutantDef[defName='OWD_Lich']/needWhitelist</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>/Defs/MutantDef[defName='OWD_Lich']/needWhitelist/li[text()='TM_Stamina']</xpath>
+        <match Class="PatchOperationSequence">
+          <operations />
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/MutantDef[defName='OWD_Lich']/needWhitelist</xpath>
+          <value>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Stamina</li>
+          </value>
+        </nomatch>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/MutantDef[defName='OWD_Lich']</xpath>
+        <value>
+          <needWhitelist>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Stamina</li>
+          </needWhitelist>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <!-- Add TM_Stamina to OWD_Undead_Base if RoM is active -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/needWhitelist</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/needWhitelist/li[text()='TM_Stamina']</xpath>
+        <match Class="PatchOperationSequence">
+          <operations />
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/needWhitelist</xpath>
+          <value>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Stamina</li>
+          </value>
+        </nomatch>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']</xpath>
+        <value>
+          <needWhitelist>
+            <li MayRequire="Torann.ARimworldOfMagic">TM_Stamina</li>
+          </needWhitelist>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+
+
+  <!-- Add ManaPotion to OWD_Lich if RoM is active -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MutantDef[defName='OWD_Lich']</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/MutantDef[defName='OWD_Lich']/drugWhitelist</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>/Defs/MutantDef[defName='OWD_Lich']/drugWhitelist/li[text()='ManaPotion']</xpath>
+        <match Class="PatchOperationSequence">
+          <operations />
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/MutantDef[defName='OWD_Lich']/drugWhitelist</xpath>
+          <value>
+            <li MayRequire="Torann.ARimworldOfMagic">ManaPotion</li>
+          </value>
+        </nomatch>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/MutantDef[defName='OWD_Lich']</xpath>
+        <value>
+          <drugWhitelist>
+            <li MayRequire="Torann.ARimworldOfMagic">ManaPotion</li>
+          </drugWhitelist>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+  <!-- Add ManaPotion to OWD_Undead_Base if RoM is active -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/drugWhitelist</xpath>
+      <match Class="PatchOperationConditional">
+        <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/drugWhitelist/li[text()='ManaPotion']</xpath>
+        <match Class="PatchOperationSequence">
+          <operations />
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']/drugWhitelist</xpath>
+          <value>
+            <li MayRequire="Torann.ARimworldOfMagic">ManaPotion</li>
+          </value>
+        </nomatch>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/MutantDef[defName='OWD_Undead_Base']</xpath>
+        <value>
+          <drugWhitelist>
+            <li MayRequire="Torann.ARimworldOfMagic">ManaPotion</li>
+          </drugWhitelist>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+
+
+
+</Patch>

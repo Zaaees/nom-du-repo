@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MechanitorImplantBase">
+    <defName>ControlExpansionItem</defName>
+    <label>Control expansion theory</label>
+    <description>A theory written on an old page, by applying its fundamentals you can expand the number of undead you can have under your control.</description>
+    <graphicData>
+      <texPath>Things/Items/PageItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <MarketValue>250</MarketValue>
+      <MaxInstallCount>15</MaxInstallCount>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+      <WorkToMake>3200</WorkToMake>
+    </statBases>
+    <costList>
+      <Leather_Human>50</Leather_Human>
+      <GreenCrystal>1</GreenCrystal>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ControlExpansion</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>InstallImplantNecro</useJob>
+        <useLabel>Study {0_label}</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>OneWithDeath.CompUseEffect_InstallBandwidthImplant</compClass>
+        <hediffDef>ControlExpansion</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+        <maxSeverity>15</maxSeverity>
+      </li>
+    </comps>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+</Defs>

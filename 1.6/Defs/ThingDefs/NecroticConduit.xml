@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>BodyPartsMisc</defName>
+    <label>Miscellaneous Body Parts</label>
+    <parent>BodyParts</parent>
+  </ThingCategoryDef>
+
+  <ThingDef>
+    <defName>OWD_NecroticConduit</defName>
+    <label>Necrotic Conduit</label>
+    <description>A crude amalgamation of a dark archotechnological shard and crystalized necrotic archites placed seemingly at random in order to forcibly create a conduit between shamblers an necromancer.</description>
+     <techLevel>Neolithic</techLevel>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+      <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(100, 180, 120)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.6</Mass>
+      <MarketValue>1200</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Install {0_label}</useLabel>
+        <userMustHaveHediff>NecromancerImplant</userMustHaveHediff>
+        <allowedMutants><li>OWD_Lich</li></allowedMutants>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OWD_NecroticFlow</hediffDef>
+       <bodyPart>Brain</bodyPart>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" /> 
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <isTechHediff>false</isTechHediff>
+  <techHediffsTags />
+  <generateCommonality>0</generateCommonality> 
+
+  </ThingDef>
+
+    <HediffDef>
+    <defName>OWD_NecroticFlow</defName>
+    <label>Shambler Link</label>
+    <description>A conduit of necrotic archites linking the necromancer to shamblers raised with the same type of archites. It uses a shard of dark archotechnology as its connection point. You can only speculate about its inner workings, but one thing is clear from your experiments: the number of controllable shamblers is directly tied to the extent of your control. Undead Overseers should be able to help you extend this limit further.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.7, 0.7, 0.9)</defaultLabelColor>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <minSeverity>0.01</minSeverity>
+      </li>
+    </stages>
+    <comps>
+      <li Class="OneWithDeath.HediffCompProperties_NecroticFlowManager">
+      
+      </li>
+    </comps>
+  </HediffDef>
+
+
+
+  <RecipeDef>
+    <defName>Make_OWD_NecroticConduit</defName>
+    <label>craft Necrotic Conduit</label>
+    <description>Craft a Necrotic Conduit, allowing a necromancer to link with shamblers</description>
+    <jobString>Crafting Necrotic Conduit.</jobString>
+    <workAmount>4000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+<effectWorking>OWD_Effect_AltarCrafting_General</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <researchPrerequisite>OWD_SLink</researchPrerequisite>
+
+      <recipeUsers>
+        <li>OWD_Altar</li>
+      </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GreenCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Shard</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <OWD_NecroticConduit>1</OWD_NecroticConduit>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GreenCrystal</li>
+        <li>Shard</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>

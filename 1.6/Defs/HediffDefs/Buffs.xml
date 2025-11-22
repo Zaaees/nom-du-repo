@@ -1,0 +1,192 @@
+<Defs>
+
+
+<HediffDef>
+    <defName>OWD_NecroticMending</defName>
+    <label>Necrotic mending</label>
+    <description>A surge of necrotic energy is actively knitting this creature's wounds back together.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.4, 1.0, 0.4)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks> 
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="OneWithDeath.HediffCompProperties_NecroticMending"/>
+    </comps>
+</HediffDef>
+
+
+
+<HediffDef>
+    <defName>OWD_NecroticRegeneration</defName>
+    <label>Necrotic Regeneration</label>
+    <description>A surge of necrotic energy accelerates healing restoring flesh and bones in the undead.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks> 
+        <showRemainingTime>true</showRemainingTime> <!-- Added for countdown display -->
+      </li>
+    </comps>
+    <stages>
+        <li>
+            <regeneration>1000</regeneration>
+        </li>
+    </stages>
+</HediffDef>
+
+
+
+  <HediffDef>
+    <defName>OWD_Enrage</defName>
+    <label>Enraged</label>
+    <description>This creature has had their senses overwhelmed by an artificial rage induced by the necrotic link. Images of enemies far away are flickering in their minds, driving them to chase the necromancer's enemies</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1.0, 0.2, 0.2)</defaultLabelColor>
+    <isBad>false</isBad>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>2</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>6000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties">
+        <compClass>OneWithDeath.HediffComp_VisualEffect</compClass>
+      </li>
+    </comps>
+     <stages>
+      <li>
+        <label>enraged</label>
+        <minSeverity>1</minSeverity>
+        <statFactors>
+          <MoveSpeed>1.3</MoveSpeed>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+        </statFactors>
+        <regeneration>200</regeneration>
+      </li>
+      <li>
+        <label>???</label>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <MeleeCooldownFactor>-0.75</MeleeCooldownFactor>
+        </statOffsets>
+        <statFactors>
+        <MeleeDamageFactor>5</MeleeDamageFactor>
+          <MoveSpeed>5</MoveSpeed>
+        </statFactors>
+        <regeneration>9999</regeneration>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>1.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- JobDef for OWD_HuntEnemiesFrenzied -->
+  <JobDef>
+    <defName>OWD_HuntEnemiesFrenzied</defName>
+    <driverClass>OneWithDeath.JobDriver_HuntEnemiesFrenzied</driverClass>
+    <reportString>hunting enemies.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  
+
+
+<HediffDef>
+    <defName>OWD_NecroticField</defName>
+    <label>Necrotic Field</label>
+    <description>A surge of necrotic energy accelerates healing, restoring flesh and bones in the undead.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <alwaysShowSeverity>true</alwaysShowSeverity>
+    <comps>
+        <li Class="HediffCompProperties_Disappears">
+            <disappearsAfterTicks>600</disappearsAfterTicks> <!-- 10 seconds -->
+            <showRemainingTime>true</showRemainingTime>
+        </li>
+    </comps>
+   <stages>
+    <li>
+        <minSeverity>0.0</minSeverity>
+        <label>minimal</label>
+        <regeneration>100</regeneration>
+        <statOffsets>
+            
+            <RangedCooldownFactor>-0.10</RangedCooldownFactor>
+            <AimingDelayFactor>-0.15</AimingDelayFactor>
+            <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+        </statOffsets>
+        <capMods>
+            <li>
+                <capacity>Consciousness</capacity>
+                <offset>0.05</offset>
+            </li>
+        </capMods>
+    </li>
+    <li>
+        <minSeverity>0.5</minSeverity>
+        <label>moderate</label>
+        <regeneration>100</regeneration>
+        <statOffsets>
+          
+            <RangedCooldownFactor>-0.15</RangedCooldownFactor>
+            <AimingDelayFactor>-0.20</AimingDelayFactor>
+            <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+        </statOffsets>
+        <capMods>
+            <li>
+                <capacity>Consciousness</capacity>
+                <offset>0.10</offset>
+            </li>
+        </capMods>
+    </li>
+    <li>
+        <minSeverity>0.75</minSeverity>
+        <label>strong</label>
+        <regeneration>100</regeneration>
+        <statOffsets>
+           
+            <RangedCooldownFactor>-0.18</RangedCooldownFactor>
+            <AimingDelayFactor>-0.25</AimingDelayFactor>
+            <ShootingAccuracyPawn>12</ShootingAccuracyPawn>
+        </statOffsets>
+        <capMods>
+            <li>
+                <capacity>Consciousness</capacity>
+                <offset>0.25</offset>
+            </li>
+        </capMods>
+    </li>
+    <li>
+        <minSeverity>1.0</minSeverity>
+        <label>extreme</label>
+        <regeneration>100</regeneration>
+        <statOffsets>
+          
+            <RangedCooldownFactor>-0.20</RangedCooldownFactor>
+            <AimingDelayFactor>-0.30</AimingDelayFactor>
+            <ShootingAccuracyPawn>15</ShootingAccuracyPawn>
+        </statOffsets>
+        <capMods>
+            <li>
+                <capacity>Consciousness</capacity>
+                <offset>0.15</offset>
+            </li>
+        </capMods>
+    </li>
+</stages>
+</HediffDef>
+
+
+
+</Defs>

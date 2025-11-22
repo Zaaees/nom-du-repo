@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BiomeDef>
+    <defName>OWD_LabyrinthBiome</defName>
+    <label>necrotic space</label>
+    <description>A pocket dimension filled with a strange necrotic energy.</description>
+    <generatesNaturally>false</generatesNaturally>
+    <animalDensity>0</animalDensity>
+    <plantDensity>0</plantDensity>
+    <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+    <baseWeatherCommonalities>
+      <OWD_Darkness>1</OWD_Darkness>
+      
+    </baseWeatherCommonalities>
+    <diseaseMtbDays>99999</diseaseMtbDays>
+  </BiomeDef>
+
+  <LayoutDef>
+    <defName>OWD_LabyrinthLayoutDef</defName>
+    <workerClass>OneWithDeath.LayoutWorker_OWD_Labyrinth</workerClass>
+    <canHaveMultipleLayoutsInRoom>false</canHaveMultipleLayoutsInRoom>
+    <multipleLayoutRoomChance>0.15</multipleLayoutRoomChance>
+    <roomDefs>
+      <LabyrinthObelisk />
+      <LabyrinthEmpty>0.15</LabyrinthEmpty>
+      <LabyrinthEndlessPit>0.1</LabyrinthEndlessPit>
+      <OWD_PocketGrave_Def>0.1</OWD_PocketGrave_Def>
+      <OWD_CorpseRoom_Def>0.01</OWD_CorpseRoom_Def>
+      <LabyrinthAbandonedCamp>0.02</LabyrinthAbandonedCamp>
+      <LabyrinthHarbinger>0.01</LabyrinthHarbinger>
+      <LabyrinthTrees>0.03</LabyrinthTrees>
+      <LabyrinthGrayBox>0.05</LabyrinthGrayBox>
+      <LabyrinthLargeGrayBox>0.025</LabyrinthLargeGrayBox>
+      <LabyrinthLargeEmptyGrayBox>0.025</LabyrinthLargeEmptyGrayBox>
+      <LabyrinthFloorRamblings>0.05</LabyrinthFloorRamblings>
+    </roomDefs>
+  </LayoutDef>
+
+  <GenStepDef>
+    <defName>OWD_GenStep_Labyrinth</defName>
+    <order>10</order>
+    <genStep Class="OneWithDeath.GenStep_OWD_Labyrinth"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>OWD_GenStep_PocketDimensionRoof</defName>
+    <order>11</order>
+    <genStep Class="OneWithDeath.GenStep_PocketDimensionRoof"/>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>OWD_PlaceObeliskExit</defName>
+    <order>300</order>
+    <genStep Class="OneWithDeath.GenStep_PlaceObeliskExit"/>
+  </GenStepDef>
+
+  <MapGeneratorDef>
+    <defName>OWD_PocketDimension</defName>
+    <label>Necrotic Labyrinth</label>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <disableShadows>false</disableShadows>
+    <disableCallAid>true</disableCallAid>
+    <customMapComponents>
+      <li>OneWithDeath.PocketDimensionMapComponent</li>
+      <li>OneWithDeath.MapComponent_PocketDarkness</li>
+    </customMapComponents>
+    <pocketMapProperties>
+      <biome>OWD_LabyrinthBiome</biome>
+      <temperature>-30</temperature>
+      <destroyOnParentMapAbandoned>true</destroyOnParentMapAbandoned>
+    </pocketMapProperties>
+    <genSteps>
+      <li>OWD_GenStep_Labyrinth</li>
+      <li>OWD_GenStep_PocketDimensionRoof</li>
+      <li>OWD_PlaceObeliskExit</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <WorldObjectDef>
+    <defName>OWD_PocketMapParent</defName>
+    <label>necrotic dimension</label>
+    <description>A pocket dimension linked to a Necrotic Obelisk.</description>
+    <worldObjectClass>RimWorld.Planet.PocketMapParent</worldObjectClass>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <saved>true</saved>
+    <canBePlayerHome>false</canBePlayerHome>
+    <allowCaravanIncidentsWhichGenerateMap>false</allowCaravanIncidentsWhichGenerateMap>
+  </WorldObjectDef>
+
+  <!-- Vanilla LayoutRoomDefs required by the LayoutDef -->
+  <LayoutRoomDef>
+    <defName>LabyrinthEmpty</defName>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthEndlessPit</defName>
+    <roomContentsWorkerType>RoomContents_EndlessPit</roomContentsWorkerType>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthObelisk</defName>
+    <roomContentsWorkerType>RoomContents_Obelisk</roomContentsWorkerType>
+    <dontPlaceRandomly>true</dontPlaceRandomly>
+    <isValidPlayerSpawnRoom>false</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthDeadBody</defName>
+    <roomContentsWorkerType>RoomContents_DeadBodyLabyrinth</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthCorpseRoom</defName>
+    <roomContentsWorkerType>RoomContents_CorpseRoom</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthSleepingFleshbeast</defName>
+    <roomContentsWorkerType>RoomContents_SleepingFleshbeast</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>false</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthAbandonedCamp</defName>
+    <roomContentsWorkerType>RoomContents_AbandonedCamp</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthAnimalCorpses</defName>
+    <roomContentsWorkerType>RoomContents_AnimalCorpses</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthHarbinger</defName>
+    <roomContentsWorkerType>RoomContents_Harbinger</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthTrees</defName>
+    <roomContentsWorkerType>RoomContents_Trees</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthAnimals</defName>
+    <roomContentsWorkerType>RoomContents_Animals</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthGrayBox</defName>
+    <roomContentsWorkerType>RoomContents_GrayBox</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthLargeGrayBox</defName>
+    <roomContentsWorkerType>RoomContents_LargeGrayBox</roomContentsWorkerType>
+    <canBeInMixedRoom>false</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthLargeEmptyGrayBox</defName>
+    <roomContentsWorkerType>RoomContents_LargeEmptyGrayBox</roomContentsWorkerType>
+    <canBeInMixedRoom>false</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthFloorRamblings</defName>
+    <roomContentsWorkerType>RoomContents_Ramblings</roomContentsWorkerType>
+    <canBeInMixedRoom>true</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+  <LayoutRoomDef>
+    <defName>LabyrinthChildRoom</defName>
+    <roomContentsWorkerType>RoomContents_ChildRoom</roomContentsWorkerType>
+    <isValidPlayerSpawnRoom>true</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+
+</Defs>

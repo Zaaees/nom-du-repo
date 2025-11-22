@@ -1,0 +1,126 @@
+ <Defs>
+ <MutantDef Name="BaseShambler">
+    <defName>OWD_Shambler</defName>
+    <label>Undead</label>
+    <description>A creature who has been raised from the dead by corrupted nano-scale archites.\n\nAbout shamblers: Shamblers are corpses which have been reanimated by archotechnology. They attack living creatures relentlessly and their immunity to pain makes them difficult to kill. However, the archites which animate them cannot sustain the rotting body for long, so shamblers expire after a few days of movement.\n\nThere are ways to raise your own shamblers and make yourself invisible to them, so they attack only outsiders.</description>
+    <hediff>Shambler</hediff>
+    <thinkTree>OWD_ShamblerThinkTree</thinkTree>
+    <thinkTreeConstant>OWD_ShamblerConstantThinkTree</thinkTreeConstant>
+    <namePrefix>Undead </namePrefix>
+    <useCorpseGraphics>true</useCorpseGraphics>
+    <isConsideredCorpse>true</isConsideredCorpse>
+    <canBeDrafted>true</canBeDrafted>
+    <canBleed>false</canBleed>
+    <bloodDef>Filth_DarkBlood</bloodDef>
+    <bloodSmearDef>Filth_DarkBloodSmear</bloodSmearDef>
+    <entitledToMedicalCare>false</entitledToMedicalCare>
+    <isImmuneToInfections>true</isImmuneToInfections>
+    <removeChronicIllnesses>true</removeChronicIllnesses>
+    <removeAddictions>true</removeAddictions>
+    <removeAllInjuries>true</removeAllInjuries>
+    <restoreLegs>true</restoreLegs>
+    <standingAnimation>ShamblerSway</standingAnimation>
+     <canTravelInCaravan>true</canTravelInCaravan>
+    <respectsAllowedArea>true</respectsAllowedArea>
+    <canOpenDoors>true</canOpenDoors>
+    <makesFootprints>false</makesFootprints>
+    <clearMutantStatusOnDeath>true</clearMutantStatusOnDeath>
+    <canAttackWhileCrawling>true</canAttackWhileCrawling>
+    <deathOnDownedChance>0.25</deathOnDownedChance>
+    <woundColor>(0.3, 0.3, 0.0, 1.0)</woundColor>
+    <anomalyKnowledgeOffset>0</anomalyKnowledgeOffset>
+    <knowledgeCategory>Basic</knowledgeCategory>
+    <codexEntry>Shambler</codexEntry>
+    <removesHediffs>
+      <li>CryptosleepSickness</li>
+      <li>LuciferiumHigh</li>
+      <li>LuciferiumAddiction</li>
+      <li>Scaria</li>
+      <li>CorpseTorment</li>
+      <li>CubeInterest</li>
+      <li>CubeWithdrawal</li>
+      <li>CubeComa</li>
+      <li>CubeRage</li>
+      <li>HeartAttack</li>
+      <li>Scaria</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">MechlinkImplant</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PregnantHuman</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PregnancyLabor</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">HemogenAmplified</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PostpartumExhaustion</li>
+    </removesHediffs>
+    <disablesGenes>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Hemogenic</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+    </disablesGenes>
+    <producesBioferrite>true</producesBioferrite>
+    <!-- Sounds -->
+    <soundCall>Pawn_Shambler_Call</soundCall>
+    <soundAttack>Pawn_Shambler_Attack</soundAttack>
+    <soundWounded>Pawn_Shambler_Wounded</soundWounded>
+    <soundDeath>Pawn_Shambler_Killed</soundDeath>
+    <!-- Rendering -->
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Overlay">
+        <debugLabel>Shambler wounds</debugLabel>
+        <workerClass>PawnRenderNodeWorker_OverlayShambler</workerClass>
+        <overlayLayer>Body</overlayLayer>
+        <baseLayer>20</baseLayer>
+        <pawnType>HumanlikeOnly</pawnType>
+      </li>
+      <li>
+        <debugLabel>Shambler wounds</debugLabel>
+        <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+        <workerClass>PawnRenderNodeWorker_OverlayShambler</workerClass>
+        <overlayLayer>Body</overlayLayer>
+        <baseLayer>20</baseLayer>
+        <pawnType>NonHumanlikeOnly</pawnType>
+      </li>
+    </renderNodeProperties>
+
+    <tools>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+      </li>
+      <li>
+        <label>left hand</label>
+        <labelNoLocation>hand</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1.5</chanceFactor>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right hand</label>
+        <labelNoLocation>hand</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <chanceFactor>1.5</chanceFactor>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+  </MutantDef>
+  </Defs>

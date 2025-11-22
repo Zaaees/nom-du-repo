@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>OWD_NecroticOrb</defName>
+    <label>Necrotic Orb</label>
+    <description>An ancient orb of compressed necrotic energy that has been stabilized beyond your comprehension. When installed in place of a heart, it projects a powerful, shimmering green energy field that intercepts incoming projectiles. The energy emitted prevents other orbs from being Installed. The orb seems to have other uses as well, I must investigate further.</description>
+     <techLevel>Neolithic</techLevel>
+       <graphicData>
+      <texPath>Things/Items/NecOrb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>ThingWithComps</thingClass>
+<tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <isTechHediff>false</isTechHediff>
+  <techHediffsTags />
+
+  <generateCommonality>0</generateCommonality> 
+    <statBases>
+      <MarketValue>5000</MarketValue>
+      <Mass>1.5</Mass>
+       <DeteriorationRate>0</DeteriorationRate> 
+    </statBases>
+    <comps>
+    <li Class="RimWorld.CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>62626262</analysisID>
+        <analysisDurationHours>10</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Necrotic Orb analyzed: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the Necrotic Orb, {PAWN_labelShort} has unlocked the secrets of {RESEARCH}.\n\nYour researchers can now begin exploring this forbidden knowledge.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze this strange artifact to unlock its uses.</activateDescString>
+        <jobString>Analyzing Necrotic Orb</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+       <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(0,200,0,0)</glowColor>
+      </li>
+      <li Class="OneWithDeath.CompProperties_UsableNecroticOrb">
+        <useJob>InstallNecroticOrbJob</useJob>
+        <useLabel>Install Necrotic Orb</useLabel>
+        <allowedMutants>
+          <li>OWD_Lich</li>
+        </allowedMutants>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>OneWithDeath.CompUseEffect_InstallNecroticOrb</compClass>
+        <hediffDef>OWD_Hediff_NecroticOrb</hediffDef>
+        <bodyPart>Heart</bodyPart>
+      </li>
+    </comps>
+  </ThingDef>
+
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>OWD_Hediff_NecroticOrb</defName>
+    <label>necrotic orb</label>
+    <labelNoun>a Necrotic orb</labelNoun>
+    <description>An installed necrotic orb. It projects a powerful energy shield.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <spawnThingOnRemoved>OWD_NecroticOrb</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <comps>
+      <li Class="OneWithDeath.HediffCompProperties_NecroticOrbManager">
+        <energyPerTick>0.05</energyPerTick>
+        <tickInterval>200</tickInterval>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <CarryingCapacity>50</CarryingCapacity>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  
+
+
+<ThingDef>
+    <defName>OWD_Thing_NecroticOrbFollower</defName>
+    <label>necrotic orb field</label>
+    <thingClass>OneWithDeath.NecroticOrbFollowerThing</thingClass>
+    <category>Attachment</category> 
+    <tickerType>Normal</tickerType>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Mote/Transparent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>PawnState</altitudeLayer> 
+    <comps>
+      <li Class="OneWithDeath.CompProperties_NecroticOrbFollower" />
+      <li Class="OneWithDeath.CompProperties_NecroticOrbInterceptor">
+        <radius>1.4</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+        <interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+        <color>(0.4, 1.0, 0.4, 0.5)</color>
+        <hitPoints>400</hitPoints>
+        <chargeDurationTicks>1200</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>15</rechargeHitPointsIntervalTicks>
+        <drawWithNoSelection>true</drawWithNoSelection>
+        <minIdleAlpha>1</minIdleAlpha>
+        <disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+        <customTip>A pulsating orb of necromantic energy that shields its bearer from harm.</customTip>
+        <alwaysShowHitpointsGizmo>true</alwaysShowHitpointsGizmo>
+      </li>
+    </comps>
+</ThingDef>
+
+
+
+  <JobDef>
+    <defName>InstallNecroticOrbJob</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>installing necrotic orb.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>OWD_RemoveNecroticOrb</defName>
+    <driverClass>OneWithDeath.JobDriver_RemoveNecroticOrb</driverClass>
+    <reportString>removing necrotic orb from {0}.</reportString>
+  </JobDef>
+
+
+</Defs>

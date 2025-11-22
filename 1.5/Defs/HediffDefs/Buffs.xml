@@ -1,0 +1,64 @@
+<Defs>
+<HediffDef>
+    <defName>OWD_NecroticRegeneration</defName>
+    <label>Necrotic Regeneration</label>
+    <description>A surge of necrotic energy accelerates healing restoring flesh and bones in the undead.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2000</disappearsAfterTicks> <!-- 60 seconds -->
+        <showRemainingTime>true</showRemainingTime> <!-- Added for countdown display -->
+      </li>
+    </comps>
+    <stages>
+        <li>
+            <regeneration>1000</regeneration>
+        </li>
+    </stages>
+</HediffDef>
+
+
+
+  <HediffDef>
+    <defName>OWD_Enrage</defName>
+    <label>Enraged</label>
+    <description>This creature has had their senses overwhelmed by an artificial rage induced by the necrotic link. Images of enemies far away are flickering in their minds, driving them to chase the necromancer's enemies</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1.0, 0.2, 0.2)</defaultLabelColor>
+    <isBad>false</isBad>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>6000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties">
+        <compClass>OneWithDeath.HediffComp_VisualEffect</compClass>
+      </li>
+    </comps>
+    <stages>
+        <li>
+        <statFactors>
+          <MoveSpeed>1.3</MoveSpeed>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+        </statFactors>
+            <regeneration>200</regeneration>
+        </li>
+    </stages>
+  </HediffDef>
+
+
+  <JobDef>
+    <defName>OWD_HuntEnemiesFrenzied</defName>
+    <driverClass>OneWithDeath.JobDriver_HuntEnemiesFrenzied</driverClass>
+    <reportString>hunting enemies.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  
+
+</Defs>

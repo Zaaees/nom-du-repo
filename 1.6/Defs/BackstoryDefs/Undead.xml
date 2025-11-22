@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>OWD_BKST_UndeadChildhood</defName>
+    <identifier>UndeadChildhood</identifier>
+    <slot>Childhood</slot>
+    <title>Undead Origin</title>
+    <titleShort>Undead</titleShort>
+    <description>Resurrected as an undead, [PAWN_nameDef] has no memories of a living childhood, existing only as a servant of death.</description>
+    <skillGains>
+
+    </skillGains>
+    <workDisables>Intellectual</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories>
+      <li>Undead</li> 
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <shuffleable>false</shuffleable>
+    <possessions>
+     
+    </possessions>
+  </BackstoryDef>
+
+    <BackstoryDef>
+    <defName>OWD_BKST_UndeadBeginnings</defName>
+    <identifier>UndeadChildhood</identifier>
+    <slot>Childhood</slot>
+    <title>Undead Origin</title>
+    <titleShort>Undead</titleShort>
+    <description>Resurrected as an undead, [PAWN_nameDef] has no memories of a living childhood, existing only as a servant of death.</description>
+    <skillGains>
+     
+    </skillGains>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories>
+      <li>Undead</li> 
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <shuffleable>false</shuffleable>
+    <possessions>
+     
+    </possessions>
+  </BackstoryDef>
+
+  
+
+
+  <BackstoryDef>
+    <defName>OWD_BKST_UndeadAdulthood</defName>
+    <identifier>UndeadAdulthood</identifier>
+    <slot>Adulthood</slot>
+    <title>Undead Servitude</title>
+    <titleShort>Servant</titleShort>
+    <description>Bound to a necromancer’s will, [PAWN_nameDef] exists as an undead, stripped of past life and driven by necrotic energy.</description>
+    <skillGains>
+
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories>
+      <li>Undead</li> 
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <shuffleable>false</shuffleable>
+    <possessions>
+
+    </possessions>
+  </BackstoryDef>
+
+
+
+
+
+  <BackstoryDef>
+    <defName>OWD_BKST_UndeadChampion</defName>
+    <identifier>UndeadChampion</identifier>
+    <slot>Adulthood</slot>
+    <title>Undead Champion</title>
+    <titleShort>Champion</titleShort>
+    <description>[PAWN_nameDef] is stronger than regular undead, retaining more of its previous self to enable it to fight more fiercely</description>
+    <skillGains>
+      <Melee>5</Melee>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories>
+      <li>Undead</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <shuffleable>false</shuffleable>
+    <possessions>
+
+    </possessions>
+  </BackstoryDef>
+
+
+
+
+  <BackstoryDef>
+    <defName>OWD_BKST_UndeadOverseer</defName>
+    <identifier>UndeadOverseer</identifier>
+    <slot>Adulthood</slot>
+    <title>Undead Overseer</title>
+    <titleShort>Overseer</titleShort>
+    <description>[PAWN_nameDef] retains most of its old memories along with new ones that allow the channeling of the necrotic energy flowing inside its own body.</description>
+    <skillGains>
+      <Social>4</Social>
+      <Medicine>4</Medicine>
+      <Crafting>4</Crafting>
+      <Intellectual>4</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories>
+      <li>Undead</li> 
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <shuffleable>false</shuffleable>
+    <possessions>
+    </possessions>
+  </BackstoryDef>
+
+</Defs>

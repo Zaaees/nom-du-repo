@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Mood buff for Unfamiliar with Death -->
+  <ThoughtDef>
+    <defName>UnfamiliarWithDeathPositive</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <hediff>UnfamiliarWithDeath</hediff>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Understanding of Death</label>
+        <baseMoodEffect>10</baseMoodEffect>
+        <description>You are just beginning to understand death, you feel a link to something bigger.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Mood buff for Familiar with Death -->
+  <ThoughtDef>
+    <defName>FamiliarWithDeathPositive</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <hediff>FamiliarWithDeath</hediff>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Familiar with death</label>
+        <baseMoodEffect>20</baseMoodEffect>
+        <description>The link to death grows stronger, you feel a calm detachment and improved mental clarity.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Mood buff for One with Death -->
+  <ThoughtDef>
+    <defName>OneWithDeathPositive</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <hediff>OneWithDeath</hediff>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>One with death</label>
+        <baseMoodEffect>100</baseMoodEffect>
+        <description>You have become one with death, you feel linked to eternity itself, that comes with a sense of bliss</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Mood buff for Undead -->
+  <ThoughtDef>
+    <defName>UndeadTranquillity</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <hediff>OWD_Undead</hediff>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Undead</label>
+        <baseMoodEffect>100</baseMoodEffect>
+        <description>The link to the one that revived you fills your mind with its thoughts.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<ThoughtDef>
+  <defName>BoundToNecromancer</defName>
+  <thoughtClass>Thought_MemorySocial</thoughtClass> 
+  <validWhileDespawned>true</validWhileDespawned>
+  <durationDays>100</durationDays> 
+  <stackLimit>1</stackLimit>
+  <stages>
+    <li>
+      <label>bound to necromancer</label>
+      <description>A profound sense of loyalty</description>
+      <baseOpinionOffset>100</baseOpinionOffset>
+    </li>
+  </stages>
+</ThoughtDef>
+
+
+<ThoughtDef>
+    <defName>UndeadTranquillityChampion</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+      <hediff>UndeadChampion</hediff>
+        <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+       <label>Undead</label>
+        <baseMoodEffect>100</baseMoodEffect>
+        <description>The link to the one that revived you fills your mind with its thoughts.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>UndeadTranquillityOverseer</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+     <hediff>UndeadOverseer</hediff>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Undead</label>
+        <baseMoodEffect>100</baseMoodEffect>
+        <description>The link to the one that revived you fills your mind with positivity.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+</Defs>

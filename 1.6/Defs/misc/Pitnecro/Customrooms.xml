@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LayoutRoomDef>
+    <defName>OWD_LabyrinthObeliskExitRoom</defName>
+    <roomContentsWorkerType>OneWithDeath.RoomContentsWorker_OWD_ObeliskExit</roomContentsWorkerType>
+    <dontPlaceRandomly>true</dontPlaceRandomly>
+    <isValidPlayerSpawnRoom>false</isValidPlayerSpawnRoom>
+  </LayoutRoomDef>
+
+</Defs>

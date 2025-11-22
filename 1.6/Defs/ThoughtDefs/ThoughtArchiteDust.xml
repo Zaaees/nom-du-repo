@@ -1,0 +1,21 @@
+ <Defs>
+ <ThoughtDef>
+    <defName>OWD_AteArchiteDust</defName>
+    <thoughtClass>Thought_FoodEaten</thoughtClass>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+     <nullifyingHediffs>
+    <li>OWD_Undead</li>
+    <li>UndeadChampion</li>
+    <li>UndeadOverseer</li>
+  </nullifyingHediffs>
+    <stages>
+      <li>
+        <label>ate necrotic archite dust</label>
+        <description>I can feel it melting my stomach and repairing it, it feels wrong and painful.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  </Defs>

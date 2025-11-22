@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StatDef>
+    <defName>OWD_Control</defName>
+    <label>Stable Control Bonus</label>
+    <description>A flat bonus to the stable control a necromancer can have.</description>
+    <category>PawnMisc</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+    <displayPriorityInCategory>100</displayPriorityInCategory>
+    <showIfHediffsPresent>
+      <li>NecromancerImplant</li>
+    </showIfHediffsPresent>
+  </StatDef>
+
+  <StatDef>
+    <defName>OWD_UnstableControl</defName>
+    <label>Unstable Control Bonus</label>
+    <description>A flat bonus to the unstable control a necromancer can have.</description>
+    <category>PawnMisc</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+    <displayPriorityInCategory>90</displayPriorityInCategory>
+    <showIfHediffsPresent>
+      <li>NecromancerImplant</li>
+    </showIfHediffsPresent>
+  </StatDef>
+
+  <StatDef>
+    <defName>OWD_ShamblerControl</defName>
+    <label>Shambler Control Bonus</label>
+    <description>A flat bonus to the total control points available for controlling shamblers.</description>
+    <category>PawnMisc</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Integer</toStringStyle>
+    <displayPriorityInCategory>80</displayPriorityInCategory>
+    <showIfHediffsPresent>
+      <li>NecromancerImplant</li>
+    </showIfHediffsPresent>
+  </StatDef>
+
+  <StatDef>
+    <defName>OWD_EnergyRegeneration</defName>
+    <label>Energy Regeneration Bonus</label>
+    <description>A flat bonus to the amount of necrotic energy regenerated per second.</description>
+    <category>PawnMisc</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>FloatMaxTwo</toStringStyle>
+    <displayPriorityInCategory>70</displayPriorityInCategory>
+    <showIfHediffsPresent>
+      <li>NecromancerImplant</li>
+    </showIfHediffsPresent>
+  </StatDef>
+
+</Defs>

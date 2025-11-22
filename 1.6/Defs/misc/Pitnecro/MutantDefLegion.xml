@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MutantDef Abstract="True" Name="OWD_BaseMutant_Legion">
+    <thinkTree>OWD_CombatUndead</thinkTree>
+    <thinkTreeConstant>OWD_CombatUndeadConstant</thinkTreeConstant>
+    <defaultFaction>OWD_Undeads</defaultFaction>
+    
+    <!-- Visuals & Basic Properties -->
+    <useCorpseGraphics>true</useCorpseGraphics>
+    <isConsideredCorpse>true</isConsideredCorpse>
+    <canBleed>false</canBleed>
+    <bloodDef>Filth_DarkBlood</bloodDef>
+    <standingAnimation>ShamblerSway</standingAnimation>
+    <makesFootprints>false</makesFootprints>
+    <woundColor>(0.3, 0.3, 0.0, 1.0)</woundColor>
+    
+    <!-- Sounds -->
+    <soundAttackChance>0.25</soundAttackChance>
+    <soundCall>Pawn_Shambler_Call</soundCall>
+    <soundAttack>Pawn_Shambler_Attack</soundAttack>
+    <soundWounded>Pawn_Shambler_Wounded</soundWounded>
+    <soundDeath>Pawn_Shambler_Killed</soundDeath>
+    <deathOnDownedChance>1</deathOnDownedChance>
+    <!-- Behavior Flags (1.6 System) for Hostile NPCs -->
+    <consideredSubhuman>false</consideredSubhuman>
+    <disableNeeds>true</disableNeeds>
+    <disablesIdeo>true</disablesIdeo>
+    <disableOwnership>true</disableOwnership>
+    <preventsMentalBreaks>true</preventsMentalBreaks>
+    <incapableOfSocialInteractions>true</incapableOfSocialInteractions>
+    <entitledToMedicalCare>false</entitledToMedicalCare>
+    <canGainXP>false</canGainXP>
+    <clearMutantStatusOnDeath>true</clearMutantStatusOnDeath>
+    
+    <!-- Health & Immunities -->
+    <isImmuneToInfections>true</isImmuneToInfections>
+    <removeChronicIllnesses>true</removeChronicIllnesses>
+    <removeAddictions>true</removeAddictions>
+    <removeAllInjuries>true</removeAllInjuries>
+    <restoreLegs>true</restoreLegs>
+    <givesHediffs>
+      <li>
+        <def>Regeneration</def>
+        <severity>0.5</severity>
+      </li>
+    </givesHediffs>
+    
+    <!-- Combat Tools -->
+    <tools>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+      </li>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+  </MutantDef>
+
+
+  <MutantDef ParentName="OWD_BaseMutant_Legion">
+    <defName>OWD_mutant_undead</defName>
+    <label>Legion Undead</label>
+    <description>A human whose flesh has rotted away or been necromantically stripped, leaving only an animated skeleton bound by dark energies. It knows no hunger, fatigue, or pain, and serves its master mindlessly.</description>
+    <killedLeavings>
+      <li>
+        <def>GreenCrystal</def>
+      </li>
+    </killedLeavings>
+  </MutantDef>
+
+
+  <MutantDef ParentName="OWD_BaseMutant_Legion">
+    <defName>OWD_legion_lich</defName>
+    <label>Legion Lich</label>
+    <description>A powerful undead commander, its bones crackling with necrotic power. It leads the lesser undead with an unholy intelligence.</description>
+    
+    <givesHediffs>
+        <li>
+            <def>OWD_Hediff_NecroticOrb</def>
+        </li>
+    </givesHediffs>
+    <killedLeavings>
+      <li>
+        <def>GreenCrystal</def>
+      </li>
+    </killedLeavings>
+  </MutantDef>
+
+</Defs>

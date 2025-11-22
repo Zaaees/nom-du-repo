@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Custom Weather for the Pocket Dimension -->
+  <WeatherDef ParentName="UnnaturalDarknessBase">
+    <defName>OWD_Darkness</defName>
+    <label>crushing darkness</label>
+    <description>An oppressive, unnatural darkness blankets the area, seemingly absorbing all light. The air is still and heavy.</description>
+    <ambientSounds>
+      <li>Ambient_UnnaturalDarkness_Phase2</li>
+    </ambientSounds>
+    <skyColorsDay>
+      <sky>(0.02,0.02,0.03)</sky>
+      <shadow>(0.9,0.9,0.93)</shadow>
+      <overlay>(0.1,0.1,0.1)</overlay>
+      <saturation>0.65</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.02,0.02,0.03)</sky>
+      <shadow>(0.9,0.9,0.93)</shadow>
+      <overlay>(0.1,0.1,0.1)</overlay>
+      <saturation>0.65</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.02,0.02,0.03)</sky>
+      <shadow>(0.9,0.9,0.93)</shadow>
+      <overlay>(0.1,0.1,0.1)</overlay>
+      <saturation>0.65</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.02,0.02,0.03)</sky>
+      <shadow>(0.9,0.9,0.93)</shadow>
+      <overlay>(0.1,0.1,0.1)</overlay>
+      <saturation>0.65</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+  <!-- Custom Hediff for the Pocket Dimension -->
+  <HediffDef>
+    <defName>OWD_UnendingDarkness</defName>
+    <label>unending darkness</label>
+    <description>The crushing darkness of this place seeps into the soul, manifesting as physical wounds. Only light offers protection.</description>
+    <hediffClass>OneWithDeath.Hediff_UnendingDarkness</hediffClass>
+    <defaultLabelColor>(0.8, 0, 0.3)</defaultLabelColor>
+    <isBad>true</isBad>
+    <initialSeverity>1</initialSeverity>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <!-- Add allowedMutants node where missing -->
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Usable" and not(allowedMutants)]</xpath>
+        <value>
+          <allowedMutants>
+            <li>OWD_Lich</li>
+            <li>OWD_Undead_Base</li>
+          </allowedMutants>
+        </value>
+      </li>
+      <!-- Add entries to allowedMutants where it already exists -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Usable"]/allowedMutants</xpath>
+        <value>
+          <li>OWD_Lich</li>
+          <li>OWD_Undead_Base</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

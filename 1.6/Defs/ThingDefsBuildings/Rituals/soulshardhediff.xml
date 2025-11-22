@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef Name="OWD_SoulInfusionBase" Abstract="True">
+    <hediffClass>OneWithDeath.Hediff_SoulInfusion</hediffClass>
+    <description>A soul shard infusion granting latent skills and knowledge.</description>
+    <isBad>false</isBad>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <defaultLabelColor>(1.0, 0.0, 0.0)</defaultLabelColor>
+    <stages>
+      <li>
+        <minSeverity>0.0</minSeverity>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.50</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.95</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- ==================== Major Single Skills ==================== -->
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_ShootingMajor</defName>
+    <label>soul infusion (Major Shooting)</label>
+    <description>A crystal shard containing the soul of a master sharpshooter.</description>
+    <aptitudes><Shooting>10</Shooting></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <AimingDelayFactor>-0.25</AimingDelayFactor>
+          <RangedCooldownFactor>-0.25</RangedCooldownFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_MeleeMajor</defName>
+    <label>soul infusion (Major Melee)</label>
+    <description>A crystal shard containing the soul of a master warrior.</description>
+    <aptitudes><Melee>10</Melee></aptitudes>
+    <stages Inherit="False">
+      <li>
+       <statOffsets>
+          <MeleeDodgeChance>7.5</MeleeDodgeChance>
+          <MeleeHitChance>2</MeleeHitChance>
+          <MeleeCooldownFactor>-0.125</MeleeCooldownFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_ConstructionMajor</defName>
+    <label>soul infusion (Major Construction)</label>
+    <description>A crystal shard containing the soul of a master builder.</description>
+    <aptitudes><Construction>10</Construction></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <ConstructionSpeed>1.25</ConstructionSpeed>
+          <SmoothingSpeed>1.25</SmoothingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_MiningMajor</defName>
+    <label>soul infusion (Major Mining)</label>
+    <description>A crystal shard containing the soul of a master miner.</description>
+    <aptitudes><Mining>10</Mining></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MiningYield>0.25</MiningYield>
+        </statOffsets>
+        <statFactors>
+          <MiningSpeed>1.75</MiningSpeed>
+          <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_CookingMajor</defName>
+    <label>soul infusion (Major Cooking)</label>
+    <description>A crystal shard containing the soul of a master cook.</description>
+    <aptitudes><Cooking>10</Cooking></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <FoodPoisonChance>0.75</FoodPoisonChance>
+          <CookSpeed>1.25</CookSpeed>
+          <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+          <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_PlantsMajor</defName>
+    <label>soul infusion (Major Plants)</label>
+    <description>A crystal shard containing the soul of a master gardener.</description>
+    <aptitudes><Plants>10</Plants></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <PlantHarvestYield>0.25</PlantHarvestYield>
+        </statOffsets>
+        <statFactors>
+          <PlantWorkSpeed>1.75</PlantWorkSpeed>
+          <PruningSpeed MayRequire="Ludeon.RimWorld.Biotech">1.25</PruningSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_AnimalsMajor</defName>
+    <label>soul infusion (Major Animals)</label>
+    <description>A crystal shard containing the soul of a master animal handler.</description>
+    <aptitudes><Animals>10</Animals></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <TameAnimalChance>1.25</TameAnimalChance>
+          <TrainAnimalChance>1.25</TrainAnimalChance>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_CraftingMajor</defName>
+    <label>soul infusion (Major Crafting)</label>
+    <description>A crystal shard containing the soul of a master crafter.</description>
+    <aptitudes><Crafting>10</Crafting></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <SmoothingSpeed>1.25</SmoothingSpeed>
+          <SmeltingSpeed>1.25</SmeltingSpeed>
+          <DrugSynthesisSpeed>1.25</DrugSynthesisSpeed>
+          <DrugCookingSpeed>1.25</DrugCookingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_ArtisticMajor</defName>
+    <label>soul infusion (Major Artistic)</label>
+    <description>A crystal shard containing the soul of a master artist.</description>
+    <aptitudes><Artistic>10</Artistic></aptitudes>
+    <!-- No stat bonuses as requested -->
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_MedicineMajor</defName>
+    <label>soul infusion (Major Medicine)</label>
+    <description>A crystal shard containing the soul of a master doctor.</description>
+    <aptitudes><Medicine>10</Medicine></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MedicalTendQuality>0.25</MedicalTendQuality>
+          <MedicalSurgerySuccessChance>0.25</MedicalSurgerySuccessChance>
+        </statOffsets>
+        <statFactors>
+          <MedicalTendSpeed>1.25</MedicalTendSpeed>
+          <MedicalOperationSpeed>1.25</MedicalOperationSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_SocialMajor</defName>
+    <label>soul infusion (Major Social)</label>
+    <description>A crystal shard containing the soul of a master diplomat.</description>
+    <aptitudes><Social>10</Social></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <NegotiationAbility>0.25</NegotiationAbility>
+          <TradePriceImprovement>0.25</TradePriceImprovement>
+          <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</ConversionPower>
+        </statOffsets>
+        <statFactors>
+          <TameAnimalChance>1.25</TameAnimalChance>
+          <TrainAnimalChance>1.25</TrainAnimalChance>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_IntellectualMajor</defName>
+    <label>soul infusion (Major Intellectual)</label>
+    <description>A crystal shard containing the soul of a master scholar.</description>
+    <aptitudes><Intellectual>10</Intellectual></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <ResearchSpeed>1.25</ResearchSpeed>
+          <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1.25</EntityStudyRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- ==================== Minor Single Skills ==================== -->
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_ShootingMinor</defName>
+    <label>soul infusion (Minor Shooting)</label>
+    <description>A crystal shard containing the soul of a skilled shooter.</description>
+    <aptitudes><Shooting>5</Shooting></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <AimingDelayFactor>-0.10</AimingDelayFactor>
+          <RangedCooldownFactor>-0.10</RangedCooldownFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_MeleeMinor</defName>
+    <label>soul infusion (Minor Melee)</label>
+    <description>A crystal shard containing the soul of a skilled warrior.</description>
+    <aptitudes><Melee>5</Melee></aptitudes>
+    <stages Inherit="False">
+      <li>
+       <statOffsets>
+          <MeleeDodgeChance>3.75</MeleeDodgeChance>
+          <MeleeHitChance>1</MeleeHitChance>
+          <MeleeCooldownFactor>-0.0625</MeleeCooldownFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_ConstructionMinor</defName>
+    <label>soul infusion (Minor Construction)</label>
+    <description>A crystal shard containing the soul of a skilled builder.</description>
+    <aptitudes><Construction>5</Construction></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <ConstructionSpeed>1.10</ConstructionSpeed>
+          <SmoothingSpeed>1.10</SmoothingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_MiningMinor</defName>
+    <label>soul infusion (Minor Mining)</label>
+    <description>A crystal shard containing the soul of a skilled miner.</description>
+    <aptitudes><Mining>5</Mining></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MiningYield>0.10</MiningYield>
+        </statOffsets>
+        <statFactors>
+          <MiningSpeed>1.25</MiningSpeed>
+          <DeepDrillingSpeed>1.10</DeepDrillingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_CookingMinor</defName>
+    <label>soul infusion (Minor Cooking)</label>
+    <description>A crystal shard containing the soul of a skilled cook.</description>
+    <aptitudes><Cooking>5</Cooking></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <FoodPoisonChance>0.90</FoodPoisonChance>
+          <CookSpeed>1.10</CookSpeed>
+          <ButcheryFleshSpeed>1.10</ButcheryFleshSpeed>
+          <ButcheryFleshEfficiency>1.10</ButcheryFleshEfficiency>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_PlantsMinor</defName>
+    <label>soul infusion (Minor Plants)</label>
+    <description>A crystal shard containing the soul of a skilled gardener.</description>
+    <aptitudes><Plants>5</Plants></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <PlantHarvestYield>0.10</PlantHarvestYield>
+        </statOffsets>
+        <statFactors>
+          <PlantWorkSpeed>1.25</PlantWorkSpeed>
+          <PruningSpeed MayRequire="Ludeon.RimWorld.Biotech">1.10</PruningSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_AnimalsMinor</defName>
+    <label>soul infusion (Minor Animals)</label>
+    <description>A crystal shard containing the soul of a skilled animal handler.</description>
+    <aptitudes><Animals>5</Animals></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <TameAnimalChance>1.10</TameAnimalChance>
+          <TrainAnimalChance>1.10</TrainAnimalChance>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_CraftingMinor</defName>
+    <label>soul infusion (Minor Crafting)</label>
+    <description>A crystal shard containing the soul of a skilled crafter.</description>
+    <aptitudes><Crafting>5</Crafting></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <SmoothingSpeed>1.10</SmoothingSpeed>
+          <SmeltingSpeed>1.10</SmeltingSpeed>
+          <DrugSynthesisSpeed>1.10</DrugSynthesisSpeed>
+          <DrugCookingSpeed>1.10</DrugCookingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_ArtisticMinor</defName>
+    <label>soul infusion (Minor Artistic)</label>
+    <description>A crystal shard containing the soul of a skilled artist.</description>
+    <aptitudes><Artistic>5</Artistic></aptitudes>
+    <!-- No stat bonuses as requested -->
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_MedicineMinor</defName>
+    <label>soul infusion (Minor Medicine)</label>
+    <description>A crystal shard containing the soul of a skilled doctor.</description>
+    <aptitudes><Medicine>5</Medicine></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MedicalTendQuality>0.10</MedicalTendQuality>
+          <MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
+        </statOffsets>
+        <statFactors>
+          <MedicalTendSpeed>1.10</MedicalTendSpeed>
+          <MedicalOperationSpeed>1.10</MedicalOperationSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_SocialMinor</defName>
+    <label>soul infusion (Minor Social)</label>
+    <description>A crystal shard containing the soul of a skilled diplomat.</description>
+    <aptitudes><Social>5</Social></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <NegotiationAbility>0.10</NegotiationAbility>
+          <TradePriceImprovement>0.10</TradePriceImprovement>
+          <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.10</ConversionPower>
+        </statOffsets>
+        <statFactors>
+          <TameAnimalChance>1.10</TameAnimalChance>
+          <TrainAnimalChance>1.10</TrainAnimalChance>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_IntellectualMinor</defName>
+    <label>soul infusion (Minor Intellectual)</label>
+    <description>A crystal shard containing the soul of a skilled scholar.</description>
+    <aptitudes><Intellectual>5</Intellectual></aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <ResearchSpeed>1.10</ResearchSpeed>
+          <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1.10</EntityStudyRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <!-- ==================== Archetype Souls ==================== -->
+
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_SlaveMajor</defName>
+    <label>soul infusion (Major Slave Soul)</label>
+    <description>A crystal shard containing the soul of a master slave, skilled in all forms of labor.</description>
+    <aptitudes>
+      <Crafting>5</Crafting>
+      <Construction>5</Construction>
+      <Plants>5</Plants>
+      <Mining>5</Mining>
+      <Cooking>5</Cooking>
+    </aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MiningYield>0.165</MiningYield>
+          <PlantHarvestYield>0.165</PlantHarvestYield>
+        </statOffsets>
+        <statFactors>
+          <ConstructionSpeed>1.165</ConstructionSpeed>
+          <SmoothingSpeed>1.165</SmoothingSpeed>
+          <MiningSpeed>1.495</MiningSpeed>
+          <DeepDrillingSpeed>1.165</DeepDrillingSpeed>
+          <FoodPoisonChance>0.835</FoodPoisonChance>
+          <CookSpeed>1.165</CookSpeed>
+          <ButcheryFleshSpeed>1.165</ButcheryFleshSpeed>
+          <ButcheryFleshEfficiency>1.165</ButcheryFleshEfficiency>
+          <PlantWorkSpeed>1.495</PlantWorkSpeed>
+          <PruningSpeed MayRequire="Ludeon.RimWorld.Biotech">1.165</PruningSpeed>
+          <SmeltingSpeed>1.165</SmeltingSpeed>
+          <DrugSynthesisSpeed>1.165</DrugSynthesisSpeed>
+          <DrugCookingSpeed>1.165</DrugCookingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_SlaveMinor</defName>
+    <label>soul infusion (Minor Slave Soul)</label>
+    <description>A crystal shard containing the soul of a skilled slave.</description>
+    <aptitudes>
+      <Crafting>3</Crafting>
+      <Construction>3</Construction>
+      <Plants>3</Plants>
+      <Mining>3</Mining>
+      <Cooking>3</Cooking>
+    </aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MiningYield>0.066</MiningYield>
+          <PlantHarvestYield>0.066</PlantHarvestYield>
+        </statOffsets>
+        <statFactors>
+          <ConstructionSpeed>1.066</ConstructionSpeed>
+          <SmoothingSpeed>1.066</SmoothingSpeed>
+          <MiningSpeed>1.165</MiningSpeed>
+          <DeepDrillingSpeed>1.066</DeepDrillingSpeed>
+          <FoodPoisonChance>0.934</FoodPoisonChance>
+          <CookSpeed>1.066</CookSpeed>
+          <ButcheryFleshSpeed>1.066</ButcheryFleshSpeed>
+          <ButcheryFleshEfficiency>1.066</ButcheryFleshEfficiency>
+          <PlantWorkSpeed>1.165</PlantWorkSpeed>
+          <PruningSpeed MayRequire="Ludeon.RimWorld.Biotech">1.066</PruningSpeed>
+          <SmeltingSpeed>1.066</SmeltingSpeed>
+          <DrugSynthesisSpeed>1.066</DrugSynthesisSpeed>
+          <DrugCookingSpeed>1.066</DrugCookingSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_SmartMajor</defName>
+    <label>soul infusion (Major Smart Soul)</label>
+    <description>A crystal shard containing the soul of a very smart pawn, skilled in intellectual pursuits.</description>
+    <aptitudes>
+      <Medicine>5</Medicine>
+      <Social>5</Social>
+      <Animals>5</Animals>
+      <Intellectual>5</Intellectual>
+    </aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MedicalTendQuality>0.165</MedicalTendQuality>
+          <MedicalSurgerySuccessChance>0.165</MedicalSurgerySuccessChance>
+          <NegotiationAbility>0.165</NegotiationAbility>
+          <TradePriceImprovement>0.165</TradePriceImprovement>
+          <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.165</ConversionPower>
+        </statOffsets>
+        <statFactors>
+          <MedicalTendSpeed>1.165</MedicalTendSpeed>
+          <MedicalOperationSpeed>1.165</MedicalOperationSpeed>
+          <TameAnimalChance>1.165</TameAnimalChance>
+          <TrainAnimalChance>1.165</TrainAnimalChance>
+          <ResearchSpeed>1.165</ResearchSpeed>
+          <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1.165</EntityStudyRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="OWD_SoulInfusionBase">
+    <defName>OWD_ShardInfusion_SmartMinor</defName>
+    <label>soul infusion (Minor Smart Soul)</label>
+    <description>A crystal shard containing the soul of a smart pawn.</description>
+    <aptitudes>
+      <Medicine>3</Medicine>
+      <Social>3</Social>
+      <Animals>3</Animals>
+      <Intellectual>3</Intellectual>
+    </aptitudes>
+    <stages Inherit="False">
+      <li>
+        <statOffsets>
+          <MedicalTendQuality>0.066</MedicalTendQuality>
+          <MedicalSurgerySuccessChance>0.066</MedicalSurgerySuccessChance>
+          <NegotiationAbility>0.066</NegotiationAbility>
+          <TradePriceImprovement>0.066</TradePriceImprovement>
+          <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.066</ConversionPower>
+        </statOffsets>
+        <statFactors>
+          <MedicalTendSpeed>1.066</MedicalTendSpeed>
+          <MedicalOperationSpeed>1.066</MedicalOperationSpeed>
+          <TameAnimalChance>1.066</TameAnimalChance>
+          <TrainAnimalChance>1.066</TrainAnimalChance>
+          <ResearchSpeed>1.066</ResearchSpeed>
+          <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1.066</EntityStudyRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

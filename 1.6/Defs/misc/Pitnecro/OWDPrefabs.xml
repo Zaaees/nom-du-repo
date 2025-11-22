@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PrefabDef>
+    <defName>OWD_Prefab_LichStudy</defName>
+    <rotations>North, East, South, West</rotations>
+    <size>(3,2)</size>
+    <things>
+      <EndTable>
+        <stuff>WoodLog</stuff>
+        <position>(0,0,0)</position>
+      </EndTable>
+      <Armchair>
+        <stuff>Leather_Human</stuff>
+        <position>(1,0,0)</position>
+      </Armchair>
+      <BookcaseSmall>
+        <stuff>WoodLog</stuff>
+        <position>(2,0,0)</position>
+      </BookcaseSmall>
+    </things>
+  </PrefabDef>
+
+</Defs>

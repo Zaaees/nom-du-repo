@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>OWD_ReviveShamblers</defName>
+    <label>Necrotic Dust</label>
+    <description>Use Necrotic energy to perfectly simulate deadlife dust. The shamblers are uncontrollable, pheraphs there is a way to link them to us?.</description>
+    <modExtensions>
+     <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+       <li Class="OneWithDeath.AbilityExtension_ResearchRequirement">
+      <requiredResearch>OWD_CAI</requiredResearch>
+      </li>
+    </modExtensions>
+    <iconPath>UI/Abilities/ReleaseDeadlifeDust</iconPath>
+    <showPsycastEffects>false</showPsycastEffects>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <targetRequired>true</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>4</warmupTime>
+      <range>15</range>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <soundCast>DeadlifeRelease</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_AbilityReleaseGasFromCell">
+        <gasType>DeadlifeDust</gasType>
+        <cellsToFill>10</cellsToFill>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>SummonShambler</defName>
+    <label>Skip Shambler</label>
+    <description>You skip a reanimated shambler from somwhere. You can somehow feel their presence and guess their location in this and other worlds</description>
+    <modExtensions>
+      <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+       <li Class="OneWithDeath.AbilityExtension_ResearchRequirement">
+      <requiredResearch>SkipShambler</requiredResearch>
+    </li>
+    </modExtensions>
+    <iconPath>UI/Abilities/Shambler</iconPath>
+    <showPsycastEffects>false</showPsycastEffects>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <targetRequired>true</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1</warmupTime>
+      <range>30</range>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <soundCast>Pawn_Ghoul_Frenzy</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_SummonShambler">
+        <shamblerPawnKind>ShamblerSwarmer</shamblerPawnKind>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>SummonHorde</defName>
+    <label>Skip Horde</label>
+    <description>Skip a horde of 5 reanimated shamblers from somewhere. You can somehow feel their presence and guess their location in this and other worlds</description>
+    <modExtensions>
+      <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+       <li Class="OneWithDeath.AbilityExtension_ResearchRequirement">
+      <requiredResearch>SkipHorde</requiredResearch>
+    </li>
+    </modExtensions>
+    <iconPath>UI/Abilities/Horde</iconPath>
+    <showPsycastEffects>false</showPsycastEffects>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <targetRequired>true</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2</warmupTime>
+      <range>30</range>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <soundCast>Pawn_Ghoul_Frenzy</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_AbilitySummonGroupOfShamblers">
+        <shamblerPawnKind>ShamblerSwarmer</shamblerPawnKind>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  
+  <AbilityDef>
+    <defName>RaiseUndead</defName>
+    <label>Raise Undead</label>
+    <description>Reanimates corpses and make them do your biddings</description>
+    <modExtensions>
+      <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+    </modExtensions>
+    <abilityClass>Ability</abilityClass>
+    <iconPath>UI/Abilities/RaiseUndead</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1</warmupTime>
+      <range>10</range>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <soundCast>Pawn_Ghoul_Frenzy</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_RaiseUndead">
+        <undeadHediff>OWD_Undead</undeadHediff>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>ConsumeCorpses</defName>
+    <label>Consume Corpses</label>
+    <description>Consume corpses in a big area around you in order to quickly convert their flesh and bones into necrotic energy. Used on the undead condenses the energy into crystals</description>
+    <modExtensions>
+      <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+    </modExtensions>
+    <abilityClass>Ability</abilityClass>
+    <iconPath>UI/Abilities/ConsumeCorpses</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>3</warmupTime>
+      <range>10</range>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <soundCast>DeadlifeRelease</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_ConsumeCorpses" />
+    </comps>
+  </AbilityDef>
+
+  <!-- Expand Mana Ability -->
+  <AbilityDef>
+    <defName>Ability_ExpandMana</defName>
+    <label>Expand Energy Capacity</label>
+    <description>Consumes all necrotic energy to permanently increase maximum capacity by 10.</description>
+    <modExtensions>
+      <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+    </modExtensions>
+    <abilityClass>Ability</abilityClass>
+    <iconPath>UI/Abilities/ExpandMana</iconPath>
+    <targetRequired>false</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+            <targetable>false</targetable>
+      <range>0</range>
+      <drawAimPie>false</drawAimPie>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_ExpandMana" />
+    </comps>
+  </AbilityDef>
+
+  <!-- Select Necromancer Ability -->
+  <AbilityDef>
+    <defName>Ability_SelectNecromancer</defName>
+    <label>Select Necromancer</label>
+    <description>Teleport the camera to the controlling necromancer.</description>
+    <abilityClass>OneWithDeath.Ability_SelectNecromancer</abilityClass>
+    <iconPath>UI/Commands/SelectOverseer</iconPath>
+     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <targetRequired>false</targetRequired>
+        <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <targetable>false</targetable>
+      <range>0</range>
+      <drawAimPie>false</drawAimPie>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+    </verbProperties>
+    
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Ability_UndeadSuicide</defName>
+    <label>Destroy Self</label>
+    <description>Order this undead to destroy itself.</description>
+    <abilityClass>OneWithDeath.Ability_UndeadSuicide</abilityClass>
+    <iconPath>UI/Commands/Deselect</iconPath>
+     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <targetRequired>false</targetRequired>
+        <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <targetable>false</targetable>
+      <range>0</range>
+      <drawAimPie>false</drawAimPie>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+    </verbProperties>
+  </AbilityDef>
+
+<AbilityDef>
+  <defName>RaiseUndeadChampion</defName>
+  <label>Raise Undead Champion</label>
+  <description>Resurrects a single corpse as a powerful undead champion linked to the necromancer.</description>
+  <modExtensions>
+    <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+    <li Class="OneWithDeath.AbilityExtension_ResearchRequirement">
+      <requiredResearch>IntermediateNecromancy</requiredResearch>
+    </li>
+  </modExtensions>
+  <abilityClass>OneWithDeath.Ability_RaiseUndeadChampion</abilityClass>
+  <iconPath>UI/Abilities/RaiseUndeadChampion</iconPath> <!-- Adjust path as needed -->
+  <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+  <warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+  <warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+  <warmupSound>AnomalyAbilityWarmup</warmupSound>
+  <verbProperties>
+    <verbClass>Verb_CastAbility</verbClass> <!-- Changed to match ConsumeCorpses -->
+    <warmupTime>2</warmupTime>
+    <range>10</range>
+    <drawAimPie>true</drawAimPie>
+    <requireLineOfSight>true</requireLineOfSight>
+    <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+    <targetParams>
+      <canTargetSelf>false</canTargetSelf>
+      <canTargetBuildings>false</canTargetBuildings>
+      <canTargetPawns>false</canTargetPawns>
+      <canTargetCorpses>true</canTargetCorpses>
+    </targetParams>
+    <soundCast>Pawn_Ghoul_Frenzy</soundCast>
+  </verbProperties>
+  <comps>
+    <li Class="OneWithDeath.CompProperties_RaiseUndeadChampion">
+      <undeadHediff>UndeadChampion</undeadHediff>
+    </li>
+  </comps>
+</AbilityDef>
+
+
+
+ <AbilityDef>
+  <defName>RaiseUndeadOverseer</defName>
+  <label>Raise Undead Overseer</label>
+  <description>Resurrects a single corpse as a powerful undead overseer linked to the necromancer.</description>
+  <modExtensions>
+    <li Class="OneWithDeath.AbilityExtension_Necromancy" />
+    <li Class="OneWithDeath.AbilityExtension_ResearchRequirement">
+      <requiredResearch>AdvancedNecromancy</requiredResearch>
+    </li>
+  </modExtensions>
+  <abilityClass>OneWithDeath.Ability_RaiseUndeadOverseer</abilityClass>
+  <iconPath>UI/Abilities/RaiseUndeadOverseer</iconPath>
+  <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+  <warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+  <warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+  <warmupSound>AnomalyAbilityWarmup</warmupSound>
+  <verbProperties>
+    <verbClass>Verb_CastAbility</verbClass>
+    <warmupTime>2</warmupTime>
+    <range>10</range>
+    <drawAimPie>true</drawAimPie>
+    <requireLineOfSight>true</requireLineOfSight>
+    <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+    <targetParams>
+      <canTargetSelf>false</canTargetSelf>
+      <canTargetBuildings>false</canTargetBuildings>
+      <canTargetPawns>false</canTargetPawns>
+      <canTargetCorpses>true</canTargetCorpses>
+    </targetParams>
+    <soundCast>Pawn_Ghoul_Frenzy</soundCast>
+  </verbProperties>
+  <comps>
+    <li Class="OneWithDeath.CompProperties_RaiseUndeadOverseer">
+      <undeadHediff>UndeadOverseer</undeadHediff>
+    </li>
+  </comps>
+</AbilityDef>
+
+<AbilityDef>
+    <defName>NecroticHealing</defName>
+    <label>Necrotic Healing</label>
+   <description>Channels necrotic energy into nearby Undead, costs 25 mana to cast and an extra 50 for each tier 3 or higher undead.</description>
+    <modExtensions>
+      <li Class="OneWithDeath.AbilityExtension_Necromancy" /> 
+      <li Class="OneWithDeath.AbilityExtension_ResearchRequirement">
+      <requiredResearch>NecroticHealing</requiredResearch>
+      </li>
+    </modExtensions>
+    <abilityClass>Ability</abilityClass>
+    <iconPath>UI/Abilities/NecroticHealing</iconPath>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+      <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2</warmupTime>
+      <range>20</range>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <soundCast>AgonyPulse_Cast</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_NecroticHealing" />
+    </comps>
+</AbilityDef>
+
+ <AbilityDef>
+    <defName>OWD_RaiseCreature</defName>
+    <label>Raise Shamblers</label>
+    <description>Raise most kinds of corpses as shamblers, and partially links them to the necromancer.</description>
+  <modExtensions>
+  <li Class="OneWithDeath.AbilityExtension_Necromancy" /> 
+  <li Class="OneWithDeath.AbilityExtension_ResearchRequirement">
+    <requiredResearch>OWD_SLink</requiredResearch>
+  </li>
+</modExtensions>
+    <abilityClass>Ability</abilityClass>
+    <iconPath>UI/Abilities/RaiseCreature</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.5</warmupTime>
+      <range>10</range>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+      <soundCast>Pawn_Ghoul_Frenzy</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_RaiseCreature" />
+    </comps>
+  </AbilityDef>
+
+</Defs>

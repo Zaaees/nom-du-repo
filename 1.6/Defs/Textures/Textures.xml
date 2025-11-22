@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <HeadTypeDef>
+    <defName>OWD_SkullAverage</defName>
+    <graphicPath>Heads/None_Average_Skull</graphicPath> 
+    <gender>None</gender>
+    <randomChosen>false</randomChosen>
+    <selectionWeight>0</selectionWeight> 
+    <requiredGenes IsNull="True" />
+  </HeadTypeDef>
+
+
+</Defs>

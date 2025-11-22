@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef>
+    <defName>OWD_NecroticTorch</defName>
+    <label>Necrotic Torch</label>
+    <description>A permanently lit torch that burns with a cold, green, necrotic flame. It requires no fuel.</description>
+    <techLevel>Neolithic</techLevel>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Buildings/NTorch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <drawSize>(2.66, 2.66)</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <fillPercent>0.20</fillPercent>
+    <selectable>true</selectable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+<tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>250</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+      <GreenCrystal>1</GreenCrystal>
+    </costList>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>StudyOfNecromancy</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(0, 200, 0, 0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

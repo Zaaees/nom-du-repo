@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>OWD_NecromanticCore</defName>
+    <label>Fleshbound Grimoire</label>
+    <description>A grotesque tome of stitched human skin, adorned with a grinning skull, its empty pages emitting a faint, ceaseless whisper.</description>
+     <techLevel>Neolithic</techLevel>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>UI/Commands/Bookdeaditem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1</Mass>
+      <MarketValue>2500</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>InstallNecromanticCore</useJob>
+        <useLabel>Read {0_label} to become necromancer</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>OneWithDeath.CompUseEffect_InstallImplantNecromancer</compClass>
+        <hediffDef>NecromancerImplant</hediffDef>
+        <bodyPart>Brain</bodyPart>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+<tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

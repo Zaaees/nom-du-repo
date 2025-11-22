@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>OWD_DoBillsAltar</defName>
+    <label>do bills at necrotic altar</label>
+    <giverClass>OneWithDeath.WorkGiver_Altar</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>110</priorityInType> 
+    <fixedBillGiverDefs>
+      <li>OWD_Altar</li>
+    </fixedBillGiverDefs>
+    <verb>work at</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+    <workTags>
+      <li>Hauling</li>
+      <li>Crafting</li>
+    </workTags>
+  </WorkGiverDef>
+  
+</Defs>

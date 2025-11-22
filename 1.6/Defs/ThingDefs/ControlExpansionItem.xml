@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MechanitorImplantBase">
+    <defName>OWD_ControlExpansionItem</defName>
+    <label>Control expansion theory</label>
+    <description>A theory written on an old page. By applying its fundamentals you can expand the number of undead you can have under your stable control. Can be used up to 5 times</description>
+    <graphicData>
+      <texPath>Things/Items/PageItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <MarketValue>250</MarketValue>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+      <WorkToMake>3200</WorkToMake>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <costList>
+      <GreenCrystal>1</GreenCrystal>
+      <Leather_Human>30</Leather_Human>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>OWD_ControlExpansion</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <recipeUsers>
+        <li>OWD_Altar</li>
+      </recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>OWD_Effect_AltarCrafting_General</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <allowedMutants><li>OWD_Lich</li></allowedMutants>
+        <compClass>CompUsableImplant</compClass>
+        <useJob>InstallImplantNecro</useJob>
+        <useLabel>Study {0_label}</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>OneWithDeath.CompUseEffect_InstallStableControl</compClass>
+        <hediffDef>ControlExpansion</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+        <maxSeverity>5</maxSeverity>
+      </li>
+    </comps>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <isTechHediff>false</isTechHediff>
+    <techHediffsTags />
+    <generateCommonality>0</generateCommonality>
+  </ThingDef>
+
+  <ThingDef ParentName="MechanitorImplantBase">
+    <defName>OWD_UnstableControlExpansionItem</defName>
+    <label>Unstable control expansion theory</label>
+    <description>A refined theory that allows for pushing the boundaries of undead control into unstable territory. Requires a deep understanding of the underlying workings of control servitors in order to be made. Can be used up to 5 times, required 5 levels of the previous tier</description>
+    <graphicData>
+      <texPath>Things/Items/PageItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    <color>(225,240,225)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <MarketValue>500</MarketValue>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+      <WorkToMake>4000</WorkToMake>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <costList>
+      <GreenCrystal>5</GreenCrystal>
+      <Leather_Human>30</Leather_Human>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>OWD_UnstableControlTheory</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <recipeUsers>
+        <li>OWD_Altar</li>
+      </recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>OWD_Effect_AltarCrafting_General</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>511</displayPriority>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(100,255,100,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Usable">
+        <allowedMutants><li>OWD_Lich</li></allowedMutants>
+        <compClass>CompUsableImplant</compClass>
+        <useJob>InstallImplantNecro</useJob>
+        <useLabel>Study {0_label}</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>OneWithDeath.CompUseEffect_InstallUnstableControl</compClass>
+        <hediffDef>ControlExpansion</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+        <maxSeverity>10</maxSeverity>
+      </li>
+    </comps>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <isTechHediff>false</isTechHediff>
+    <techHediffsTags />
+    <generateCommonality>0</generateCommonality>
+  </ThingDef>
+
+</Defs>

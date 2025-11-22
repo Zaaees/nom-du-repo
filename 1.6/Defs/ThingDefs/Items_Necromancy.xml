@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GreenCrystal</defName>
+    <label>Green crystal</label>
+   <techLevel>Neolithic</techLevel>
+    <description>A green crystal that seems to be made from condensed archites and crystallized energy.</description>
+    <graphicData>
+      <texPath>Things/Items/GreenCrystal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>20</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <genericMarketSellable>false</genericMarketSellable>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>250</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+     <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(0, 100, 0, 0)</glowColor>
+      </li>
+    </comps>
+    <intricate>true</intricate>
+  
+   <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+  </ThingDef>
+
+ <RecipeDef>
+    <defName>Make_GreenCrystal_Metal</defName>
+    <label>craft Green Crystal (metal catalyst)</label>
+    <description>Craft a Green Crystal by using steel, gold, plasteel, or uranium as a catalyst and bodies as fuel, allowing archites to replicate themselves.</description>
+    <jobString>Crafting a Green Crystal.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>OWD_Effect_AltarCrafting_General</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <researchPrerequisite>IntermediateNecromancy</researchPrerequisite>
+
+      <recipeUsers>
+        <li>OWD_Altar</li>
+      </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+          <disallowedCategories>
+            <li>CorpsesAnimal</li>
+            <li>CorpsesMechanoid</li>
+          </disallowedCategories>
+          <specialFiltersToAllow>
+            <li>AllowRotten</li>
+          </specialFiltersToAllow>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+            <li>Gold</li>
+            <li>Plasteel</li>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <GreenCrystal>1</GreenCrystal>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesAnimal</li>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToAllow>
+        <li>AllowRotten</li>
+      </specialFiltersToAllow>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Gold</li>
+        <li>Plasteel</li>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_GreenCrystal</defName>
+    <label>craft Green Crystal</label>
+    <description>Craft a Green Crystal by using Jade as a catalyst and bodies as fuel, allowing archites to replicate themselves.</description>
+    <jobString>Crafting a Green Crystal.</jobString>
+    <workAmount>250</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>OWD_Effect_AltarCrafting_General</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <researchPrerequisite>IntermediateNecromancy</researchPrerequisite>
+
+      <recipeUsers>
+        <li>OWD_Altar</li>
+      </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+          <disallowedCategories>
+            <li>CorpsesAnimal</li>
+            <li>CorpsesMechanoid</li>
+          </disallowedCategories>
+          <specialFiltersToAllow>
+            <li>AllowRotten</li>
+          </specialFiltersToAllow>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Jade</li>
+              </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <GreenCrystal>1</GreenCrystal>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesAnimal</li>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToAllow>
+        <li>AllowRotten</li>
+      </specialFiltersToAllow>
+      <thingDefs>
+        <li>Jade</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+   
+ 
+
+
+</Defs>

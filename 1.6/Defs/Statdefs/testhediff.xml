@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>OWD_StatBonus_Test</defName>
+    <label>Stat Bonus (Test)</label>
+    <description>A test hediff that grants bonuses to necromancy stats.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <OWD_Control>10</OWD_Control>
+          <OWD_UnstableControl>10</OWD_UnstableControl>
+          <OWD_ShamblerControl>500</OWD_ShamblerControl>
+          <OWD_EnergyRegeneration>5</OWD_EnergyRegeneration>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

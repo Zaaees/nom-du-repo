@@ -1,0 +1,34 @@
+  <Defs>
+  <HediffDef>
+    <defName>OWD_ECrescens</defName>
+    <label>Exsecratio Crescens</label>
+    <description>The necrotic link to this being empowers it, growing stronger with each summoning.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+    <stages>
+      <li><label>I</label><minSeverity>1</minSeverity><regeneration>100</regeneration><statOffsets><MoveSpeed>0.05</MoveSpeed><MeleeCooldownFactor>-0.05</MeleeCooldownFactor><ArmorRating_Sharp>0.2</ArmorRating_Sharp><ArmorRating_Blunt>0.2</ArmorRating_Blunt></statOffsets></li>
+      <li><label>II</label><minSeverity>2</minSeverity><regeneration>200</regeneration><statOffsets><MoveSpeed>0.10</MoveSpeed><MeleeCooldownFactor>-0.10</MeleeCooldownFactor><ArmorRating_Sharp>0.4</ArmorRating_Sharp><ArmorRating_Blunt>0.4</ArmorRating_Blunt></statOffsets></li>
+      <li><label>III</label><minSeverity>3</minSeverity><regeneration>300</regeneration><statOffsets><MoveSpeed>0.15</MoveSpeed><MeleeCooldownFactor>-0.15</MeleeCooldownFactor><ArmorRating_Sharp>0.6</ArmorRating_Sharp><ArmorRating_Blunt>0.6</ArmorRating_Blunt></statOffsets></li>
+      <li><label>IV</label><minSeverity>4</minSeverity><regeneration>400</regeneration><statOffsets><MoveSpeed>0.20</MoveSpeed><MeleeCooldownFactor>-0.20</MeleeCooldownFactor><ArmorRating_Sharp>0.8</ArmorRating_Sharp><ArmorRating_Blunt>0.8</ArmorRating_Blunt></statOffsets></li>
+      <li><label>V</label><minSeverity>5</minSeverity><regeneration>500</regeneration><statOffsets><MoveSpeed>0.25</MoveSpeed><MeleeCooldownFactor>-0.25</MeleeCooldownFactor><ArmorRating_Sharp>1.0</ArmorRating_Sharp><ArmorRating_Blunt>1.0</ArmorRating_Blunt></statOffsets></li>
+      <li><label>VI</label><minSeverity>6</minSeverity><regeneration>600</regeneration><statOffsets><MoveSpeed>0.30</MoveSpeed><MeleeCooldownFactor>-0.30</MeleeCooldownFactor><ArmorRating_Sharp>1.2</ArmorRating_Sharp><ArmorRating_Blunt>1.2</ArmorRating_Blunt></statOffsets></li>
+      <li><label>VII</label><minSeverity>7</minSeverity><regeneration>700</regeneration><statOffsets><MoveSpeed>0.35</MoveSpeed><MeleeCooldownFactor>-0.35</MeleeCooldownFactor><ArmorRating_Sharp>1.4</ArmorRating_Sharp><ArmorRating_Blunt>1.4</ArmorRating_Blunt></statOffsets></li>
+      <li><label>VIII</label><minSeverity>8</minSeverity><regeneration>800</regeneration><statOffsets><MoveSpeed>0.40</MoveSpeed><MeleeCooldownFactor>-0.40</MeleeCooldownFactor><ArmorRating_Sharp>1.6</ArmorRating_Sharp><ArmorRating_Blunt>1.6</ArmorRating_Blunt></statOffsets></li>
+      <li><label>IX</label><minSeverity>9</minSeverity><regeneration>900</regeneration><statOffsets><MoveSpeed>0.45</MoveSpeed><MeleeCooldownFactor>-0.45</MeleeCooldownFactor><ArmorRating_Sharp>1.8</ArmorRating_Sharp><ArmorRating_Blunt>1.8</ArmorRating_Blunt></statOffsets></li>
+      <li><label>X</label><minSeverity>10</minSeverity><regeneration>1000</regeneration><statOffsets><MoveSpeed>0.50</MoveSpeed><MeleeCooldownFactor>-0.50</MeleeCooldownFactor><ArmorRating_Sharp>2.0</ArmorRating_Sharp><ArmorRating_Blunt>2.0</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XI</label><minSeverity>11</minSeverity><regeneration>1100</regeneration><statOffsets><MoveSpeed>0.55</MoveSpeed><MeleeCooldownFactor>-0.55</MeleeCooldownFactor><ArmorRating_Sharp>2.2</ArmorRating_Sharp><ArmorRating_Blunt>2.2</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XII</label><minSeverity>12</minSeverity><regeneration>1200</regeneration><statOffsets><MoveSpeed>0.60</MoveSpeed><MeleeCooldownFactor>-0.60</MeleeCooldownFactor><ArmorRating_Sharp>2.4</ArmorRating_Sharp><ArmorRating_Blunt>2.4</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XIII</label><minSeverity>13</minSeverity><regeneration>1300</regeneration><statOffsets><MoveSpeed>0.65</MoveSpeed><MeleeCooldownFactor>-0.65</MeleeCooldownFactor><ArmorRating_Sharp>2.6</ArmorRating_Sharp><ArmorRating_Blunt>2.6</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XIV</label><minSeverity>14</minSeverity><regeneration>1400</regeneration><statOffsets><MoveSpeed>0.70</MoveSpeed><MeleeCooldownFactor>-0.70</MeleeCooldownFactor><ArmorRating_Sharp>2.8</ArmorRating_Sharp><ArmorRating_Blunt>2.8</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XV</label><minSeverity>15</minSeverity><regeneration>1500</regeneration><statOffsets><MoveSpeed>0.75</MoveSpeed><MeleeCooldownFactor>-0.75</MeleeCooldownFactor><ArmorRating_Sharp>3.0</ArmorRating_Sharp><ArmorRating_Blunt>3.0</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XVI</label><minSeverity>16</minSeverity><regeneration>1600</regeneration><statOffsets><MoveSpeed>0.80</MoveSpeed><MeleeCooldownFactor>-0.80</MeleeCooldownFactor><ArmorRating_Sharp>3.2</ArmorRating_Sharp><ArmorRating_Blunt>3.2</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XVII</label><minSeverity>17</minSeverity><regeneration>1700</regeneration><statOffsets><MoveSpeed>0.85</MoveSpeed><MeleeCooldownFactor>-0.85</MeleeCooldownFactor><ArmorRating_Sharp>3.4</ArmorRating_Sharp><ArmorRating_Blunt>3.4</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XVIII</label><minSeverity>18</minSeverity><regeneration>1800</regeneration><statOffsets><MoveSpeed>0.90</MoveSpeed><MeleeCooldownFactor>-0.90</MeleeCooldownFactor><ArmorRating_Sharp>3.6</ArmorRating_Sharp><ArmorRating_Blunt>3.6</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XIX</label><minSeverity>19</minSeverity><regeneration>1900</regeneration><statOffsets><MoveSpeed>0.95</MoveSpeed><MeleeCooldownFactor>-0.95</MeleeCooldownFactor><ArmorRating_Sharp>3.8</ArmorRating_Sharp><ArmorRating_Blunt>3.8</ArmorRating_Blunt></statOffsets></li>
+      <li><label>XX</label><minSeverity>20</minSeverity><regeneration>2000</regeneration><statOffsets><MoveSpeed>1.0</MoveSpeed><MeleeCooldownFactor>-1.0</MeleeCooldownFactor><ArmorRating_Sharp>4.0</ArmorRating_Sharp><ArmorRating_Blunt>4.0</ArmorRating_Blunt></statOffsets></li>
+      <li><label>???</label><minSeverity>21</minSeverity><regeneration>2100</regeneration><statOffsets><MoveSpeed>2.0</MoveSpeed><MeleeCooldownFactor>-2.0</MeleeCooldownFactor><ArmorRating_Sharp>8.0</ArmorRating_Sharp><ArmorRating_Blunt>8.0</ArmorRating_Blunt></statOffsets></li>
+      <li><label>??????</label><minSeverity>22</minSeverity><regeneration>2200</regeneration><statOffsets><MoveSpeed>3.0</MoveSpeed><MeleeCooldownFactor>-3.0</MeleeCooldownFactor><ArmorRating_Sharp>12.0</ArmorRating_Sharp><ArmorRating_Blunt>12.0</ArmorRating_Blunt></statOffsets></li>
+    </stages>
+  </HediffDef>
+</Defs>

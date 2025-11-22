@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>OWD_incident_SpawnNecroticObelisk</defName>
+    <label>Necrotic Obelisk Manifestation</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>OneWithDeath.IncidentWorker_SpawnNecroticObelisk</workerClass>
+  </IncidentDef>
+
+  <OneWithDeath.PsychicRitualDef_Provocation>
+    <defName>OWD_ProvokeObelisk</defName>
+    <label>Necrotic Provocation</label>
+    <description>Perform a ritual using necrotic energy as a medium, like screaming into the void and waiting for an answer. Whatever responds has to be somehow related to the necrotic energy itself.</description>
+    <modExtensions>
+      <li Class="OneWithDeath.RitualExtension_Necrotic"/>
+    </modExtensions>
+    <researchPrerequisite>OWD_Rituals</researchPrerequisite>
+    <iconPath>UI/Abilities/NecroticProvocation</iconPath>
+    <hoursUntilOutcome>0.05</hoursUntilOutcome>
+    <cooldownHours>24</cooldownHours>
+    <invocationCircleRadius>1</invocationCircleRadius>
+    <outcomeDescription>A necrotic obelisk will manifest somewhere on the map, guarded by several undead minions.</outcomeDescription>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>GreenCrystal</li>
+        </thingDefs>
+      </filter>
+      <count>5</count>
+    </requiredOffering>
+    <invokerRole>OWD_Invoker_Psychic</invokerRole>
+    <chanterRole>OWD_Chanter</chanterRole>
+    <layerWhitelist>
+      <li>Surface</li>
+    </layerWhitelist>
+  </OneWithDeath.PsychicRitualDef_Provocation>
+
+</Defs>

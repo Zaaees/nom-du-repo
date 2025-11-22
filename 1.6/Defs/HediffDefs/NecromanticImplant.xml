@@ -1,0 +1,33 @@
+<Defs>
+  <HediffDef>
+    <defName>NecromancerImplant</defName>
+    <label>Necromancer</label>
+    <description>Manage and control archites to raise undead and perform other abilities</description>
+    <hediffClass>OneWithDeath.Hediff_NecromancerImplant</hediffClass>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.373, 0.871, 0.424)</defaultLabelColor>
+    <everCurableByItem>false</everCurableByItem> 
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration> 
+    <duplicationAllowed>false</duplicationAllowed>
+    <stages>
+      
+    </stages>
+    <comps>
+    <li Class="OneWithDeath.HediffCompProperties_SoulID"/>
+      <li Class="OneWithDeath.HediffCompProperties_GiveNecromancyAbility">
+        <abilityDefs>
+          <li>RaiseUndead</li>
+          <li>ConsumeCorpses</li>
+          <li>NecroticHealing</li>
+          <li>OWD_RaiseCreature</li>
+          <li>RaiseUndeadChampion</li>
+          <li>RaiseUndeadOverseer</li>
+           <li>SummonShambler</li>
+           <li>SummonHorde</li>
+           <li>OWD_ReviveShamblers</li>
+           <li>Ability_ExpandMana</li>
+              </abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

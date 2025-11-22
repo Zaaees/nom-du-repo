@@ -1,0 +1,143 @@
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>OWD_CServitor</defName>
+    <label>Control Servitor</label>
+    <description>A construct that can hold a living pawn inside indefinitely, forcibly linking it to the necrotic link that binds a necromancer to a mysterious archotech. This mentally enslaved pawn will be able to support the linked necromancer in various tasks.</description>
+    <techLevel>Neolithic</techLevel>
+    <thingClass>OneWithDeath.Building_ControlServitor</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Buildings/OWD_ControlE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <size>(3,3)</size>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>120</Mass>
+       <MarketValue>0</MarketValue>
+    </statBases>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <costList>
+      <Steel>200</Steel>
+      <Gold>150</Gold>
+      <Uranium>75</Uranium>
+      <Jade>75</Jade>
+      <GreenCrystal>10</GreenCrystal>
+      <OWD_NecroticOrb>1</OWD_NecroticOrb>
+    </costList>
+    <researchPrerequisites>
+      <li>OWD_ControlServitorResearch</li>
+    </researchPrerequisites>
+    <designationCategory>Misc</designationCategory>
+    <rotatable>false</rotatable>
+    <hasInteractionCell>false</hasInteractionCell>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <building Class="OneWithDeath.BuildingProperties_ControlServitor">
+      <destroyBrain>true</destroyBrain>
+      <headOffset>(0.0, 0.01, 0.2)</headOffset>
+    </building>
+    <comps>
+     <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.001</fuelConsumptionRate> 
+        <fuelCapacity>10.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+             <li>OWD_NecroBloomTonic</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(80, 220, 80, 0)</glowColor>
+      </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>owd_auxServitor</li>
+        </linkableFacilities>
+      </li>
+      <li Class="OneWithDeath.CompProperties_EnergyTransfer" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>owd_auxServitor</defName>
+    <label>auxiliary servitor</label>
+    <description>A small construct that acts as a catalyst to improve certain aspects of necromancy, it is generally used to boost the connection to the necrotic link, improving the quality of rituals or the control given by a control servitor.</description>
+    <techLevel>Neolithic</techLevel>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/OWD_ControlA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconScale>0.4</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <fillPercent>0.20</fillPercent>
+    <size>(1,1)</size>
+  <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>15</Mass>
+      <Flammability>1.0</Flammability>
+       <MarketValue>0</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>250</Steel>
+      <GreenCrystal>5</GreenCrystal>
+    </costList>
+    <researchPrerequisites>
+      <li>OWD_ControlServitorResearch</li>
+    </researchPrerequisites>
+    <designationCategory>Misc</designationCategory>
+    <rotatable>false</rotatable>
+    <placeWorkers>
+      <li>OneWithDeath.PlaceWorker_ControlPylon</li>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_Facility_AuxServitor">
+        <linkableBuildings>
+            <li>OWD_CServitor</li>
+            <li>OWD_Altar</li>
+        </linkableBuildings>
+        <maxSimultaneous>5</maxSimultaneous>
+        <maxDistance>10</maxDistance>
+        <controlBonusMultiplier>0.20</controlBonusMultiplier>
+        <statOffsets>
+          <PsychicRitualQuality>0.05</PsychicRitualQuality>
+        </statOffsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <WorkGiverDef>
+    <defName>OWD_CarryToControlServitor</defName>
+    <label>carry to control servitor</label>
+    <giverClass>OneWithDeath.WorkGiver_CarryToControlServitor</giverClass>
+    <workType>Warden</workType>
+    <verb>carry</verb>
+    <gerund>carrying</gerund>
+    <priorityInType>110</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>OWD_Altar</defName>
+    <label>Necrotic Altar</label>
+    <description>An altar that converts corpses to necrotic energy. Due to the conversion requiring a weak link between the control servitor and the body, only humanlike corpses can be used. Can also be used as a focus for necromantic rituals.</description>
+    <techLevel>Neolithic</techLevel>
+    <thingClass>Building_WorkTable</thingClass>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Buildings/OWD_altar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-5</Cleanliness>
+      <Mass>20</Mass>
+    </statBases>
+
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    
+    <altitudeLayer>Building</altitudeLayer>
+    <size>(1,1)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <buildingTags>
+        <li>Production</li>
+        <li>RitualFocus</li>
+      </buildingTags>
+    </building>
+
+    <comps>
+      <li Class="OneWithDeath.CompProperties_NecroticAltar"/>
+      <li Class="OneWithDeath.CompProperties_RitualTarget_Enduvia"/> 
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>owd_auxServitor</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      <li>PlaceWorker_NeverAdjacentUnstandableRadial</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    
+    <designationCategory>Misc</designationCategory>
+    <rotatable>false</rotatable>
+    
+    <researchPrerequisites>
+ <li>StudyOfNecromancy</li>
+    </researchPrerequisites>
+    
+    <specialDisplayRadius>11.6</specialDisplayRadius>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>OWD_ConvertCorpseToEnergy</defName>
+    <label>convert necrotic energy</label>
+    <description>Convert a corpse into 5 necrotic energy.</description>
+    <jobString>Converting corpse to energy.</jobString>
+    <workAmount>50</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>OWD_Effect_AltarCrafting_General</effectWorking>
+    <soundWorking>AnomalyAbilityWarmup</soundWorking>
+    <workerClass>OneWithDeath.RecipeWorker_ConvertCorpseToEnergy</workerClass>
+    <recipeUsers>
+      <li>OWD_Altar</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="OneWithDeath.RecipeExtension_EnergyCost">
+        <energyCost>0</energyCost> 
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <!--<WorkGiverDef>
+    <defName>OWD_DoBillsConvertEnergy</defName>
+    <label>convert necrotic energy</label>
+    <giverClass>RimWorld.WorkGiver_DoBill</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>40</priorityInType>
+    <fixedBillGiverDefs>
+      <li>OWD_Altar</li>
+    </fixedBillGiverDefs>
+    <verb>convert energy at</verb>
+    <gerund>converting energy at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  -->
+
+  <OneWithDeath.PsychicRitualRoleDef_Sacrifice>
+    <defName>OWD_Sacrifice</defName>
+    <label>sacrifice</label>
+    <description>The person to be sacrificed for the ritual.</description>
+    <allowedCount>1</allowedCount>
+    <applyPowerOffset>false</applyPowerOffset>
+    <removeOnLost>true</removeOnLost>
+    <allowedConditions>Default, Prisoner, Downed, Sleeping, NoPsychicSensitivity</allowedConditions>
+  </OneWithDeath.PsychicRitualRoleDef_Sacrifice>
+
+  <OneWithDeath.PsychicRitualRoleDef_Necromancer>
+    <defName>OWD_Invoker</defName>
+    <label>invoker</label>
+    <allowedCount>1</allowedCount>
+    <canHandleOfferings>true</canHandleOfferings>
+    <showInvocationVfx>true</showInvocationVfx>
+    <allowedConditions>DefaultInvoker, SubHuman, NoPsychicSensitivity</allowedConditions>
+  </OneWithDeath.PsychicRitualRoleDef_Necromancer>
+
+  <OneWithDeath.PsychicRitualRoleDef_NecromancerChanter>
+    <defName>OWD_Chanter</defName>
+    <label>chanter</label>
+    <description>Chanters add psychic power to the ritual.</description>
+    <showInvocationVfx>true</showInvocationVfx>
+    <allowedCount>0~5</allowedCount>
+    <allowedConditions>Default, SubHuman, NoPsychicSensitivity</allowedConditions>
+  </OneWithDeath.PsychicRitualRoleDef_NecromancerChanter>
+
+  <OneWithDeath.PsychicRitualDef_InscribeSoul>
+    <defName>OWD_InscribeSoul</defName>
+    <label>Inscribe Soul</label>
+    <description>Perform a dark ritual to sacrifice a living creature, fusing their memory and brain patterns, their "soul", from their body to inscribe it into an empty Soul Shard.</description>
+    <iconPath>UI/Commands/SoulInscription</iconPath>
+    <outcomeDescription>The quality of the ritual will determine the potency of the inscription.</outcomeDescription>
+    <hoursUntilOutcome>2</hoursUntilOutcome>
+    <researchPrerequisite>OWD_SoulShardResearch</researchPrerequisite>
+    <cooldownHours>24</cooldownHours>
+    <invocationCircleRadius>1.5</invocationCircleRadius>
+    <invokerRole>OWD_Invoker</invokerRole>
+    <chanterRole>OWD_Chanter</chanterRole>
+    <targetRole>OWD_Sacrifice</targetRole>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>OWD_SoulShardEmpty</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </requiredOffering>
+    <modExtensions>
+      <li Class="OneWithDeath.RitualExtension_Necrotic"/>
+    </modExtensions>
+  </OneWithDeath.PsychicRitualDef_InscribeSoul>
+
+</Defs>

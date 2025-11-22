@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <OutfitDef>
+    <defName>UndeadOutfit</defName>
+    <label>Undead</label>
+    <description>Basic attire suitable for undead minions. No fancy clothes here.</description>
+    <filter>
+      <disallowedThingDefs>
+        <li>Apparel_Parka</li>
+        <li>Apparel_Duster</li>
+        <li>Apparel_Jacket</li>
+      </disallowedThingDefs>
+      <allowedTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </allowedTags>
+      <disallowedTags>
+        <li>Noble</li>
+        <li>Spacer</li>
+      </disallowedTags>
+      <allowUnusableApparel>false</allowUnusableApparel>
+    </filter>
+
+  </OutfitDef>
+</Defs>

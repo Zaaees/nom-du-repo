@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EffecterDef>
+    <defName>OWD_NecromancyCastEffect</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>owd_architepuff</fleckDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <scale>0.8~1.2</scale>
+        <color>(0.2, 0.8, 0.2, 0.5)</color>
+        <ticksBetweenMotes>12</ticksBetweenMotes>
+      </li>
+    </children>
+  </EffecterDef>
+
+<FleckDef ParentName="FleckBase_Thrown">
+    <defName>owd_architepuff</defName>
+    <graphicData>
+      <texPath>effects/architepuff</texPath>
+      <renderInstanced>true</renderInstanced>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.4, 1.0, 0.4)</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.6</solidTime>
+    <fadeOutTime>1.4</fadeOutTime>
+  </FleckDef>
+
+</Defs>

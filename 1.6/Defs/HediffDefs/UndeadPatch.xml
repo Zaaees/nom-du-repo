@@ -1,0 +1,9 @@
+<Defs>
+  <HediffDef>
+    <defName>Undead</defName>
+    <label>Undead (Deprecated)</label>
+    <description>This is a dummy placeholder for savegame compatibility. If you see this, please kill this pawn and raise it again..</description>
+    <hediffClass>OneWithDeath.Hediff_Undead</hediffClass>
+    <isBad>false</isBad>
+  </HediffDef>
+</Defs>

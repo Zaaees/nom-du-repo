@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <OneWithDeath.LichNamePoolDef>
+    <defName>OWD_LichNames_Default</defName>
+    <names>
+       <li>Rokuni</li>
+       <li>Hibitas</li>
+       <li>Crane</li>
+        <li>Teyapi</li>
+        <li>The Augur</li>
+        <li>Scribe</li>
+         <li>The Pale King</li>
+          <li>Carn</li>
+         
+        
+       
+        
+    </names>
+  </OneWithDeath.LichNamePoolDef>
+
+</Defs>

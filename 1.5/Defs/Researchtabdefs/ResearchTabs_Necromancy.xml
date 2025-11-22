@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>Necromancy</defName>
+    <label>Necromancy</label>
+    <generalTitle>Necromancy</generalTitle>
+    <generalDescription>Study of life, death and undeath.</generalDescription>
+  </ResearchTabDef>
+</Defs>

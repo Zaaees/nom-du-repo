@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OWD_HoraxianFieldQuickRingCurved</defName>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <fadeInTime>.4</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+    <growthRate>-.5</growthRate>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <texPath>effects/HoraxianGeoCurvednecro</texPath>
+      <shaderType>Mote</shaderType>
+      <renderInstanced>false</renderInstanced>
+      <shaderParameters>
+        <_brightnessMultiplier>0.0</_brightnessMultiplier>
+      </shaderParameters>
+      <drawSize>10.0</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OWD_HoraxianFerroBlob</defName>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <texPath>effects/NecroFerroBlob</texPath>
+      <shaderType>FerroBlob</shaderType>
+      <shaderParameters>
+        <_NoiseScale>10</_NoiseScale>
+      </shaderParameters>
+    </graphicData>
+    <altitudeLayer>Terrain</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>1</solidTime>
+    <fadeOutTime>.3</fadeOutTime>
+    <scalers>
+      <li>
+        <scaleAmt>2.5~3.5</scaleAmt>
+        <scaleTime>1</scaleTime>
+        <curve>
+          <points>
+            <li>(0,0)</li>
+            <li>(0.5,1)</li>
+            <li>(1,0)</li>
+          </points>
+        </curve>
+      </li>
+    </scalers>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>OWD_PsychicRitual_Sustained</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_CameraShakeChance</subEffecterClass>
+        <scale>.03~.03</scale>
+        <chancePeriodTicks>5</chancePeriodTicks>
+        <chancePerTick>1</chancePerTick>
+        <distanceAttenuationScale>1</distanceAttenuationScale>
+        <distanceAttenuationMax>10</distanceAttenuationMax>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>PulsingDistortionRing</fleckDef>
+        <spawnLocType>OnTarget</spawnLocType>
+        <burstCount>1</burstCount>
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>96</chancePeriodTicks>
+        <positionRadius>0</positionRadius>
+        <scale>.3</scale>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <chancePerTick>.3</chancePerTick>
+        <chancePeriodTicks>6</chancePeriodTicks>
+        <fleckDef>OWD_HoraxianFieldQuickRingCurved</fleckDef>
+        <spawnLocType>OnTarget</spawnLocType>
+        <burstCount>2~2</burstCount>
+        <positionRadius>1.75</positionRadius>
+        <positionRadiusMin>1</positionRadiusMin>
+        <scale>.45~.55</scale>
+        <rotation>50~120</rotation>
+        <rotationRate>-5~5</rotationRate>
+        <angle>0~0</angle>
+        <speed>-.2~.35</speed>
+        <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+        <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <chancePerTick>.2</chancePerTick>
+        <chancePeriodTicks>20</chancePeriodTicks>
+        <scale>.05</scale>
+        <fleckDef>OWD_HoraxianFerroBlob</fleckDef>
+        <positionRadius>4.2</positionRadius>
+        <positionRadiusMin>4.2</positionRadiusMin>
+        <burstCount>1~2</burstCount>
+        <speed>-1.6</speed>
+        <angle>0</angle>
+        <spawnLocType>OnSource</spawnLocType>
+        <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <chancePerTick>1</chancePerTick>
+        <chancePeriodTicks>120</chancePeriodTicks>
+        <avoidLastPositionRadius>1</avoidLastPositionRadius>
+        <fleckDef>GroundCrack</fleckDef>
+        <burstCount>1</burstCount>
+        <color>(1, 1, 1, .75)</color>
+        <spawnLocType>OnSource</spawnLocType>
+        <positionRadius>5</positionRadius>
+        <scale>.75~2</scale>
+        <rotation>0~360</rotation>
+        <positionOffset>(-.5, 0, -.5)</positionOffset>
+        <makeMoteOnSubtrigger>true</makeMoteOnSubtrigger>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <ThingDef ParentName="MoteGlowDistorted">
+    <defName>OWD_Mote_PsychicRitualInvocation</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <texPath>Things/Mote/HateChanterRing</texPath>
+      <shaderType>MoteHateChant</shaderType>
+      <shaderParameters>
+        <_pulseSpeed>0.3</_pulseSpeed>
+        <_distortionIntensity>0</_distortionIntensity>
+        <_snakeParticlesFactor>1.1</_snakeParticlesFactor>
+        <_MaskTex>/Things/Mote/RitualEffects/HateChantMask</_MaskTex>
+      </shaderParameters>
+      <drawSize>3</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <InteractionDef>
+    <defName>OWD_RitualChatter</defName>
+    <label>necrotic words</label>
+    <symbol>Heads/None_Average_Skull_south</symbol>
+    <ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <logRulesInitiator>
+      <include>
+        <li>DarkDialogue</li>
+      </include>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [rambled] about [subjectInsane].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] about [subjectInsane].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

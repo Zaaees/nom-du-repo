@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <OneWithDeath.NecroControlModeDef>
+    <defName>NecroList</defName>
+    <label>list</label>
+    <description>View the list of undead controlled by the necromancer.</description>
+    <iconPath>UI/Commands/List</iconPath>
+  </OneWithDeath.NecroControlModeDef>
+
+  <OneWithDeath.NecroControlModeDef>
+    <defName>NecroSelectAllMechs</defName>
+    <label>select all</label>
+    <description>Select all undead in this control group.</description>
+    <iconPath>UI/Commands/SelectAllMechs</iconPath>
+  </OneWithDeath.NecroControlModeDef>
+
+    <OneWithDeath.NecroControlModeDef>
+    <defName>NecroCemetery</defName>
+    <label>Cemetery</label>
+    <description>View deceased undead.</description>
+    <iconPath>UI/Commands/Cemetery</iconPath> <!-- Replace with your icon path -->
+  </OneWithDeath.NecroControlModeDef>
+
+  <OneWithDeath.NecroControlModeDef>
+    <defName>NecroNskip</defName>
+    <label>Nskip</label>
+    <description>Reserved for future use.</description>
+    <iconPath>UI/Commands/Nskip</iconPath> <!-- Replace with your icon path -->
+  </OneWithDeath.NecroControlModeDef>
+</Defs>

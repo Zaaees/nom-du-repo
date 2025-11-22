@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Abstract="True" Name="ExperimentResultsBase">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <graphicData>
+      <texPath>Things/Items/Theory</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <MarketValue>200</MarketValue>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsable</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Read {0_label}</useLabel>
+      </li>
+    </comps>
+    <tradeability>Sellable</tradeability>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- Experiment Results I -->
+  <ThingDef ParentName="ExperimentResultsBase">
+    <defName>ExperimentResultsI</defName>
+    <label>Experiment Results I</label>
+    <description>An old page detailing forbidden experiments with the dead. Reading it imparts unsettling knowledge.</description>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_UseEffect_ApplyHediff">
+        <hediffDef>UnfamiliarWithDeath</hediffDef>
+        <requiredHediff>NecromancerImplant</requiredHediff>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Recipe for Experiment Results I -->
+  <RecipeDef>
+    <defName>Make_ExperimentResultsI</defName>
+    <label>Write Experiment Results I</label>
+    <description>Write the results of your experiments on paper</description>
+    <jobString>Experimenting.</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <researchPrerequisite>FirstExperiment</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+          <disallowedCategories>
+            <li>CorpsesAnimal</li>
+            <li>CorpsesMechanoid</li>
+          </disallowedCategories>
+          <specialFiltersToAllow>
+            <li>AllowRotten</li>
+          </specialFiltersToAllow>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GreenCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ExperimentResultsI>1</ExperimentResultsI>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesAnimal</li>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToAllow>
+        <li>AllowRotten</li>
+      </specialFiltersToAllow>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <!-- Experiment Results II -->
+  <ThingDef ParentName="ExperimentResultsBase">
+    <defName>ExperimentResultsII</defName>
+    <label>Experiment Results II</label>
+    <description>Write the results of your experiments on paper.</description>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_UseEffect_ApplyHediff">
+        <hediffDef>FamiliarWithDeath</hediffDef>
+        <requiredHediff>UnfamiliarWithDeath</requiredHediff>
+        <hediffToRemove>UnfamiliarWithDeath</hediffToRemove>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Recipe for Experiment Results II -->
+  <RecipeDef>
+    <defName>Make_ExperimentResultsII</defName>
+    <label>Write Experiment Results II</label>
+    <description>Write the results of your experiments on paper.</description>
+    <jobString>Experimenting</jobString>
+    <workAmount>4000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <researchPrerequisite>SecondExperiment</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+          <disallowedCategories>
+            <li>CorpsesAnimal</li>
+            <li>CorpsesMechanoid</li>
+          </disallowedCategories>
+          <specialFiltersToAllow>
+            <li>AllowRotten</li>
+          </specialFiltersToAllow>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GreenCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <ExperimentResultsII>1</ExperimentResultsII>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesAnimal</li>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToAllow>
+        <li>AllowRotten</li>
+      </specialFiltersToAllow>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <!-- Experiment Results III -->
+  <ThingDef ParentName="ExperimentResultsBase">
+    <defName>ExperimentResultsIII</defName>
+    <label>Experiment Results III</label>
+    <description>The final record of experiments, uniting the reader with death itself.</description>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_UseEffect_ApplyHediff">
+        <hediffDef>OneWithDeath</hediffDef>
+        <requiredHediff>FamiliarWithDeath</requiredHediff>
+        <hediffToRemove>FamiliarWithDeath</hediffToRemove>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Recipe for Experiment Results III -->
+  <RecipeDef>
+    <defName>Make_ExperimentResultsIII</defName>
+    <label>Write Experiment Results III</label>
+    <description>Craft the ultimate record of necromantic mastery from corpses and green crystals.</description>
+    <jobString>Experimenting.</jobString>
+    <workAmount>6000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <researchPrerequisite>OneWithDeath</researchPrerequisite>
+    <recipeUsers>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+          <disallowedCategories>
+            <li>CorpsesAnimal</li>
+            <li>CorpsesMechanoid</li>
+          </disallowedCategories>
+          <specialFiltersToAllow>
+            <li>AllowRotten</li>
+          </specialFiltersToAllow>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GreenCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <ExperimentResultsIII>1</ExperimentResultsIII>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesAnimal</li>
+        <li>CorpsesMechanoid</li>
+      </disallowedCategories>
+      <specialFiltersToAllow>
+        <li>AllowRotten</li>
+      </specialFiltersToAllow>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>

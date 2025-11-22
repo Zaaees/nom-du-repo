@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>OWD_ObeliskEntrance</defName>
+    <label>Necrotic Obelisk</label>
+    <description>A strange obelisk humming with latent energy. It seems to be a focal point, a gateway to a pocket dimension.</description>
+     <techLevel>Neolithic</techLevel>
+    <thingClass>OneWithDeath.Building_ObeliskEntrance</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/OWDObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255,255,255)</color>
+      <drawSize>(4,4)</drawSize>
+      <!--
+       <shadowData>
+        <volume>(1.8, 0.5, 1.8)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+      -->
+      <damageData>
+        <rect>(0.3, 0.1, 1.4, 1.8)</rect>
+      </damageData>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1.0</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Mass>80</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>true</useHitPoints>
+    <destroyable>true</destroyable>
+    <rotatable>false</rotatable>
+     <building>
+      <isEdifice>true</isEdifice>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isPlayerEjectable>false</isPlayerEjectable>
+    </building>
+    <comps>
+       <li Class="CompProperties_InspectString">
+         <inspectString>A strange obelisk humming with latent energy.</inspectString>
+       </li>
+    </comps>
+    <portal>
+      <pocketMapGenerator>OWD_PocketDimension</pocketMapGenerator>
+      <pocketMapSize>100</pocketMapSize>
+      <enteredLetterLabel>Labyrinth Entered</enteredLetterLabel>
+      <enteredLetterText>Your colonists have entered the necrotic labyrinth. The only way out is through the portal at its heart.</enteredLetterText>
+      <enteredLetterDef>PositiveEvent</enteredLetterDef>
+      <traverseSound>Psycast_Skip_Entry</traverseSound>
+    </portal>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>OWD_ObeliskExit</defName>
+    <label>Necrotic Obelisk (Exit)</label>
+    <description>A shimmering portal anchored by an obelisk fragment. It seems to lead back to where you came from.</description>
+    <techLevel>Neolithic</techLevel>
+    <thingClass>OneWithDeath.Building_ObeliskExit</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/OWDObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255,255,255)</color>
+      <drawSize>(4,4)</drawSize>
+       <shadowData>
+        <volume>(1.8, 0.5, 1.8)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+       <damageData>
+        <rect>(0.3, 0.1, 1.4, 1.8)</rect>
+      </damageData>
+    </graphicData>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <building>
+      <isEdifice>true</isEdifice>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isPlayerEjectable>false</isPlayerEjectable>
+    </building>
+     <comps>
+       <li Class="CompProperties_InspectString">
+         <inspectString>A portal leading back.</inspectString>
+       </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

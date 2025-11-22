@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <OneWithDeath.BlockedHediffsDef>
+    <defName>OWD_BlockedHediffsList</defName> 
+    <label>OWD Blocked Hediffs</label>
+    <description>Defines hediffs that should be blocked from being added to OWD undead types.</description>
+
+    <hediffsToBlock>
+      <!-- Pregnancy Related (Vanilla + Biotech) -->
+     
+
+
+      <!-- Major Health Conditions -->
+      <li>HeartAttack</li>
+      <li>FoodPoisoning</li>
+      <li>DeathRefusalSickness</li>
+       <li>XenogermLossShock</li>
+        <li>XenogerminationComa</li>
+        <li>InterruptedDeathrest</li>
+        <li>PsychicBondTorn</li>
+        
+      
+   
+
+      <!-- Biotech Needs/Conditions -->
+      <li>DeathrestExhaustion</li>
+      <li>HemogenCraving</li>
+      <li>BioStarvation</li>
+      <li>Anesthetic</li>
+      <li>CryptosleepSickness</li>
+      <li>ResurrectionSickness</li>
+      <li>ResurrectionPsychosis</li>
+      <li>PsychicShock</li>
+      <li>DarkPsychicShock</li>
+      <li>BrainShock</li>
+      <li>DrugOverdose</li>
+   
+    </hediffsToBlock>
+  </OneWithDeath.BlockedHediffsDef>
+
+</Defs>

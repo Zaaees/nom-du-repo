@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<HediffDef>
+    <defName>OWD_Undead</defName>
+       <label>Undead</label>
+    <description>This pawn is an undead controlled by a necromancer</description>
+    <hediffClass>OneWithDeath.Hediff_Undead</hediffClass>
+        <isBad>false</isBad>
+    <defaultLabelColor>(0.2, 0.5, 0.2)</defaultLabelColor> <!-- Darkish green -->
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+  
+    <stages>
+      <li>
+        <blocksInspirations>true</blocksInspirations>
+    <pctAllThoughtNullification>1</pctAllThoughtNullification>
+        <painFactor>0</painFactor>
+        <minSeverity>0</minSeverity>
+           <statFactors>
+          <PsychicSensitivity>0</PsychicSensitivity>
+            </statFactors>
+        <statOffsets>
+        <CarryingCapacity>40</CarryingCapacity>
+           <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+          <WorkSpeedGlobal>-0.7</WorkSpeedGlobal>
+          <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+     <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+    <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+    <ToxicResistance>1.0</ToxicResistance>
+        </statOffsets>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+        <li>ToxicBuildup</li>
+        <li>SensoryMechanites</li>
+        </makeImmuneTo>
+        <painOffset>0</painOffset>
+        <regeneration>25</regeneration>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+ <comps>
+  <li Class="OneWithDeath.HediffCompProperties_UndeadChanges" />
+  <li Class="OneWithDeath.HediffCompProperties_UndeadSelfDestruct">
+    <ticksBeforeDeath>24000</ticksBeforeDeath>
+      </li>
+  <li Class="OneWithDeath.HediffCompProperties_UndeadSkills" />
+  <li Class="OneWithDeath.HediffCompProperties_UndeadLabel" />
+   <li Class="OneWithDeath.HediffCompProperties_SelfExtinguish"/>
+
+  <li Class="HediffCompProperties_GiveAbility">
+    <abilityDefs>
+      <li>Ability_SelectNecromancer</li>
+      <li>Ability_UndeadSuicide</li>
+    </abilityDefs>
+  </li>
+  <li Class="OneWithDeath.HediffCompProperties_UndeadBandwidth">
+    <bandwidthCost>1</bandwidthCost>
+  </li>
+  <li Class="OneWithDeath.HediffCompProperties_SoulTransferGiver"/>
+</comps>
+</HediffDef>
+
+<HediffDef>
+    <defName>UndeadChampion</defName>
+    <label>Undead Champion</label>
+    <description>This powerful undead is stronger, faster, better but requires more energy to be sustained.</description>
+ 
+    <hediffClass>OneWithDeath.Hediff_UndeadChampion</hediffClass>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.831, 0.922, 0.149)</defaultLabelColor>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+   
+ <showGizmosOnCorpse>true</showGizmosOnCorpse>
+
+    <stages>
+      <li>
+        <pctAllThoughtNullification>1</pctAllThoughtNullification>
+    <blocksInspirations>true</blocksInspirations>
+        <painFactor>0</painFactor>
+        <minSeverity>0</minSeverity>
+           <statFactors>
+          <PsychicSensitivity>0</PsychicSensitivity>
+          <IncomingDamageFactor>0.5</IncomingDamageFactor>
+            </statFactors>
+         <statOffsets>
+         <CarryingCapacity>40</CarryingCapacity>
+          <MentalBreakThreshold>0.2</MentalBreakThreshold>
+          <WorkSpeedGlobal>-0.8</WorkSpeedGlobal>
+          <MeleeCooldownFactor>-0.25</MeleeCooldownFactor>
+          <MeleeHitChance>4</MeleeHitChance>
+          <MeleeDodgeChance>15</MeleeDodgeChance>
+          <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+    <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+    <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+    <ToxicResistance>1.0</ToxicResistance>
+        </statOffsets>
+       <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+        <li>ToxicBuildup</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">BloodRot</li>
+        <li>SensoryMechanites</li>
+        </makeImmuneTo>
+        <partIgnoreMissingHP>true</partIgnoreMissingHP>
+        <painOffset>0</painOffset>
+        <regeneration>100</regeneration>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.0</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="OneWithDeath.HediffCompProperties_UndeadChanges" />
+      <li Class="OneWithDeath.HediffCompProperties_UndeadSelfDestruct">
+      <ticksBeforeDeath>60000</ticksBeforeDeath>
+          </li>
+      <li Class="OneWithDeath.HediffCompProperties_UndeadSkills" />
+      <li Class="OneWithDeath.HediffCompProperties_UndeadLabel" />
+       <li Class="OneWithDeath.HediffCompProperties_SelfExtinguish"/>
+
+   
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>Ability_SelectNecromancer</li>
+          <li>Ability_UndeadSuicide</li>
+        </abilityDefs>
+      </li>
+          <li Class="OneWithDeath.HediffCompProperties_UndeadBandwidth">
+        <bandwidthCost>2</bandwidthCost>
+      </li>
+      <li Class="OneWithDeath.HediffCompProperties_SoulTransferGiver"/>
+    </comps>
+</HediffDef>
+
+
+<HediffDef>
+    <defName>UndeadOverseer</defName>
+    <label>Undead Overseer</label>
+    <description>This powerful undead retains most of its former self, still bound by the necromancer by an unwavering sense of loyalty.</description>
+    <hediffClass>OneWithDeath.Hediff_UndeadOverseer</hediffClass>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.682, 0.396, 0.859)</defaultLabelColor>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+     <allowedMeditationFocusTypes>
+      <li>Void</li>
+      <li>Morbid</li>
+    </allowedMeditationFocusTypes>
+    <hairColorOverride>(255, 255, 255)</hairColorOverride>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <minSeverity>0</minSeverity>
+             <blocksInspirations>true</blocksInspirations>
+        <statOffsets>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+          <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+             <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+    <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+    <ToxicResistance>1.0</ToxicResistance>
+                  </statOffsets>
+       <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+        <li>ToxicBuildup</li>
+        <li>SensoryMechanites</li>
+        </makeImmuneTo>
+        <partIgnoreMissingHP>true</partIgnoreMissingHP>
+        <painOffset>0</painOffset>
+        <regeneration>75</regeneration>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="OneWithDeath.HediffCompProperties_UndeadChanges" />
+      <li Class="OneWithDeath.HediffCompProperties_UndeadSelfDestruct">
+        <ticksBeforeDeath>120000</ticksBeforeDeath>
+      </li>
+      <li Class="OneWithDeath.HediffCompProperties_UndeadSkills" />
+      <li Class="OneWithDeath.HediffCompProperties_UndeadLabel" />
+       <li Class="OneWithDeath.HediffCompProperties_SelfExtinguish"/>
+      <li Class="OneWithDeath.HediffCompProperties_ShamblerEffect" />
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>Ability_SelectNecromancer</li>
+          <li>Ability_UndeadSuicide</li>
+            <li>SummonShambler</li>
+            <li>SummonHorde</li>
+            <li>NecroticHealing</li>
+            <li>RaiseUndead</li>
+               </abilityDefs>
+      </li>
+          <li Class="OneWithDeath.HediffCompProperties_UndeadBandwidth">
+        <bandwidthCost>3</bandwidthCost>
+      </li>
+      <li Class="OneWithDeath.HediffCompProperties_SoulTransferGiver"/>
+    </comps>
+    
+</HediffDef>
+
+
+<HediffDef>
+    <defName>OWD_UndeadCreature</defName>
+    <label>Undead Creature</label> 
+    <description>This creature has been reanimated by a necromancer and is bound to their will. It contributes to the necromancer's control point cost.</description>
+
+    <hediffClass>OneWithDeath.Hediff_UndeadCreature</hediffClass>
+
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.4, 0.6, 0.4)</defaultLabelColor>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+      <blocksInspirations>true</blocksInspirations>
+        <minSeverity>0.01</minSeverity>
+        <statOffsets>
+          <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+          <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+          <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+          <WorkSpeedGlobal>-0.7</WorkSpeedGlobal>
+          <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+          <ToxicResistance>1.0</ToxicResistance>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="OneWithDeath.HediffCompProperties_ConditionalDeathTimer"/>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>Ability_SelectNecromancer</li>
+          <li>Ability_UndeadSuicide</li>
+        </abilityDefs>
+      </li>
+      <li Class="OneWithDeath.HediffCompProperties_UndeadLabel"/>
+    </comps>
+</HediffDef>
+
+
+</Defs>

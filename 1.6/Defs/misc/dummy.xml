@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef>
+    <defName>ControlExpansionItem</defName>
+    <label>Control Expansion (deprecated)</label>
+       <description>A deprecated item used for save game compatibility.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <graphicData>
+      <texPath>Things/Mote/Transparent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>OWD_SoulShardFilled</defName>
+    <label>Soul Shard (deprecated)</label>
+         <description>A deprecated item used for save game compatibility.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <graphicData>
+      <texPath>Things/Mote/Transparent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_SoulShard"/>
+    </comps>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+  </ThingDef>
+
+</Defs>

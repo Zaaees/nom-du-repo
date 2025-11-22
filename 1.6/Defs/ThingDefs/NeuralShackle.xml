@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>OWD_NeuralShackle</defName>
+    <label>neural shackle</label>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>Items_Necromancy</li>
+    </thingCategories>
+    <description>A neural implant that links the wearer to a necromancer, providing additional bandwidth and serving as a mana source.</description>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <MarketValue>800</MarketValue>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.5</Mass>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>NeuralShackleTech</researchPrerequisite>
+<effectWorking>OWD_Effect_AltarCrafting_General</effectWorking>
+      <recipeUsers>
+        <li>OWD_Altar</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <GreenCrystal>10</GreenCrystal>
+      <Steel>200</Steel>
+    </costList>
+    <comps>
+      <li Class="OneWithDeath.CompProperties_NeuralShackleLink"/>
+    </comps>
+    <category>Item</category>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <isTechHediff>false</isTechHediff>
+  <techHediffsTags />
+  <generateCommonality>0</generateCommonality> 
+  </ThingDef>
+
+  <HediffDef>
+    <defName>OWD_NecroticLink</defName>
+    <label>Necrotic link</label>
+    <defaultLabelColor>(0.3, 0.8, 0.3)</defaultLabelColor>
+    <description>A neural implant made from crystallized archites, surrendering parts of this pawn's brain to the linked necromancer, granting 1 extra control and allowing the backlash from unsafely using necromantic abilities to be absorbed by this pawn instead.</description>
+    <isBad>false</isBad>
+    <hediffClass>OneWithDeath.Hediff_NecroticLink</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <MentalBreakThreshold>1.2</MentalBreakThreshold>
+          <GeneralLaborSpeed>-0.5</GeneralLaborSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="OneWithDeath.HediffCompProperties_NecroticLink"/>
+    </comps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallNeuralShackle</defName>
+    <label>install neural shackle</label>
+    <description>Install a neural shackle to link the pawn to a necromancer.</description>
+    <workerClass>OneWithDeath.RecipeWorker_InstallNeuralShackle</workerClass>
+    <jobString>Installing neural shackle.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OWD_NeuralShackle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OWD_NeuralShackle</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OWD_NecroticLink</addsHediff>
+    <researchPrerequisite>NeuralShackleTech</researchPrerequisite>
+  </RecipeDef>
+
+
+
+    <JobDef>
+    <defName>OWD_AttuneNecroticLink</defName>
+    <label>Attune necrotic link</label>
+    <description>Attuning a pawn's neural shackle to establish a necrotic link.</description>
+    <driverClass>OneWithDeath.JobDriver_AttuneNecroticLink</driverClass>
+    <reportString>Attuning {0}'s necrotic link.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+  </JobDef>
+
+
+</Defs>

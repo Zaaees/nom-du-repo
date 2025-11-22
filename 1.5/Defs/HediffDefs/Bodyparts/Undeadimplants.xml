@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>BodyPartsNecrotic</defName>
+    <label>necrotic body parts</label>
+    <parent>BodyParts</parent>
+  </ThingCategoryDef>
+
+  <!-- Base for necrotic implants -->
+  <ThingDef Name="BodyPartNecroticBase" ParentName="BodyPartBionicBase" Abstract="True">
+    <techLevel>Neolithic</techLevel>
+    <thingCategories>
+      <li>BodyPartsNecrotic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <color>(80, 100, 80)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <tradeTags Inherit="false" />
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <!-- Unfinished necrotic prosthetic -->
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedHealthItemNecrotic</defName>
+    <label>unfinished necrotic prosthetic</label>
+    <description>An unfinished necrotic prosthetic.</description>
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedHealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(80, 100, 80)</color>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+  <!-- Hediff for installed Necrotic Core -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>OWD_NecroticCore</defName>
+    <label>necrotic core</label>
+    <labelNoun>a necrotic core</labelNoun>
+    <description>An installed necrotic core. This implant replaces the heart of an undead pawn, sustaining their body with necrotic energy, boosting regeneration.</description>
+    <descriptionHyperlinks><ThingDef>OWD_NecroticCore</ThingDef></descriptionHyperlinks>
+    <defaultLabelColor>(0.2, 0.4, 0.2)</defaultLabelColor>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.5</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <regeneration>25</regeneration>
+        <statFactors>
+          <InjuryHealingFactor>1.25</InjuryHealingFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Item definition for Necrotic Core -->
+  <ThingDef ParentName="BodyPartNecroticBase">
+    <defName>OWD_NecroticCore</defName>
+    <label>necrotic core</label>
+    <description>A core of cristallized necrotic archites, can virtualize and improve the function of a regular heart by copying and internalizing its functions. The heart is destroyed in this process.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MarketValue>1030</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>15000</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <costList>
+      <GreenCrystal>10</GreenCrystal>
+      <Heart>1</Heart>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemNecrotic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>OWD_implants</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="OneWithDeath.CompProperties_UsableNecroticCore">
+        <compClass>OneWithDeath.CompUsableNecroticCore</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Install Necrotic Core</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>OWD_NecroticCore</hediffDef>
+        <bodyPart>Heart</bodyPart>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <tradeability>All</tradeability>
+    <techHediffsTags>
+      <li>Necrotic</li>
+    </techHediffsTags>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <OneWithDeath.PsychicRitualDef_ForbiddenKnowledge>
+    <defName>OWD_ForbiddenKnowledge</defName>
+    <label>Forbidden Knowledge</label>
+   <description>Something is linked to the altar, I can feel it, by focusing on it with the help of a sacrifice, we can try and skip the source of this power. Who knows what will arrive, we should be careful.</description>
+    <researchPrerequisite>StudyOfNecromancy</researchPrerequisite>
+    <iconPath>UI/Commands/BookOfTheDeadIcon</iconPath>
+    <outcomeDescription>The key to necromancy is behind this ritual; A book will appear on completion, along with something else that defends this knowledge. We should prepare ourselves.</outcomeDescription>
+    <hoursUntilOutcome>0.24</hoursUntilOutcome>
+    <cooldownHours>72</cooldownHours>
+    <invocationCircleRadius>1</invocationCircleRadius>
+    <invokerRole>OWD_Invoker_Psychic</invokerRole>
+    <chanterRole>OWD_Chanter</chanterRole>
+    <targetRole>OWD_Sacrifice</targetRole>
+    <modExtensions>
+      <li Class="OneWithDeath.RitualExtension_Necrotic"/>
+    </modExtensions>
+  </OneWithDeath.PsychicRitualDef_ForbiddenKnowledge>
+
+</Defs>

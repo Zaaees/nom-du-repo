@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>IntellectualDisabled</defName>
+    <label>intellectual disabled</label>
+    <labelShortAdj>non-intellectual</labelShortAdj>
+    <description>Carriers of this gene lack the capacity to perform intellectual tasks</description>
+    <iconPath>UI/Icons/Genes/Gene_IntellectualDisabled</iconPath>
+    <displayCategory>Aptitudes</displayCategory>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <disabledWorkTags>
+      <li>Intellectual</li>
+    </disabledWorkTags>
+    <biostatMet>2</biostatMet>
+    <exclusionTags>
+      <li>IntellectualAptitude</li>
+      <li>LearningSpeed</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>dull</symbol>
+          <weight>2</weight>
+        </li>
+        <li><symbol>simple</symbol></li>
+        <li><symbol>basic</symbol></li>
+        <li><symbol>mindless</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>mind</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+</Defs>

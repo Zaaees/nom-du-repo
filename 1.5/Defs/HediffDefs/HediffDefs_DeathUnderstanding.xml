@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>UnfamiliarWithDeath</defName>
+    <label>Unfamiliar with Death</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>You do not fully comprehend what lies beyond.</description>
+    <isBad>false</isBad>
+       <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <regeneration>10</regeneration>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FamiliarWithDeath</defName>
+    <label>Familiar with Death</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>You start to understand what death is, the archites link and how undead are able to move even without food</description>
+    <isBad>false</isBad>
+       <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+    <disablesNeeds>
+      <li>Rest</li>
+      <li>Comfort</li>
+      <li>Food</li>
+    </disablesNeeds>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <regeneration>100</regeneration>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>OneWithDeath</defName>
+    <label>One with Death</label>
+    <defaultLabelColor>(0.373, 0.871, 0.424)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>You fully embraced death and became familiar with the innerworkings of the archite link. As long as you have archites flowing thorugh you, or have pawns to sacrifice, you are functionally immortal.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <duplicationAllowed>false</duplicationAllowed>
+    <disablesNeeds>
+    <li>Rest</li>
+      <li>Comfort</li>
+      <li>Food</li>
+      <li>Joy</li>
+      <li>Beauty</li>
+      <li>Outdoors</li>
+      <li>DrugDesire</li>
+      <li>Indoors</li>
+      <li>RoomSize</li>
+      <li>Chemical_Luciferium</li>
+    </disablesNeeds>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <regeneration>200</regeneration>
+           <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+        <painFactor>0</painFactor>
+        <statOffsets>
+          <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+          <MoveSpeed>0.25</MoveSpeed>
+          <CrawlSpeed>2</CrawlSpeed>
+          <GlobalLearningFactor>0.25</GlobalLearningFactor>
+          <PsychicSensitivity>2</PsychicSensitivity>
+          <ToxicResistance>1.0</ToxicResistance>
+          <MentalBreakThreshold>-0.99</MentalBreakThreshold>
+          <MeleeCooldownFactor>-0.5</MeleeCooldownFactor>
+          <LifespanFactor>5.0</LifespanFactor>
+          <PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
+          <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+          <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+          <ArmorRating_Blunt>-0.4</ArmorRating_Blunt>
+             <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+    <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+    <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+         <li Class="OneWithDeath.HediffCompProperties_SelfExtinguish"/>
+
+      <li Class="OneWithDeath.HediffCompProperties_ShamblerEffect" />
+            <li Class="OneWithDeath.HediffCompProperties_OneWithDeathChanges" />
+      <li Class="OneWithDeath.HediffCompProperties_RefillDrugNeeds" />
+    </comps>
+  </HediffDef>
+
+</Defs>
+
+
+
+
+
+
+  

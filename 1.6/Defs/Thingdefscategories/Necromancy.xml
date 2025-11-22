@@ -1,0 +1,9 @@
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>Items_Necromancy</defName>
+    <label>Necromancy</label>
+    <parent>Items</parent>
+  </ThingCategoryDef>
+
+</Defs>
