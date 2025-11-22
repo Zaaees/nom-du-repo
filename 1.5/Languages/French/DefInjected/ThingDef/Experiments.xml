@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Experiment Results I -->
+  <ExperimentResultsI.label>Résultats d'expérience I</ExperimentResultsI.label>
+  <ExperimentResultsI.description>Une vieille page détaillant des expériences interdites avec les morts. La lire confère une connaissance troublante.</ExperimentResultsI.description>
+
+  <!-- Experiment Results II -->
+  <ExperimentResultsII.label>Résultats d'expérience II</ExperimentResultsII.label>
+  <ExperimentResultsII.description>Écrire les résultats de vos expériences sur papier.</ExperimentResultsII.description>
+
+  <!-- Experiment Results III -->
+  <ExperimentResultsIII.label>Résultats d'expérience III</ExperimentResultsIII.label>
+  <ExperimentResultsIII.description>L'enregistrement final des expériences, unissant le lecteur à la mort elle-même.</ExperimentResultsIII.description>
+
+</LanguageData>

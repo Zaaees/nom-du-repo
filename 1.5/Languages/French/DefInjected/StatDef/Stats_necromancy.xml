@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <OWD_Control.label>Bonus de contrôle stable</OWD_Control.label>
+  <OWD_Control.description>Un bonus fixe au contrôle stable qu'un nécromancien peut avoir.</OWD_Control.description>
+
+  <OWD_UnstableControl.label>Bonus de contrôle instable</OWD_UnstableControl.label>
+  <OWD_UnstableControl.description>Un bonus fixe au contrôle instable qu'un nécromancien peut avoir.</OWD_UnstableControl.description>
+
+  <OWD_ShamblerControl.label>Bonus de contrôle des traînants</OWD_ShamblerControl.label>
+  <OWD_ShamblerControl.description>Un bonus fixe au total de points de contrôle disponibles pour contrôler les traînants.</OWD_ShamblerControl.description>
+
+  <OWD_EnergyRegeneration.label>Bonus de régénération d'énergie</OWD_EnergyRegeneration.label>
+  <OWD_EnergyRegeneration.description>Un bonus fixe à la quantité d'énergie nécromantique régénérée par seconde.</OWD_EnergyRegeneration.description>
+
+</LanguageData>

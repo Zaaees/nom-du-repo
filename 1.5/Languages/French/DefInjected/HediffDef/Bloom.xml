@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Link Perception Hediff -->
+  <OWD_LinkPerception.label>Perception du lien nécromantique</OWD_LinkPerception.label>
+  <OWD_LinkPerception.description>L'esprit de l'utilisateur est subtilement accordé au lien nécromantique, accordant un sentiment de détachement et augmentant la vitesse de guérison.</OWD_LinkPerception.description>
+
+  <!-- Tonic Healing Hediff -->
+  <OWD_TonicHealing.label>réparation nécromantique (tonique)</OWD_TonicHealing.label>
+  <OWD_TonicHealing.description>Une vague courte et intense d'énergie nécromantique referme activement les blessures de cette créature.</OWD_TonicHealing.description>
+
+</LanguageData>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Understanding of Death Thought -->
+  <UnfamiliarWithDeathPositive.stages.0.label>Compréhension de la mort</UnfamiliarWithDeathPositive.stages.0.label>
+  <UnfamiliarWithDeathPositive.stages.0.description>Vous commencez tout juste à comprendre la mort, vous ressentez un lien avec quelque chose de plus grand.</UnfamiliarWithDeathPositive.stages.0.description>
+
+  <!-- Familiar with Death Thought -->
+  <FamiliarWithDeathPositive.stages.0.label>Familier avec la mort</FamiliarWithDeathPositive.stages.0.label>
+  <FamiliarWithDeathPositive.stages.0.description>Le lien avec la mort se renforce, vous ressentez un détachement calme et une clarté mentale améliorée.</FamiliarWithDeathPositive.stages.0.description>
+
+  <!-- One with Death Thought -->
+  <OneWithDeathPositive.stages.0.label>Un avec la mort</OneWithDeathPositive.stages.0.label>
+  <OneWithDeathPositive.stages.0.description>Vous êtes devenu un avec la mort, vous vous sentez lié à l'éternité elle-même, ce qui s'accompagne d'un sentiment de félicité.</OneWithDeathPositive.stages.0.description>
+
+  <!-- Undead Tranquillity Thought -->
+  <OWD_UndeadTranquillity.stages.0.label>Mort-vivant</OWD_UndeadTranquillity.stages.0.label>
+  <OWD_UndeadTranquillity.stages.0.description>La volonté du nécromancien submerge l'esprit de ce colon, ne laissant qu'un faible écho de son ancien moi.</OWD_UndeadTranquillity.stages.0.description>
+
+  <!-- Bound to Necromancer Thought -->
+  <BoundToNecromancer.stages.0.label>lié au nécromancien</BoundToNecromancer.stages.0.label>
+  <BoundToNecromancer.stages.0.description>Un profond sentiment de loyauté.</BoundToNecromancer.stages.0.description>
+
+  <!-- Undead Tranquillity Overseer Thought -->
+  <UndeadTranquillityOverseer.stages.0.label>Mort-vivant</UndeadTranquillityOverseer.stages.0.label>
+  <UndeadTranquillityOverseer.stages.0.description>La volonté du nécromancien submerge ce colon, seul un faible écho de sa volonté subsiste.</UndeadTranquillityOverseer.stages.0.description>
+
+</LanguageData>

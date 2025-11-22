@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Exuvia Ritual -->
+  <OWD_Exuvia.label>Exuvia</OWD_Exuvia.label>
+  <OWD_Exuvia.description>Un rituel puissant et pas entièrement compris où un nécromancien qui a déjà embrassé la mort, se défait de son dernier enveloppe mortelle. Son essence même est arrachée de son corps et liée dans un Orbe d'âme. Le rituel nécessite un sacrifice vivant et d'énormes quantités d'énergie nécromantique, fournie par un serviteur proche.</OWD_Exuvia.description>
+  <OWD_Exuvia.outcomeDescription>Le corps du lanceur mourra. Le sacrifice sera tué. Un Orbe d'âme contenant l'âme du lanceur sera créé et son essence sauvegardée pour une utilisation future.</OWD_Exuvia.outcomeDescription>
+
+</LanguageData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Control Expansion -->
+  <ControlExpansion.label>Expansion de contrôle</ControlExpansion.label>
+  <ControlExpansion.description>Augmente la capacité de contrôle des morts-vivants d'un nécromancien. Peut être augmenté jusqu'à 10 fois.</ControlExpansion.description>
+
+</LanguageData>

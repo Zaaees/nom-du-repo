@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Base Undead -->
+  <OWD_Undead.label>Mort-vivant</OWD_Undead.label>
+  <OWD_Undead.description>Ce colon est un mort-vivant contrôlé par un nécromancien.</OWD_Undead.description>
+
+  <!-- Undead Champion -->
+  <UndeadChampion.label>Champion mort-vivant</UndeadChampion.label>
+  <UndeadChampion.description>Ce puissant mort-vivant est plus fort, plus rapide, meilleur mais nécessite plus d'énergie pour être maintenu.</UndeadChampion.description>
+
+  <!-- Undead Overseer -->
+  <UndeadOverseer.label>Surveillant mort-vivant</UndeadOverseer.label>
+  <UndeadOverseer.description>Ce puissant mort-vivant conserve la majeure partie de son ancien moi, toujours lié au nécromancien par un sens inébranlable de loyauté.</UndeadOverseer.description>
+
+  <!-- Undead Creature -->
+  <OWD_UndeadCreature.label>Créature morte-vivante</OWD_UndeadCreature.label>
+  <OWD_UndeadCreature.description>Cette créature a été réanimée par un nécromancien et est liée à sa volonté. Elle contribue au coût en points de contrôle du nécromancien.</OWD_UndeadCreature.description>
+
+</LanguageData>

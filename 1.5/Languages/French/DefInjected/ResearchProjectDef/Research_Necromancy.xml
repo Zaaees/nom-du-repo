@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tier 1 -->
+  <StudyOfNecromancy.label>Étude de la nécromancie</StudyOfNecromancy.label>
+  <StudyOfNecromancy.description>En essayant de comprendre l'origine des traînants, j'ai trouvé la représentation d'un curieux autel avec des caractères spécifiques gravés dessus, ainsi que quelques instructions griffonnées. Je devrais essayer de le recréer et faire une offrande comme il était écrit, peut-être que quelque chose se passera.</StudyOfNecromancy.description>
+
+  <!-- Tier 2 -->
+  <OWD_ControlExpansion.label>expansion du contrôle</OWD_ControlExpansion.label>
+  <OWD_ControlExpansion.description>Augmenter la limite de morts-vivants que je peux contrôler devrait être possible en théorie, mais chaque augmentation perturbe toutes les variables connues. Les progrès doivent être faits prudemment, étape par étape.</OWD_ControlExpansion.description>
+
+  <IntermediateNecromancy.label>nécromancie intermédiaire</IntermediateNecromancy.label>
+  <IntermediateNecromancy.description>Canaliser une plus grande concentration d'énergie nécromantique dans un seul mort-vivant améliore sa force et sa vitesse, accordant même la régénération. Cependant, la tension sur l'esprit pour contrôler une telle entité augmente considérablement.</IntermediateNecromancy.description>
+
+  <OWD_Rituals.label>Rituels</OWD_Rituals.label>
+  <OWD_Rituals.description>L'étude approfondie de l'autel révèle des moyens d'effectuer différents rituels.</OWD_Rituals.description>
+
+  <!-- Tier 3 -->
+  <AdvancedNecromancy.label>nécromancie avancée</AdvancedNecromancy.label>
+  <AdvancedNecromancy.description>Infuser des quantités extrêmes d'énergie nécromantique dans un corps est dangereux, la plupart se rompent simplement sous la pression. Pourtant, j'ai réussi. Ces morts-vivants se régénèrent à un rythme étonnant, la chair se reformant même à partir d'une dessiccation totale. Leurs esprits conservent des fragments de leur ancien moi, leurs capacités cognitives améliorées au-delà des limites précédentes. L'effort mental pour les contrôler est immense, mais les résultats sont indéniables. Ils semblent savoir instinctivement comment canaliser l'énergie nécromantique, mais ils ne peuvent pas la stocker de manière optimale, ils doivent sacrifier leur propre chair pour pouvoir l'utiliser. Heureusement, ils ont la capacité de se régénérer.</AdvancedNecromancy.description>
+
+  <SelfExperimentation.label>Auto-expérimentation</SelfExperimentation.label>
+  <SelfExperimentation.description>La quête de la connaissance exige des sacrifices. En expérimentant sur moi-même, je peux acquérir une compréhension directe des subtilités du pouvoir nécromantique.</SelfExperimentation.description>
+
+  <NecroticHealing.label>guérison nécromantique</NecroticHealing.label>
+  <NecroticHealing.description>En infusant les tissus morts-vivants avec de l'énergie nécromantique brute, nous pouvons faire régénérer rapidement leur chair et leurs os.</NecroticHealing.description>
+
+  <SkipShambler.label>Sauter traînant</SkipShambler.label>
+  <SkipShambler.description>Les traînants laissent une signature d'archites qu'il est possible de localiser, avec cela, il devrait être possible de les téléporter ici. Puisque je ne peux pas les infuser avec les archites qui coulent dans mon corps, ils seront cependant hostiles.</SkipShambler.description>
+
+  <OWD_implants.label>Implants</OWD_implants.label>
+  <OWD_implants.description>Le développement d'implants nécromantiques nous permet d'améliorer les corps vivants ou morts-vivants avec des dispositifs infusés d'archites, améliorant le contrôle et la résilience au prix d'une intégration plus profonde avec l'énergie nécromantique.</OWD_implants.description>
+
+  <!-- Tier 4 -->
+  <OWD_Artifacts.label>Artefacts</OWD_Artifacts.label>
+  <OWD_Artifacts.description>Débloque la création de structures et d'objets fabriqués à partir d'artefacts rares.</OWD_Artifacts.description>
+
+  <FirstExperiment.label>Première expérience</FirstExperiment.label>
+  <FirstExperiment.description>En étudiant les morts-vivants, je commence à percevoir quelque chose, un lien invisible les reliant à une force inconnue. Plus je canalise d'énergie nécromantique à travers mon propre corps, plus cette connexion devient claire. Le sommeil et la faim s'estompent, remplacés par une compréhension plus profonde de la mort et de la non-mort.</FirstExperiment.description>
+
+  <OWD_constructs.label>Créatures artificielles</OWD_constructs.label>
+  <OWD_constructs.description>En combinant l'énergie nécromantique avec de la chair préservée, nous pouvons créer des créatures artificielles mortes-vivantes stables qui servent des objectifs spécifiques, tels que le travail ou la défense, sans la volatilité des cadavres entièrement réanimés.</OWD_constructs.description>
+
+  <!-- Tier 5 -->
+  <OWD_ControlServitorResearch.label>Serviteur de contrôle</OWD_ControlServitorResearch.label>
+  <OWD_ControlServitorResearch.description>Permet la construction de serviteurs de contrôle et de serviteurs auxiliaires, qui peuvent être liés à un nécromancien pour augmenter le contrôle.</OWD_ControlServitorResearch.description>
+
+  <OWD_UnstableControlTheory.label>Expansion de contrôle instable</OWD_UnstableControlTheory.label>
+  <OWD_UnstableControlTheory.description>En déléguant à un serviteur de contrôle la majeure partie de la gestion des morts-vivants, nous pouvons encore étendre le nombre de morts-vivants que nous pouvons contrôler.</OWD_UnstableControlTheory.description>
+
+  <OWD_SoulShardResearch.label>Éclats d'âme</OWD_SoulShardResearch.label>
+  <OWD_SoulShardResearch.description>Permet la fabrication et la manipulation d'éclats d'âme.</OWD_SoulShardResearch.description>
+
+  <SecondExperiment.label>Deuxième expérience</SecondExperiment.label>
+  <SecondExperiment.description>Plus j'infuse ces archites dans mon corps, plus je me connecte à "cela", quoi que ce soit. Je me sens plus détaché de mes besoins et plus concentré sur le travail qui doit être fait.</SecondExperiment.description>
+
+  <SkipHorde.label>sauter horde</SkipHorde.label>
+  <SkipHorde.description>En m'appuyant sur la percée des traînants, je peux maintenant téléporter plusieurs traînants à la fois. Leur hostilité signifie que je dois faire attention à l'endroit où je les téléporte.</SkipHorde.description>
+
+  <!-- Tier 6 -->
+  <UnsafeCasting.label>lancement dangereux</UnsafeCasting.label>
+  <UnsafeCasting.description>Grâce à mes études, j'ai découvert que chaque corps vivant ou mort abrite le potentiel de reproduire des archites nécromantiques. Cette révélation me permet de canaliser des capacités nécromantiques en utilisant mon propre corps comme carburant, accordant du pouvoir au détriment de ma propre chair.</UnsafeCasting.description>
+
+  <OneWithDeath.label>un avec la mort</OneWithDeath.label>
+  <OneWithDeath.description>J'ai pleinement embrassé la mort et la non-mort. La connexion invisible qui me lie à quelque chose de bien au-delà de la compréhension mortelle soutient mon corps, me gardant en vie sans nourriture, sommeil ou respiration. --Gagne la capacité de te ressusciter en utilisant 25 énergie nécromantique ou toute alternative comme des morts-vivants contrôlés.</OneWithDeath.description>
+
+  <!-- Tier 7 -->
+  <NeuralShackleTech.label>Entrave neurale</NeuralShackleTech.label>
+  <NeuralShackleTech.description>Débloque la capacité de fabriquer et d'installer des entraves neurales. En étudiant le lien entre un nécromancien et les morts-vivants, j'ai appris qu'en utilisant un catalyseur sur un être vivant, il est possible de recréer quelque chose de similaire. Bien qu'incapable de contrôler entièrement l'être vivant, je peux accéder à des parties de leur cerveau, les utilisant pour m'aider à contrôler plus de morts-vivants. En cas de besoin, je suis capable d'utiliser le lien pour utiliser directement leurs corps comme carburant pour les archites.</NeuralShackleTech.description>
+
+  <OWD_ExuviaResearch.label>Exuvie</OWD_ExuviaResearch.label>
+  <OWD_ExuviaResearch.description>Débloque le rituel d'exuvie, permettant à un nécromancien qui est un avec la mort de se débarrasser de son enveloppe mortelle et de stocker son âme dans un orbe.</OWD_ExuviaResearch.description>
+
+  <OWD_EnduviaResearch.label>Enduvie</OWD_EnduviaResearch.label>
+  <OWD_EnduviaResearch.description>Débloque le rituel d'enduvie, permettant à un nécromancien qui est un avec la mort d'invoquer une âme stockée et de la placer dans un nouveau hôte.</OWD_EnduviaResearch.description>
+
+  <!-- Dead End / Misc Branches -->
+  <OWD_SLink.label>Lien de traînant</OWD_SLink.label>
+  <OWD_SLink.description>En approfondissant la connexion aux signatures de traces des archites, je peux établir un lien psychique temporaire avec des traînants spécialement préparés. Ce lien me permet d'influencer subtilement leurs actions, de rediriger leur agression ou de les guider vers des cibles spécifiques, bien que le contrôle total reste insaisissable.</OWD_SLink.description>
+
+  <OWD_CAI.label>Intégration d'archites corrompus</OWD_CAI.label>
+  <OWD_CAI.description>En étudiant les archites corrompus que l'on voit réanimer des cadavres, nous pouvons maintenant imiter la façon dont ils fonctionnent avec des archites nécromantiques, ce qui nous permet essentiellement de reproduire leur fonctionnement entièrement. Les morts-vivants résultants ne sont pas liés au nécromancien et nous n'avons donc aucun moyen de les contrôler, mais ils ne sont pas hostiles.</OWD_CAI.description>
+
+</LanguageData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Sacrifice Role -->
+  <OWD_Sacrifice.label>sacrifice</OWD_Sacrifice.label>
+  <OWD_Sacrifice.description>La personne à sacrifier pour le rituel.</OWD_Sacrifice.description>
+
+</LanguageData>

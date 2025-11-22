@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Aura Emitter -->
+  <OWD_NecroticAuraEmitter.label>Émetteur d'aura nécromantique</OWD_NecroticAuraEmitter.label>
+  <OWD_NecroticAuraEmitter.description>Un dispositif abritant un noyau résonnant de cristaux verts. Lorsqu'il est actif, il émet un champ d'énergie nécromantique qui force une régénération rapide et douloureuse chez les êtres vivants à proximité, tout en induisant de la somnolence et en entravant la motricité fine aux intensités plus élevées. Nécessite des cristaux verts comme combustible.</OWD_NecroticAuraEmitter.description>
+
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Forbidden Knowledge Ritual -->
+  <OWD_ForbiddenKnowledge.label>Savoir interdit</OWD_ForbiddenKnowledge.label>
+  <OWD_ForbiddenKnowledge.description>Quelque chose est lié à l'autel, je peux le sentir. En me concentrant dessus avec l'aide d'un sacrifice, nous pouvons essayer de contourner la source de ce pouvoir. Qui sait ce qui arrivera, nous devrions être prudents.</OWD_ForbiddenKnowledge.description>
+  <OWD_ForbiddenKnowledge.outcomeDescription>La clé de la nécromancie se trouve derrière ce rituel ; un livre apparaîtra à sa completion, ainsi que quelque chose d'autre qui défend cette connaissance. Nous devrions nous préparer.</OWD_ForbiddenKnowledge.outcomeDescription>
+
+</LanguageData>

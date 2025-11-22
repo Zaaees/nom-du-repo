@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Aura Hediff -->
+  <OWD_NecroticAura.label>Aura nécromantique</OWD_NecroticAura.label>
+  <OWD_NecroticAura.description>Un champ psychique combiné à une brume d'archites nécromantiques coagule lentement et de force les blessures et reconstruit la chair et les membres manquants, tout en forçant l'esprit à rester concentré. Cela a cependant divers effets néfastes.</OWD_NecroticAura.description>
+  <OWD_NecroticAura.stages.0.label>légère</OWD_NecroticAura.stages.0.label>
+  <OWD_NecroticAura.stages.1.label>modérée</OWD_NecroticAura.stages.1.label>
+  <OWD_NecroticAura.stages.2.label>forte</OWD_NecroticAura.stages.2.label>
+  <OWD_NecroticAura.stages.3.label>intense</OWD_NecroticAura.stages.3.label>
+  <OWD_NecroticAura.stages.4.label>extrême</OWD_NecroticAura.stages.4.label>
+
+</LanguageData>

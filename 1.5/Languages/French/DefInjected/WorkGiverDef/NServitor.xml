@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Carry to Control Servitor -->
+  <OWD_CarryToControlServitor.label>transporter au serviteur de contrôle</OWD_CarryToControlServitor.label>
+  <OWD_CarryToControlServitor.verb>transporter</OWD_CarryToControlServitor.verb>
+  <OWD_CarryToControlServitor.gerund>transport</OWD_CarryToControlServitor.gerund>
+
+</LanguageData>

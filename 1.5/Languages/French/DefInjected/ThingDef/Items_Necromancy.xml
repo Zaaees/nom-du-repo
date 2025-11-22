@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Items_Necromancy.xml -->
+  <GreenCrystal.label>Cristal vert</GreenCrystal.label>
+  <GreenCrystal.description>Un cristal vert qui semble être fait d'archites condensés et d'énergie cristallisée.</GreenCrystal.description>
+
+  <!-- NecromanticCore.xml -->
+  <OWD_NecromanticCore.label>Grimoire de chair</OWD_NecromanticCore.label>
+  <OWD_NecromanticCore.description>Un tome grotesque de peau humaine cousue, orné d'un crâne souriant, ses pages vides émettant un faible murmure incessant.</OWD_NecromanticCore.description>
+
+  <!-- NecroticConduit.xml -->
+  <OWD_NecroticConduit.label>Conduit nécromantique</OWD_NecroticConduit.label>
+  <OWD_NecroticConduit.description>Un amalgame brut d'un éclat archotechnologique sombre et d'archites nécromantiques cristallisés placés apparemment au hasard afin de créer de force un conduit entre les traînants et le nécromancien.</OWD_NecroticConduit.description>
+
+  <!-- NeuralShackle.xml -->
+  <OWD_NeuralShackle.label>entrave neurale</OWD_NeuralShackle.label>
+  <OWD_NeuralShackle.description>Un implant neural qui lie le porteur à un nécromancien, fournissant une bande passante supplémentaire et servant de source d'énergie.</OWD_NeuralShackle.description>
+
+</LanguageData>

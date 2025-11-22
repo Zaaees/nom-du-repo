@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necro Control Mode Defs -->
+  <NecroList.label>liste</NecroList.label>
+  <NecroList.description>Voir la liste des morts-vivants contrôlés par le nécromancien.</NecroList.description>
+
+  <NecroSelectAllMechs.label>tout sélectionner</NecroSelectAllMechs.label>
+  <NecroSelectAllMechs.description>Sélectionner tous les morts-vivants de ce groupe de contrôle.</NecroSelectAllMechs.description>
+
+  <NecroCemetery.label>Cimetière</NecroCemetery.label>
+  <NecroCemetery.description>Voir les morts-vivants décédés.</NecroCemetery.description>
+
+  <NecroNskip.label>Nskip</NecroNskip.label>
+  <NecroNskip.description>Réservé pour un usage futur.</NecroNskip.description>
+
+</LanguageData>

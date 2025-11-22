@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Control Expansion Theory -->
+  <OWD_ControlExpansionItem.label>Théorie d'expansion de contrôle</OWD_ControlExpansionItem.label>
+  <OWD_ControlExpansionItem.description>Une théorie écrite sur une vieille page. En appliquant ses fondamentaux, vous pouvez augmenter le nombre de morts-vivants que vous pouvez avoir sous votre contrôle stable. Peut être utilisé jusqu'à 5 fois.</OWD_ControlExpansionItem.description>
+
+  <!-- Unstable Control Expansion Theory -->
+  <OWD_UnstableControlExpansionItem.label>Théorie d'expansion de contrôle instable</OWD_UnstableControlExpansionItem.label>
+  <OWD_UnstableControlExpansionItem.description>Une théorie raffinée qui permet de repousser les limites du contrôle des morts-vivants en territoire instable. Nécessite une compréhension approfondie du fonctionnement sous-jacent des serviteurs de contrôle pour être fabriquée. Peut être utilisé jusqu'à 5 fois, nécessite 5 niveaux du palier précédent.</OWD_UnstableControlExpansionItem.description>
+
+</LanguageData>

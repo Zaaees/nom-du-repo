@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Experiment Results I Recipe -->
+  <Make_ExperimentResultsI.label>Écrire les résultats d'expérience I</Make_ExperimentResultsI.label>
+  <Make_ExperimentResultsI.description>Écrire les résultats de vos expériences sur papier.</Make_ExperimentResultsI.description>
+  <Make_ExperimentResultsI.jobString>Expérimentation.</Make_ExperimentResultsI.jobString>
+
+  <!-- Experiment Results II Recipe -->
+  <Make_ExperimentResultsII.label>Écrire les résultats d'expérience II</Make_ExperimentResultsII.label>
+  <Make_ExperimentResultsII.description>Écrire les résultats de vos expériences sur papier.</Make_ExperimentResultsII.description>
+  <Make_ExperimentResultsII.jobString>Expérimentation.</Make_ExperimentResultsII.jobString>
+
+  <!-- Experiment Results III Recipe -->
+  <Make_ExperimentResultsIII.label>Écrire les résultats d'expérience III</Make_ExperimentResultsIII.label>
+  <Make_ExperimentResultsIII.description>Fabriquer l'enregistrement ultime de la maîtrise nécromantique à partir de cadavres et de cristaux verts.</Make_ExperimentResultsIII.description>
+  <Make_ExperimentResultsIII.jobString>Expérimentation.</Make_ExperimentResultsIII.jobString>
+
+</LanguageData>

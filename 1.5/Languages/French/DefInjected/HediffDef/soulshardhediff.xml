@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Base Soul Infusion -->
+  <OWD_SoulInfusionBase.description>Une infusion d'éclat d'âme accordant des compétences et connaissances latentes.</OWD_SoulInfusionBase.description>
+
+  <!-- Major Single Skills -->
+  <OWD_ShardInfusion_ShootingMajor.label>infusion d'âme (Tir majeur)</OWD_ShardInfusion_ShootingMajor.label>
+  <OWD_ShardInfusion_ShootingMajor.description>Un éclat de cristal contenant l'âme d'un tireur d'élite maître.</OWD_ShardInfusion_ShootingMajor.description>
+
+  <OWD_ShardInfusion_MeleeMajor.label>infusion d'âme (Corps à corps majeur)</OWD_ShardInfusion_MeleeMajor.label>
+  <OWD_ShardInfusion_MeleeMajor.description>Un éclat de cristal contenant l'âme d'un guerrier maître.</OWD_ShardInfusion_MeleeMajor.description>
+
+  <OWD_ShardInfusion_ConstructionMajor.label>infusion d'âme (Construction majeure)</OWD_ShardInfusion_ConstructionMajor.label>
+  <OWD_ShardInfusion_ConstructionMajor.description>Un éclat de cristal contenant l'âme d'un bâtisseur maître.</OWD_ShardInfusion_ConstructionMajor.description>
+
+  <OWD_ShardInfusion_MiningMajor.label>infusion d'âme (Minage majeur)</OWD_ShardInfusion_MiningMajor.label>
+  <OWD_ShardInfusion_MiningMajor.description>Un éclat de cristal contenant l'âme d'un mineur maître.</OWD_ShardInfusion_MiningMajor.description>
+
+  <OWD_ShardInfusion_CookingMajor.label>infusion d'âme (Cuisine majeure)</OWD_ShardInfusion_CookingMajor.label>
+  <OWD_ShardInfusion_CookingMajor.description>Un éclat de cristal contenant l'âme d'un cuisinier maître.</OWD_ShardInfusion_CookingMajor.description>
+
+  <OWD_ShardInfusion_PlantsMajor.label>infusion d'âme (Plantes majeures)</OWD_ShardInfusion_PlantsMajor.label>
+  <OWD_ShardInfusion_PlantsMajor.description>Un éclat de cristal contenant l'âme d'un jardinier maître.</OWD_ShardInfusion_PlantsMajor.description>
+
+  <OWD_ShardInfusion_AnimalsMajor.label>infusion d'âme (Animaux majeurs)</OWD_ShardInfusion_AnimalsMajor.label>
+  <OWD_ShardInfusion_AnimalsMajor.description>Un éclat de cristal contenant l'âme d'un dresseur d'animaux maître.</OWD_ShardInfusion_AnimalsMajor.description>
+
+  <OWD_ShardInfusion_CraftingMajor.label>infusion d'âme (Artisanat majeur)</OWD_ShardInfusion_CraftingMajor.label>
+  <OWD_ShardInfusion_CraftingMajor.description>Un éclat de cristal contenant l'âme d'un artisan maître.</OWD_ShardInfusion_CraftingMajor.description>
+
+  <OWD_ShardInfusion_ArtisticMajor.label>infusion d'âme (Art majeur)</OWD_ShardInfusion_ArtisticMajor.label>
+  <OWD_ShardInfusion_ArtisticMajor.description>Un éclat de cristal contenant l'âme d'un artiste maître.</OWD_ShardInfusion_ArtisticMajor.description>
+
+  <OWD_ShardInfusion_MedicineMajor.label>infusion d'âme (Médecine majeure)</OWD_ShardInfusion_MedicineMajor.label>
+  <OWD_ShardInfusion_MedicineMajor.description>Un éclat de cristal contenant l'âme d'un docteur maître.</OWD_ShardInfusion_MedicineMajor.description>
+
+  <OWD_ShardInfusion_SocialMajor.label>infusion d'âme (Social majeur)</OWD_ShardInfusion_SocialMajor.label>
+  <OWD_ShardInfusion_SocialMajor.description>Un éclat de cristal contenant l'âme d'un diplomate maître.</OWD_ShardInfusion_SocialMajor.description>
+
+  <OWD_ShardInfusion_IntellectualMajor.label>infusion d'âme (Intellectuel majeur)</OWD_ShardInfusion_IntellectualMajor.label>
+  <OWD_ShardInfusion_IntellectualMajor.description>Un éclat de cristal contenant l'âme d'un érudit maître.</OWD_ShardInfusion_IntellectualMajor.description>
+
+  <!-- Minor Single Skills -->
+  <OWD_ShardInfusion_ShootingMinor.label>infusion d'âme (Tir mineur)</OWD_ShardInfusion_ShootingMinor.label>
+  <OWD_ShardInfusion_ShootingMinor.description>Un éclat de cristal contenant l'âme d'un tireur compétent.</OWD_ShardInfusion_ShootingMinor.description>
+
+  <OWD_ShardInfusion_MeleeMinor.label>infusion d'âme (Corps à corps mineur)</OWD_ShardInfusion_MeleeMinor.label>
+  <OWD_ShardInfusion_MeleeMinor.description>Un éclat de cristal contenant l'âme d'un guerrier compétent.</OWD_ShardInfusion_MeleeMinor.description>
+
+  <OWD_ShardInfusion_ConstructionMinor.label>infusion d'âme (Construction mineure)</OWD_ShardInfusion_ConstructionMinor.label>
+  <OWD_ShardInfusion_ConstructionMinor.description>Un éclat de cristal contenant l'âme d'un bâtisseur compétent.</OWD_ShardInfusion_ConstructionMinor.description>
+
+  <OWD_ShardInfusion_MiningMinor.label>infusion d'âme (Minage mineur)</OWD_ShardInfusion_MiningMinor.label>
+  <OWD_ShardInfusion_MiningMinor.description>Un éclat de cristal contenant l'âme d'un mineur compétent.</OWD_ShardInfusion_MiningMinor.description>
+
+  <OWD_ShardInfusion_CookingMinor.label>infusion d'âme (Cuisine mineure)</OWD_ShardInfusion_CookingMinor.label>
+  <OWD_ShardInfusion_CookingMinor.description>Un éclat de cristal contenant l'âme d'un cuisinier compétent.</OWD_ShardInfusion_CookingMinor.description>
+
+  <OWD_ShardInfusion_PlantsMinor.label>infusion d'âme (Plantes mineures)</OWD_ShardInfusion_PlantsMinor.label>
+  <OWD_ShardInfusion_PlantsMinor.description>Un éclat de cristal contenant l'âme d'un jardinier compétent.</OWD_ShardInfusion_PlantsMinor.description>
+
+  <OWD_ShardInfusion_AnimalsMinor.label>infusion d'âme (Animaux mineurs)</OWD_ShardInfusion_AnimalsMinor.label>
+  <OWD_ShardInfusion_AnimalsMinor.description>Un éclat de cristal contenant l'âme d'un dresseur d'animaux compétent.</OWD_ShardInfusion_AnimalsMinor.description>
+
+  <OWD_ShardInfusion_CraftingMinor.label>infusion d'âme (Artisanat mineur)</OWD_ShardInfusion_CraftingMinor.label>
+  <OWD_ShardInfusion_CraftingMinor.description>Un éclat de cristal contenant l'âme d'un artisan compétent.</OWD_ShardInfusion_CraftingMinor.description>
+
+  <OWD_ShardInfusion_ArtisticMinor.label>infusion d'âme (Art mineur)</OWD_ShardInfusion_ArtisticMinor.label>
+  <OWD_ShardInfusion_ArtisticMinor.description>Un éclat de cristal contenant l'âme d'un artiste compétent.</OWD_ShardInfusion_ArtisticMinor.description>
+
+  <OWD_ShardInfusion_MedicineMinor.label>infusion d'âme (Médecine mineure)</OWD_ShardInfusion_MedicineMinor.label>
+  <OWD_ShardInfusion_MedicineMinor.description>Un éclat de cristal contenant l'âme d'un docteur compétent.</OWD_ShardInfusion_MedicineMinor.description>
+
+  <OWD_ShardInfusion_SocialMinor.label>infusion d'âme (Social mineur)</OWD_ShardInfusion_SocialMinor.label>
+  <OWD_ShardInfusion_SocialMinor.description>Un éclat de cristal contenant l'âme d'un diplomate compétent.</OWD_ShardInfusion_SocialMinor.description>
+
+  <OWD_ShardInfusion_IntellectualMinor.label>infusion d'âme (Intellectuel mineur)</OWD_ShardInfusion_IntellectualMinor.label>
+  <OWD_ShardInfusion_IntellectualMinor.description>Un éclat de cristal contenant l'âme d'un érudit compétent.</OWD_ShardInfusion_IntellectualMinor.description>
+
+  <!-- Archetype Souls -->
+  <OWD_ShardInfusion_SlaveMajor.label>infusion d'âme (Âme d'esclave majeure)</OWD_ShardInfusion_SlaveMajor.label>
+  <OWD_ShardInfusion_SlaveMajor.description>Un éclat de cristal contenant l'âme d'un esclave maître, compétent dans toutes les formes de travail.</OWD_ShardInfusion_SlaveMajor.description>
+
+  <OWD_ShardInfusion_SlaveMinor.label>infusion d'âme (Âme d'esclave mineure)</OWD_ShardInfusion_SlaveMinor.label>
+  <OWD_ShardInfusion_SlaveMinor.description>Un éclat de cristal contenant l'âme d'un esclave compétent.</OWD_ShardInfusion_SlaveMinor.description>
+
+  <OWD_ShardInfusion_SmartMajor.label>infusion d'âme (Âme intelligente majeure)</OWD_ShardInfusion_SmartMajor.label>
+  <OWD_ShardInfusion_SmartMajor.description>Un éclat de cristal contenant l'âme d'un colon très intelligent, compétent dans les activités intellectuelles.</OWD_ShardInfusion_SmartMajor.description>
+
+  <OWD_ShardInfusion_SmartMinor.label>infusion d'âme (Âme intelligente mineure)</OWD_ShardInfusion_SmartMinor.label>
+  <OWD_ShardInfusion_SmartMinor.description>Un éclat de cristal contenant l'âme d'un colon intelligent.</OWD_ShardInfusion_SmartMinor.description>
+
+</LanguageData>

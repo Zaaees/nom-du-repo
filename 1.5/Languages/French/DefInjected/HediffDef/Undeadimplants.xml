@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necrotic Core Hediff -->
+  <OWD_NecroticCore.label>noyau nécromantique</OWD_NecroticCore.label>
+  <OWD_NecroticCore.labelNoun>un noyau nécromantique</OWD_NecroticCore.labelNoun>
+  <OWD_NecroticCore.description>Un noyau nécromantique installé. Cet implant remplace le cœur d'un colon mort-vivant, soutenant son corps avec de l'énergie nécromantique, augmentant la régénération.</OWD_NecroticCore.description>
+
+</LanguageData>

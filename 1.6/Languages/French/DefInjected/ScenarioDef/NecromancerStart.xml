@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necromancer Start Scenario -->
+  <NecromancerStart.label>Début de nécromancien</NecromancerStart.label>
+  <NecromancerStart.description>Vous avez passé toute votre vie à essayer de trouver un moyen d'inverser la mort, sautant de planète en planète pour trouver des artefacts archotechs capables de le faire, chassant des histoires et payant pour des informations. Vous n'avez trouvé que de la camelote ou des sérums de résurrection mécaniques ; votre dernière trouvaille ? Un livre étrange qui n'a même rien d'écrit dessus. Lorsque vous avez essayé de quitter ce monde, votre moteur principal s'est soudainement cassé et vous vous retrouvez forcé à un atterrissage d'urgence.</NecromancerStart.description>
+  <NecromancerStart.scenario.summary>Seul avec un livre qui vous permet de contrôler les morts</NecromancerStart.scenario.summary>
+  <NecromancerStart.scenario.parts.13.text>Vous vous réveillez après la chute, vous scannez rapidement autour de vous en essayant de trouver le livre sans même chercher de nourriture en premier, vous le sentez vous appeler.</NecromancerStart.scenario.parts.13.text>
+
+</LanguageData>

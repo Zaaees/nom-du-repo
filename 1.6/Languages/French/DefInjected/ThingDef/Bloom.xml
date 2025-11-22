@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necro-bloom Plant -->
+  <OWD_Plant_Necrobloom.label>nécro-fleur</OWD_Plant_Necrobloom.label>
+  <OWD_Plant_Necrobloom.description>Cette fleur est capable d'absorber, de stocker et de répliquer les archites nécromantiques en elle-même. Ce faisant, elle modifie sa structure cellulaire pour être le réceptacle parfait pour stocker de grandes quantités d'archites nécromantiques.</OWD_Plant_Necrobloom.description>
+
+  <!-- Archite Dust -->
+  <OWD_ArchiteDust.label>poussière d'archite</OWD_ArchiteDust.label>
+  <OWD_ArchiteDust.description>Un mélange de matière végétale et d'archites nécromantiques. Une fois coupée, toute la structure de cette fleur s'effondre jusqu'à ce qu'il ne reste que de la poussière.</OWD_ArchiteDust.description>
+
+  <!-- Necro-Bloom Tonic -->
+  <OWD_NecroBloomTonic.label>Tonique de nécro-fleur</OWD_NecroBloomTonic.label>
+  <OWD_NecroBloomTonic.description>Une bouillie raffinée de biomasse et d'archites nécromantiques. A divers effets si consommée, mais son effet principal est de maintenir un serviteur de contrôle.</OWD_NecroBloomTonic.description>
+
+</LanguageData>

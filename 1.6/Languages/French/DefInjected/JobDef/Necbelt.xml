@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Install Necrotic Orb Job -->
+  <InstallNecroticOrbJob.reportString>installation de l'orbe nécromantique.</InstallNecroticOrbJob.reportString>
+
+  <!-- Remove Necrotic Orb Job -->
+  <OWD_RemoveNecroticOrb.reportString>retrait de l'orbe nécromantique de {0}.</OWD_RemoveNecroticOrb.reportString>
+
+</LanguageData>

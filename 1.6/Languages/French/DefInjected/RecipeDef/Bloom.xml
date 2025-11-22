@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Necro-Bloom Tonic Recipe -->
+  <Make_OWD_NecroBloomTonic.label>synthétiser un tonique de nécro-fleur</Make_OWD_NecroBloomTonic.label>
+  <Make_OWD_NecroBloomTonic.description>Synthétiser de la poussière de nécro-fleur raffinée en un tonique puissant et polyvalent.</Make_OWD_NecroBloomTonic.description>
+  <Make_OWD_NecroBloomTonic.jobString>Synthèse de tonique de nécro-fleur.</Make_OWD_NecroBloomTonic.jobString>
+
+</LanguageData>

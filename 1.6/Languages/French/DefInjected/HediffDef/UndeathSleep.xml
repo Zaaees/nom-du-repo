@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Undeath Sleep -->
+  <OWD_UndeathSleep.label>sommeil de mort</OWD_UndeathSleep.label>
+  <OWD_UndeathSleep.description>Un état de récupération dans lequel entre un être mort-vivant qui a subi des dommages létaux. L'énergie nécromantique est redirigée vers la guérison plutôt que vers les fonctions normales, régénérant rapidement les blessures.</OWD_UndeathSleep.description>
+  <OWD_UndeathSleep.stages.0.label>régénération</OWD_UndeathSleep.stages.0.label>
+  <OWD_UndeathSleep.stages.1.label>régénération</OWD_UndeathSleep.stages.1.label>
+
+</LanguageData>
